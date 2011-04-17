@@ -97,6 +97,10 @@ namespace IDEService.Core
         public void Logout(User user)
         {
             user.Userlogs.Add(new Userlog(){Date = DateTime.Now, Message = "Выход из системы"});
+            Kernel.GetKernel.
+               SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.DataBase,
+                                              DbSubsystemMessages.SaveContext, new object[] { }));
+           
         }
 
         public LoginStatus CheckLogin(string login)

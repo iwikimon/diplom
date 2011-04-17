@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
+using ClientServiceTypesNet.Core;
 
 namespace IDEService.Core
 {
@@ -13,6 +17,9 @@ namespace IDEService.Core
     [KnownType(typeof(ChatMessages))]
     [KnownType(typeof(ProdjectMessages))]
     [KnownType(typeof(ReportMessages))]
+    [KnownType(typeof(UserlogDto))]
+    [KnownType(typeof(DateTime))]
+    [KnownType(typeof(List<UserlogDto>))]
     public class ServiceMessage
     {
 
@@ -21,7 +28,7 @@ namespace IDEService.Core
         /// </summary>
         [DataMember]
         public KernelTypes Handler { get; set; }
-        
+
         /// <summary>
         /// От какой подсистемы сообщение
         /// </summary>
@@ -46,7 +53,7 @@ namespace IDEService.Core
         [DataMember]
         public object[] Message { get; set; }
 
-        public ServiceMessage(KernelTypes handler,SubsystemType from, SubsystemType to, Enum type, object[] msg)
+        public ServiceMessage(KernelTypes handler, SubsystemType from, SubsystemType to, Enum type, object[] msg)
         {
             Handler = handler;
             From = from;
@@ -59,8 +66,8 @@ namespace IDEService.Core
         {
             var msg = new StringBuilder();
             foreach (var obj in Message)
-                msg.Append(" "+obj.ToString());
-            return string.Format("From: {0}, To: {1}, Type: {2}, Content: {3} ",  From, To, Type,
+                msg.Append(" " + obj.ToString());
+            return string.Format("From: {0}, To: {1}, Type: {2}, Content: {3} ", From, To, Type,
                                  msg.ToString());
         }
     }

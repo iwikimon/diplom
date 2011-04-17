@@ -22,8 +22,7 @@ namespace IDEService.service
     {
         private Socket _client;
 
-        private Thread _work;
-
+        public string IP;
         private SocketAsyncEventArgs eventArgs;
 
         /// <summary>
@@ -39,13 +38,13 @@ namespace IDEService.service
             eventArgs.SetBuffer(buffer, 0, buffer.Length);
             eventArgs.Completed += eventArgsCompleted;
             _client.ReceiveAsync(eventArgs);
-       
+            IP = client.RemoteEndPoint.ToString();
 
         }
 
         public void Dispose()
         {
-            _work.Abort();
+
         }
 
         private void eventArgsCompleted(object sender, SocketAsyncEventArgs e)
@@ -79,7 +78,7 @@ namespace IDEService.service
 
         private void ProcessDisconnect(SocketAsyncEventArgs e)
         {
-            //TODO: реализация отключения клиента
+            
         }
 
         private void ProcessReceive(SocketAsyncEventArgs e)
@@ -138,8 +137,9 @@ namespace IDEService.service
             }
         }
 
-        private void Work()
+        public bool IsConnected()
         {
-             }
+            return _client.Connected;
+        }
     }
 }

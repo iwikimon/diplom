@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\AESCrypto.cs" />
+    <Compile Include="Core\DtoClasses.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs" />

@@ -1,6 +1,10 @@
 ﻿
 using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using ClientServiceTypesNet.Core;
+using IDEService.Contracts.Data;
+using ClientServiceTypesNet.Core;
 namespace IDEService.Core
 {
     class ReportModule :IReportModule
@@ -22,6 +26,11 @@ namespace IDEService.Core
         public void ProdjectReport(Project prodject, DateTime from, DateTime to)
         {
             throw new NotImplementedException();
+        }
+
+        public List<UserlogDto> GetUserLogs(User u)
+        {
+            return u.Userlogs.Select(ul => new UserlogDto() {Date = ul.Date, Message = ul.Message}).ToList();
         }
 
         public void Dispose()

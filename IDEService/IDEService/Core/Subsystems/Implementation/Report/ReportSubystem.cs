@@ -2,10 +2,11 @@
 
 namespace IDEService.Core
 {
-    class ReportSubystem :Subsystem
+    class ReportSubystem : Subsystem
     {
         private ReportModule _module;
-        public ReportSubystem() : base(SubsystemType.Report)
+        public ReportSubystem()
+            : base(SubsystemType.Report)
         {
         }
 
@@ -28,7 +29,19 @@ namespace IDEService.Core
 
         public override ServiceMessage SendMessage(ServiceMessage message)
         {
-            throw new NotImplementedException();
+            switch ((ReportMessages)message.Type)
+            {
+                case ReportMessages.GetUserLog:
+                    return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Report, SubsystemType.Report,
+                                              ReportMessages.GetUserLog, new object[]
+                                                                             {
+                                                                                 _module.GetUserLogs(
+                                                                                     ((UserCache) message.Message[0]).
+                                                                                         Client)
+                                                                             });
+                default:
+                    throw new NotImplementedException();
+            }
         }
     }
 }

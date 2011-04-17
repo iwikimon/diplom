@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using IDEService.service;
 
 namespace IDEService.Core
@@ -47,6 +48,7 @@ namespace IDEService.Core
             Logger.Log.Write(LogLevels.Debug,"Запуск ядра...");
         }
 
+ 
 
         /// <summary>
         /// Обработка сообщения от клиента
@@ -137,6 +139,14 @@ namespace IDEService.Core
                 Logger.Log.Write(LogLevels.Error, "Ошибка регистрации подсистемы" + subsystem.Type() + ":\n\n" + ex);
             }
            
+        }
+
+        public void DisconnectUser(string ip)
+        {
+            var v = Clients.Where(x => x.Value.IP == ip).First();
+            SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,
+                                           AccessMessages.Logout, new object[] {v.Value}));
+            Clients.Remove(v.Key);
         }
 
         /// <summary>

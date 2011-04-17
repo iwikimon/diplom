@@ -1,9 +1,15 @@
-﻿
+﻿using System.Runtime.Serialization;
+
 namespace IDEService.Core
 {
-    enum ReportMessages
+    [DataContract]
+    public enum ReportMessages
     {
+        [EnumMember]
         UserReport,
-        ProdjectReport
+        [EnumMember]
+        ProdjectReport,
+        [EnumMember]
+        GetUserLog
     }
 }

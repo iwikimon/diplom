@@ -48,6 +48,7 @@ namespace IDEService.Core
         public byte[] Encode(ServiceMessage msg)
         {
             var toDecode = SerializeData(msg);
+            Logger.Log.Write(LogLevels.Debug, "отправляем клиенту: " + Encoding.UTF8.GetString(toDecode));
             return AESCrypto.AES.Encrypt(toDecode, aesPasswd, aesSalt);
         }
 

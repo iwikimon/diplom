@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using IDEService.Core;
 
 namespace IDEService.service
 {
@@ -18,14 +19,31 @@ namespace IDEService.service
 
         private Thread work { get; set; }
 
-        List<ClientWorker> clients = new List<ClientWorker>();
-        
+        public List<ClientWorker> clients = new List<ClientWorker>();
+        private Thread Watcher;
         public ServerWorker(string host, int port)
         {
             listener = new TcpListener(IPAddress.Parse(host), port);
             listener.Start();
             work = new Thread(Work);
             work.Start();
+            Watcher = new Thread(ClientWatcher);
+            Watcher.Start();
+        }
+
+        private void ClientWatcher()
+        {
+            while (true)
+            {
+                for (int i = 0; i < clients.Count; ++i)
+                    if (!clients[i].IsConnected())
+                    {
+                        Kernel.GetKernel.DisconnectUser(clients[i].IP);
+                        clients.Remove(clients[i]);
+                        --i;
+                    }
+                Thread.Sleep(1000);
+            }
         }
 
         private void Work()
@@ -42,6 +60,7 @@ namespace IDEService.service
         {
             clients.ForEach(x =>x.Dispose());
             work.Abort();
+            Watcher.Abort();
         }
     }
 }

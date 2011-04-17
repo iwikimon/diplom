@@ -95,9 +95,9 @@ namespace IDEService.Core
                     }
                 case AccessMessages.Logout:
                     {
-                        _acessModule.Logout(new User());
+                        _acessModule.Logout(((UserCache)(message.Message[0])).Client);
                         return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Access, message.From, AccessMessages.Logout,
-                            new object[] { });
+                            new object[] {  });
                     }
                 default:
                     throw new SubsystemWorkingException("Неопознанный тип сообщения.");

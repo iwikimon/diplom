@@ -140,9 +140,6 @@
     <Compile Include="Core\Subsystems\Implementation\Report\IReportModule.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Report\ReportMessages.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Core\Subsystems\Implementation\Report\ReportModule.cs">
       <SubType>Code</SubType>
     </Compile>
