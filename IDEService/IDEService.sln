@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEServiceTests", "IDEServiceTests\IDEServiceTests.csproj", "{84640A0D-B64E-4044-8898-30964797DC4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientServiceTypesNet", "..\ClientServiceTypesNet\ClientServiceTypesNet\ClientServiceTypesNet.csproj", "{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = IDEService.vsmdi
@@ -46,6 +48,16 @@ Global
 		{84640A0D-B64E-4044-8898-30964797DC4A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{84640A0D-B64E-4044-8898-30964797DC4A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{84640A0D-B64E-4044-8898-30964797DC4A}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

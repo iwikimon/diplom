@@ -14,7 +14,7 @@ namespace IDEService.Core
         [EnumMember]
         Chat,
         [EnumMember]
-        Prodject,
+        Project,
         [EnumMember]
         Vcs,
         [EnumMember]

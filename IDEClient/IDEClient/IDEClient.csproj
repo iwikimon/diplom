@@ -63,8 +63,11 @@
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClientServiceTypes">
-      <HintPath>..\..\ClientServiceTypes\Bin\Debug\ClientServiceTypes.dll</HintPath>
+    <Reference Include="Liquid">
+      <HintPath>C:\Users\iwikimon\Desktop\Liquid Controls 5.3.3\Liquid.dll</HintPath>
+    </Reference>
+    <Reference Include="Liquid.Menu">
+      <HintPath>C:\Users\iwikimon\Desktop\Liquid Controls 5.3.3\Liquid.Menu.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
@@ -85,13 +88,27 @@
     <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\Controls\AccessControl.xaml.cs">
+      <DependentUpon>AccessControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ClientWorker.cs" />
+    <Compile Include="Core\BootLoader.cs" />
+    <Compile Include="Core\Controls\IDEControl.xaml.cs">
+      <DependentUpon>IDEControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Kernel.cs" />
+    <Compile Include="Core\Subsystems\AccessSubsystem.cs" />
+    <Compile Include="Core\Subsystems\NetworkSubsystem.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Controls\RegistrationControl.xaml.cs">
+      <DependentUpon>RegistrationControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Validator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -99,19 +116,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Core\Controls\AccessControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\Controls\IDEControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Core\Controls\RegistrationControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
-    <None Include="Properties\DataSources\System.ServiceModel.Channels.Message.datasource" />
     <None Include="Properties\OutOfBrowserSettings.xml" />
-    <Content Include="ServiceReferences.ClientConfig" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ClientServiceTypes\ClientServiceTypes.csproj">
+      <Project>{99132EBB-A738-4142-B00B-7BA850BA7CBE}</Project>
+      <Name>ClientServiceTypes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

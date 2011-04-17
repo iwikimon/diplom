@@ -1,1 +1,2 @@
-E:\Dropbox\Diplom\IDEClient\IDEClient\Generated_Code\IDEClient.Web.g.cs
+E:\Dropbox\Diplom\IDEClient\IDEClient
+Generated_Code\IDEClient.Web.g.cs

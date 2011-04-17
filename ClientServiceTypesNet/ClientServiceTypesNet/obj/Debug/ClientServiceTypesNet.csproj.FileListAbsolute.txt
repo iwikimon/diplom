@@ -1,0 +1,5 @@
+E:\Dropbox\Diplom\ClientServiceTypesNet\ClientServiceTypesNet\bin\Debug\ClientServiceTypesNet.dll
+E:\Dropbox\Diplom\ClientServiceTypesNet\ClientServiceTypesNet\bin\Debug\ClientServiceTypesNet.pdb
+E:\Dropbox\Diplom\ClientServiceTypesNet\ClientServiceTypesNet\obj\Debug\ResolveAssemblyReference.cache
+E:\Dropbox\Diplom\ClientServiceTypesNet\ClientServiceTypesNet\obj\Debug\ClientServiceTypesNet.dll
+E:\Dropbox\Diplom\ClientServiceTypesNet\ClientServiceTypesNet\obj\Debug\ClientServiceTypesNet.pdb

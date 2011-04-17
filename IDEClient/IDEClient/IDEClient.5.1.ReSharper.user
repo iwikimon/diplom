@@ -13,39 +13,45 @@
       <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.config" caret="0" fromTop="0" />
       <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Debug.config" caret="0" fromTop="0" />
       <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Release.config" caret="0" fromTop="0" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3937" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:Validator.cs" caret="39" fromTop="1" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:ClientWorker.cs" caret="2227" fromTop="0" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:BootLoader.cs" caret="462" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:App.xaml.cs" caret="1966" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1192" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3800" fromTop="17" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="720" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="10" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="7" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="7" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="15" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="15" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="14" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="10" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="18" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="16" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="11" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="8" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="5" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="14" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1184" fromTop="8" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3368" fromTop="4" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2502" fromTop="8" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4903" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2970" fromTop="11" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3710" fromTop="18" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2644" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4346" fromTop="8" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="5313" fromTop="14" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4253" fromTop="2" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4627" fromTop="6" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2788" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="1006" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="1956" fromTop="17" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="70" fromTop="3" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="667" fromTop="15" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3806" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3825" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="1439" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="1653" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="1732" fromTop="16" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3198" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:ClientWorker.cs" caret="3437" fromTop="15" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1198" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:ClientWorker.cs" caret="1693" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:ClientWorker.cs" caret="1425" fromTop="18" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="807" fromTop="17" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:ClientWorker.cs" caret="936" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3379" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="2669" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:App.xaml.cs" caret="1886" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="3144" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="3870" fromTop="17" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="4361" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="3501" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="631" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="2692" fromTop="5" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1474" fromTop="2" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1794" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="296" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="1423" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="720" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

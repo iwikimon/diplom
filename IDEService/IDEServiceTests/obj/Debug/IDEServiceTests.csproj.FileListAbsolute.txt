@@ -8,3 +8,5 @@ E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\IDEService.pdb
 E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\ResolveAssemblyReference.cache
 E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\IDEServiceTests.dll
 E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\IDEServiceTests.pdb
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\ClientServiceTypesNet.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\ClientServiceTypesNet.pdb

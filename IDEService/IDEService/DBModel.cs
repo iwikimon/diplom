@@ -104,7 +104,7 @@ namespace IDEService
     [ValidatePresence]
     [ValidateLength(0, 65535)]
     private string _path;
-    private int _projectId;
+    private int _folderId;
 
     #endregion
     
@@ -114,8 +114,8 @@ namespace IDEService
     public const string NameField = "Name";
     /// <summary>Identifies the Path entity attribute.</summary>
     public const string PathField = "Path";
-    /// <summary>Identifies the ProjectId entity attribute.</summary>
-    public const string ProjectIdField = "ProjectId";
+    /// <summary>Identifies the FolderId entity attribute.</summary>
+    public const string FolderIdField = "FolderId";
 
 
     #endregion
@@ -125,7 +125,7 @@ namespace IDEService
     [ReverseAssociation("File")]
     private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
     [ReverseAssociation("Files")]
-    private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
+    private readonly EntityHolder<Folder> _folder = new EntityHolder<Folder>();
 
 
     #endregion
@@ -137,10 +137,10 @@ namespace IDEService
       get { return Get(_accesses); }
     }
 
-    public Project Project
+    public Folder Folder
     {
-      get { return Get(_project); }
-      set { Set(_project, value); }
+      get { return Get(_folder); }
+      set { Set(_folder, value); }
     }
 
 
@@ -156,11 +156,11 @@ namespace IDEService
       set { Set(ref _path, value, "Path"); }
     }
 
-    /// <summary>Gets or sets the ID for the <see cref="Project" /> property.</summary>
-    public int ProjectId
+    /// <summary>Gets or sets the ID for the <see cref="Folder" /> property.</summary>
+    public int FolderId
     {
-      get { return Get(ref _projectId, "ProjectId"); }
-      set { Set(ref _projectId, value, "ProjectId"); }
+      get { return Get(ref _folderId, "FolderId"); }
+      set { Set(ref _folderId, value, "FolderId"); }
     }
 
     #endregion
@@ -200,6 +200,8 @@ namespace IDEService
 
     [ReverseAssociation("Folder")]
     private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
+    [ReverseAssociation("Folder")]
+    private readonly EntityCollection<File> _files = new EntityCollection<File>();
     [ReverseAssociation("Folders")]
     private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
 
@@ -211,6 +213,11 @@ namespace IDEService
     public EntityCollection<Access> Accesses
     {
       get { return Get(_accesses); }
+    }
+
+    public EntityCollection<File> Files
+    {
+      get { return Get(_files); }
     }
 
     public Project Project
@@ -280,8 +287,6 @@ namespace IDEService
     [ReverseAssociation("Project")]
     private readonly EntityCollection<Chat> _chats = new EntityCollection<Chat>();
     [ReverseAssociation("Project")]
-    private readonly EntityCollection<File> _files = new EntityCollection<File>();
-    [ReverseAssociation("Project")]
     private readonly EntityCollection<Folder> _folders = new EntityCollection<Folder>();
     [ReverseAssociation("ProjectsOwner")]
     private readonly EntityHolder<User> _owner = new EntityHolder<User>();
@@ -296,11 +301,6 @@ namespace IDEService
     public EntityCollection<Chat> Chats
     {
       get { return Get(_chats); }
-    }
-
-    public EntityCollection<File> Files
-    {
-      get { return Get(_files); }
     }
 
     public EntityCollection<Folder> Folders
@@ -529,7 +529,6 @@ namespace IDEService
     [ValidatePresence]
     [ValidateLength(0, 65535)]
     private string _password;
-    private int _accessId;
 
     #endregion
     
@@ -539,8 +538,6 @@ namespace IDEService
     public const string LoginField = "Login";
     /// <summary>Identifies the Password entity attribute.</summary>
     public const string PasswordField = "Password";
-    /// <summary>Identifies the AccessId entity attribute.</summary>
-    public const string AccessIdField = "AccessId";
 
 
     #endregion
@@ -556,7 +553,7 @@ namespace IDEService
     [ReverseAssociation("User")]
     private readonly EntityCollection<Chat> _chats = new EntityCollection<Chat>();
     [ReverseAssociation("User")]
-    private readonly EntityHolder<Access> _access = new EntityHolder<Access>();
+    private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
     [ReverseAssociation("User")]
     private readonly EntityHolder<Userinfo> _userinfo = new EntityHolder<Userinfo>();
 
@@ -585,10 +582,9 @@ namespace IDEService
       get { return Get(_chats); }
     }
 
-    public Access Access
+    public EntityCollection<Access> Accesses
     {
-      get { return Get(_access); }
-      set { Set(_access, value); }
+      get { return Get(_accesses); }
     }
 
     public Userinfo Userinfo
@@ -610,12 +606,6 @@ namespace IDEService
       set { Set(ref _password, value, "Password"); }
     }
 
-    public int AccessId
-    {
-      get { return Get(ref _accessId, "AccessId"); }
-      set { Set(ref _accessId, value, "AccessId"); }
-    }
-
     #endregion
   }
 
@@ -630,6 +620,7 @@ namespace IDEService
     private string _rule;
     private int _fileId;
     private int _folderId;
+    private int _userId;
 
     #endregion
     
@@ -641,6 +632,8 @@ namespace IDEService
     public const string FileIdField = "FileId";
     /// <summary>Identifies the FolderId entity attribute.</summary>
     public const string FolderIdField = "FolderId";
+    /// <summary>Identifies the UserId entity attribute.</summary>
+    public const string UserIdField = "UserId";
 
 
     #endregion
@@ -651,7 +644,7 @@ namespace IDEService
     private readonly EntityHolder<File> _file = new EntityHolder<File>();
     [ReverseAssociation("Accesses")]
     private readonly EntityHolder<Folder> _folder = new EntityHolder<Folder>();
-    [ReverseAssociation("Access")]
+    [ReverseAssociation("Accesses")]
     private readonly EntityHolder<User> _user = new EntityHolder<User>();
 
 
@@ -696,6 +689,13 @@ namespace IDEService
     {
       get { return Get(ref _folderId, "FolderId"); }
       set { Set(ref _folderId, value, "FolderId"); }
+    }
+
+    /// <summary>Gets or sets the ID for the <see cref="User" /> property.</summary>
+    public int UserId
+    {
+      get { return Get(ref _userId, "UserId"); }
+      set { Set(ref _userId, value, "UserId"); }
     }
 
     #endregion
@@ -783,7 +783,7 @@ namespace IDEService
       [System.Runtime.Serialization.DataMember]
       public string Path { get; set; }
       [System.Runtime.Serialization.DataMember]
-      public int ProjectId { get; set; }
+      public int FolderId { get; set; }
     }
 
     [System.Runtime.Serialization.DataContract(Name="Folder")]
@@ -850,8 +850,6 @@ namespace IDEService
       public string Login { get; set; }
       [System.Runtime.Serialization.DataMember]
       public string Password { get; set; }
-      [System.Runtime.Serialization.DataMember]
-      public int AccessId { get; set; }
     }
 
     [System.Runtime.Serialization.DataContract(Name="Access")]
@@ -864,6 +862,8 @@ namespace IDEService
       public int FileId { get; set; }
       [System.Runtime.Serialization.DataMember]
       public int FolderId { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int UserId { get; set; }
     }
 
 
@@ -925,7 +925,7 @@ namespace IDEService
         CopyDBModelDtoBase(entity, dto);
         dto.Name = entity.Name;
         dto.Path = entity.Path;
-        dto.ProjectId = entity.ProjectId;
+        dto.FolderId = entity.FolderId;
         AfterCopyFile(entity, dto);
       }
       
@@ -935,7 +935,7 @@ namespace IDEService
         CopyDBModelDtoBase(dto, entity);
         entity.Name = dto.Name;
         entity.Path = dto.Path;
-        entity.ProjectId = dto.ProjectId;
+        entity.FolderId = dto.FolderId;
         AfterCopyFile(dto, entity);
       }
       
@@ -1123,7 +1123,6 @@ namespace IDEService
         CopyDBModelDtoBase(entity, dto);
         dto.Login = entity.Login;
         dto.Password = entity.Password;
-        dto.AccessId = entity.AccessId;
         AfterCopyUser(entity, dto);
       }
       
@@ -1133,7 +1132,6 @@ namespace IDEService
         CopyDBModelDtoBase(dto, entity);
         entity.Login = dto.Login;
         entity.Password = dto.Password;
-        entity.AccessId = dto.AccessId;
         AfterCopyUser(dto, entity);
       }
       
@@ -1162,6 +1160,7 @@ namespace IDEService
         dto.Rule = entity.Rule;
         dto.FileId = entity.FileId;
         dto.FolderId = entity.FolderId;
+        dto.UserId = entity.UserId;
         AfterCopyAccess(entity, dto);
       }
       
@@ -1172,6 +1171,7 @@ namespace IDEService
         entity.Rule = dto.Rule;
         entity.FileId = dto.FileId;
         entity.FolderId = dto.FolderId;
+        entity.UserId = dto.UserId;
         AfterCopyAccess(dto, entity);
       }
       

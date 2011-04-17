@@ -1,12 +1,12 @@
 E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\IDEService.exe.config
+E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\IDEService.exe
+E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\IDEService.pdb
+E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\ClientServiceTypesNet.dll
+E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\MySql.Data.dll
+E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\ClientServiceTypesNet.pdb
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\IDEService.Properties.Resources.resources
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\ResGen.read.1.tlog
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\ResGen.write.1.tlog
-E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\IDEService.exe
-E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\IDEService.pdb
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\IDEService.exe
 E:\Dropbox\Diplom\IDEService\IDEService\obj\x86\Debug\IDEService.pdb
-E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\MySql.Data.dll
-E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\ClientServiceTypes.dll
-E:\Dropbox\Diplom\IDEService\IDEService\bin\mono\ClientServiceTypes.pdb

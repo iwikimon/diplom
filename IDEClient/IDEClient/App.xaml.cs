@@ -50,7 +50,7 @@ namespace IDEClient
                 e.Handled = true;
                 Deployment.Current.Dispatcher.BeginInvoke(delegate { ReportErrorToDOM(e); });
             }*/
-            if(e.ExceptionObject.InnerException is CommunicationException)
+            //if(e.ExceptionObject.InnerException is CommunicationException)
                 MessageBox.Show(e.ExceptionObject.InnerException.Message.ToString());
             e.Handled = true;
         }

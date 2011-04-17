@@ -94,6 +94,33 @@
             Gets the inner <see cref="T:System.IAsyncResult"/>.
             </summary>
         </member>
+        <member name="M:System.ServiceModel.DomainServices.BinaryTypeUtility.IsTypeBinary(System.Type)">
+            <summary>
+            Returns whether the <paramref name="type"/> <c>is System.Data.Linq.Binary</c>.
+            </summary>
+            <remarks>
+            We test Binary by Type Name so our client framework assembly can avoid taking an
+            assembly reference to <c>System.Data.Linq</c>. If a type is determined to be
+            binary, that type will be used to check reference equality for all subsequent
+            invocations.
+            </remarks>
+            <param name="type">The type to check</param>
+            <returns>Whether the <paramref name="type"/> is binary</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.BinaryTypeUtility.GetByteArrayFromBinary(System.Object)">
+            <summary>
+            Returns the <paramref name="binary"/> converted to a <c>byte[]</c>.
+            </summary>
+            <param name="binary">The binary to convert</param>
+            <returns>The byte[] form of the binary</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.BinaryTypeUtility.GetBinaryFromByteArray(System.Byte[])">
+            <summary>
+            Returns the <paramref name="bytes"/> converted to a <c>System.Data.Linq.Binary</c>.
+            </summary>
+            <param name="bytes">The bytes to convert</param>
+            <returns>The binary form of the bytes</returns>
+        </member>
         <member name="T:System.ServiceModel.DomainServices.Client.AsyncOperationType">
             <summary>
             Internal enumeration used to qualify operation results.
@@ -202,14 +229,19 @@
             Gets the <see cref="P:System.ServiceModel.DomainServices.Client.DomainClientAsyncResult.AsyncOperationType"/> describing this operation.
             </summary>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsNullableType(System.Type)">
+        <member name="F:System.ServiceModel.DomainServices.TypeUtility.systemAssemblyPublicKeyTokens">
+            <summary>
+            List of public key tokens used for System assemblies
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsNullableType(System.Type)">
             <summary>
             Returns <c>true</c> if the given type is a <see cref="T:System.Nullable"/>
             </summary>
             <param name="type">The type to test</param>
             <returns><c>true</c> if the given type is a nullable type</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.GetNonNullableType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.GetNonNullableType(System.Type)">
             <summary>
             If the given type is <see cref="T:System.Nullable"/>, returns the element type,
             otherwise simply returns the input type
@@ -217,7 +249,7 @@
             <param name="type">The type to test that may or may not be Nullable</param>
             <returns>Either the input type or, if it was Nullable, its element type</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsPredefinedType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsPredefinedType(System.Type)">
             <summary>
             Returns <c>true</c> if the given type is a primitive type or one
             of our standard acceptable simple types, such as <see cref="T:System.String"/>,
@@ -227,7 +259,7 @@
             <param name="type">The type to test</param>
             <returns><c>true</c> if the type is a primitive or standard acceptable types</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsPredefinedListType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsPredefinedListType(System.Type)">
             <summary>
             Returns <c>true</c> if the given type is <see cref="T:System.Collections.Generic.IEnumerable`1"/> or an <see cref="T:System.Collections.IList"/> type, 
             and is either an interface, an array, or has a default constructor.
@@ -235,7 +267,7 @@
             <param name="type">The type to test</param>
             <returns><c>true</c> if the type is a primitive or standard acceptable types</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsSupportedCollectionType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsSupportedCollectionType(System.Type)">
             <summary>
             Returns <c>true</c> if specified type is a supported collection Type. This method only checks the collection
             Type itself, not whether the element Type is supported.
@@ -243,7 +275,7 @@
             <param name="type">The type to test</param>
             <returns><c>true</c> if the type is a suppored collection Type.</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsPredefinedDictionaryType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsPredefinedDictionaryType(System.Type)">
             <summary>
             Returns <c>true</c> if <paramref name="type"/> implements <see cref="T:System.Collections.Generic.IDictionary`2"/> and
             its generic type arguments are acceptable predefined simple types.
@@ -251,17 +283,7 @@
             <param name="type">The type to test.</param>
             <returns><c>true</c> if the type is a <see cref="T:System.Collections.Generic.IDictionary`2"/> with supported generic type arguments.</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.GetDictionaryGenericArgumentTypes(System.Type)">
-            <summary>
-            Returns an array of types that represent the generic type arguments used in <paramref name="type"/>'s
-            implementation of <see cref="T:System.Collections.Generic.IDictionary`2"/>.
-            </summary>
-            <param name="type">The type to examine.</param>
-            <returns>An array of types that represent the generic type arguments used in <paramref name="type"/>'s
-            implementation of <see cref="T:System.Collections.Generic.IDictionary`2"/>. Returns null if <paramref name="type"/> does 
-            not implement <see cref="T:System.Collections.Generic.IDictionary`2"/>.</returns>
-        </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsPredefinedSimpleType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsPredefinedSimpleType(System.Type)">
             <summary>
             Returns <c>true</c> if the given type is either primitive or one of our
             standard acceptable simple types, such as <see cref="T:System.String"/>,
@@ -270,7 +292,43 @@
             <param name="type">The type to test</param>
             <returns><c>true</c> if the type is a primitive or standard acceptable types</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.GetElementType(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsComplexType(System.Type)">
+            <summary>
+            This method determines if the specified Type should be treated as a
+            complex type by the framework.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the type is a complex type, false otherwise.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsSystemAssembly(System.Reflection.Assembly)">
+            <summary>
+            Performs a check against an assembly to determine if it's a known
+            System assembly.
+            </summary>
+            <remarks>
+            We can't use Assembly.GetName().GetPublicKeyToken() since that requires FileIOPermissions.
+            </remarks>
+            <param name="assembly">The assembly to check.</param>
+            <returns><c>true</c> if the assembly is known to be a system assembly, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsComplexTypeCollection(System.Type)">
+            <summary>
+            Determines whether the specified type is one of the supported collection types
+            with a complex element type.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the type is a supported complex collection type, false otherwise.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.IsSupportedComplexType(System.Type)">
+            <summary>
+            Determines whether the specified type is a complex type or a collection of
+            complex types.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns>True if the specified type is a complex type or a collection of
+            complex types, false otherwise.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.GetElementType(System.Type)">
             <summary>
             Returns the underlying element type starting from a given type.
             </summary>
@@ -285,7 +343,7 @@
             <param name="type"><see cref="T:System.Type"/> to examine.</param>
             <returns>The underlying element type starting from the given type</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.DefinitionIsAssignableFrom(System.Type,System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.DefinitionIsAssignableFrom(System.Type,System.Type)">
             <summary>
             Determines whether the generic type definition is assignable from the derived type.
             </summary>
@@ -298,7 +356,7 @@
             <param name="derivedType">The type to determine assignability from</param>
             <returns>Whether the type definition is assignable from the derived type</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.DefinitionIsAssignableFrom(System.Type,System.Type,System.Type@)">
+        <member name="M:System.ServiceModel.DomainServices.TypeUtility.DefinitionIsAssignableFrom(System.Type,System.Type,System.Type@)">
             <summary>
             Determines whether the generic type definition is assignable from the derived type.
             </summary>
@@ -315,28 +373,209 @@
             </param>
             <returns>Whether the type definition is assignable from the derived type</returns>
         </member>
-        <member name="M:System.ServiceModel.DomainServices.Client.Utility.IsTypeBinary(System.Type)">
+        <member name="M:System.ServiceModel.DomainServices.ExceptionHandlingUtility.IsFatal(System.Exception)">
             <summary>
-            Returns whether the <paramref name="type"/> <c>is System.Data.Linq.Binary</c>.
+            Determines if an <see cref="T:System.Exception"/> is fatal and therefore should not be handled.
             </summary>
-            <remarks>
-            We test Binary by Type Name so our client framework assembly can avoid taking an
-            assembly reference to <c>System.Data.Linq</c>. If a type is determined to be
-            binary, that type will be used to check reference equality for all subsequent
-            invocations.
-            </remarks>
-            <param name="type">The type to check</param>
-            <returns>Whether the <paramref name="type"/> is binary</returns>
+            <example>
+            try
+            {
+                // Code that may throw
+            }
+            catch (Exception ex)
+            {
+                if (ex.IsFatal())
+                {
+                    throw;
+                }
+                
+                // Handle exception
+            }
+            </example>
+            <param name="exception">The exception to check</param>
+            <returns><c>true</c> if the exception is fatal, otherwise <c>false</c>.</returns>
         </member>
         <member name="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement">
             <summary>
             The binding element that specifies the .NET Binary Format for XML used to encode messages.
             </summary>
         </member>
-        <member name="F:System.ServiceModel.DomainServices.Client.WebHttpQueryInspector.MaximumUriLength">
+        <member name="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage">
+            <summary>
+            A buffered message created by a <see cref="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder"/>.
+            </summary>
+            <remarks>The Message.CreateMessage overloads do not provide a non-streamed message
+            that is comparable to the messages produced by the WCF framework. This disparity
+            leads to both functional and performance pitfalls. This class is an approximation
+            of a buffered message used by WCF, specifically engineered for PoxBinary (i.e.
+            MessageVersion.None only).</remarks>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.#ctor(System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData)">
+            <summary>
+            Constructs a <see cref="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage"/>.
+            </summary>
+            <param name="data">The message data containing the message contents.</param>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.OnBodyToString(System.Xml.XmlDictionaryWriter)">
+            <summary>
+            Converts the message body to a string.
+            </summary>
+            <param name="writer">The writer to which the message is written.</param>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.OnClose">
+            <summary>
+            Disposes all message resources.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.OnCreateBufferedCopy(System.Int32)">
+            <summary>
+            Creates a buffer to store this message.
+            </summary>
+            <param name="maxBufferSize">The maximum size of the buffer to be created.</param>
+            <returns>A buffer containing the message.</returns>
+            <remarks>The <paramref name="maxBufferSize"/> is ignored. Since the message
+            contents are shared, no additional buffers are created.</remarks>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.OnGetReaderAtBodyContents">
+            <summary>
+            Returns an <see cref="T:System.Xml.XmlDictionaryReader"/> positioned at the message contents.
+            </summary>
+            <returns>An <see cref="T:System.Xml.XmlDictionaryReader"/>.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)">
+            <summary>
+            Writes the message body contents to the specified writer.
+            </summary>
+            <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter"/> that is used to
+            write the message body contents.</param>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.Headers">
+            <summary>
+            The <see cref="T:System.ServiceModel.Channels.MessageHeaders"/> object that represents the headers of this message.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.IsFault">
+            <summary>
+            Returns <c>true</c> if this message contains a fault.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.Properties">
+            <summary>
+            The <see cref="T:System.ServiceModel.Channels.MessageProperties"/> instance that represents the properties of
+            this message.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.Version">
+            <summary>
+            The version of this message.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer">
+            <summary>
+            Represents a buffer that stores the data required to create a
+            <see cref="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage"/> or its contents for future consumption.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.#ctor(System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData,System.ServiceModel.Channels.MessageHeaders,System.ServiceModel.Channels.MessageProperties)">
+            <summary>
+            Constructs a <see cref="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer"/>
+            </summary>
+            <param name="data">The message data.</param>
+            <param name="headers">The message headers.</param>
+            <param name="properties">The message properties.</param>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.Close">
+            <summary>
+            Closes the buffer.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.CreateMessage">
+            <summary>
+            Returns an identical copy of the original message from which this buffer was
+            created.
+            </summary>
+            <returns>A copy of the original message.</returns>
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.WriteMessage(System.IO.Stream)">
+            <summary>
+            Writes the entire contents of this buffer into the specified stream.
+            </summary>
+            <param name="stream">The stream that the buffer contents will be written to.</param>
+            <exception cref="T:System.ArgumentNullException"/> 
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.BufferSize">
+            <summary>
+            Gets the number of bytes consumed by this buffer.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessage.PoxBinaryBufferedMessageBuffer.MessageContentType">
+            <summary>
+            Gets the type of content stored in this buffer.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException"/>
+        </member>
+        <member name="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData">
+            <summary>
+            The message data class that holds shared state between messages, buffers, and
+            messages created from a buffer.
+            </summary>
+            <remarks>The desktop framework allows callers to keep track of reader lifetimes.
+            With this ability, the state can be ref counted across all users, and the buffer
+            can be returned to its manager when all users release their references.
+            The Silverlight framework does not allow callers to keep track of reader lifetimes.
+            Given this, the buffer is not returned to its manager, but is cleaned up by the GC.
+            Note, without a custom message, we would use messages returned from
+            Message.CreateMessage. These messages cannot reuse buffers.</remarks>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData.#ctor(System.ArraySegment{System.Byte},System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder)">
+            <summary>
+            Constructs a <see cref="T:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData"/>.
+            </summary>
+            <param name="buffer">The message contents.</param>
+            <param name="encoder">The encoder producing the message contents.</param>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData.TakeReader">
+            <summary>
+            Returns an <see cref="T:System.Xml.XmlDictionaryReader"/> containing the message contents.
+            </summary>
+            <returns>An <see cref="T:System.Xml.XmlDictionaryReader"/> containing the message
+            contents.</returns>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData.Buffer">
+            <summary>
+            The message contents.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.DomainServices.Client.PoxBinaryMessageEncodingBindingElement.PoxBinaryMessageEncoder.PoxBinaryBufferedMessageData.Encoder">
+            <summary>
+            The encoder producing the message contents.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.DomainServices.Client.WebHttpQueryClientMessageFormatter">
+            <summary>
+            A formatter for serializing query requests which requires query parameters present in the
+            To uri or message body.
+            </summary>
+        </member>
+        <member name="F:System.ServiceModel.DomainServices.Client.WebHttpQueryClientMessageFormatter.MaximumUriLength">
             <summary>
             For cross-browser compatibility support, the maximum supported URI length is 2083 characters.
             </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.WebHttpQueryClientMessageFormatter.SerializeRequest(System.ServiceModel.Channels.MessageVersion,System.Object[])">
+            <summary>
+            Converts the specified <paramref name="parameters"/> into an outbound
+            <see cref="T:System.ServiceModel.Channels.Message"/>. For query requests with query properties, stores the query
+            parameters either in the To/Via or the message body.
+            </summary>
+            <param name="messageVersion">The version of the message to use.</param>
+            <param name="parameters">The parameters passed to the client operation.</param>
+            <returns>The message to send.</returns>
         </member>
         <member name="T:System.ServiceModel.DomainServices.Client.Resource">
             <summary>
@@ -356,7 +595,7 @@
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resource.DomainClient_UnableToDetermineHostUri">
             <summary>
-              Looks up a localized string similar to The current application or application host is null and the host Uri cannot be determined..
+              Looks up a localized string similar to The current application or application host is null and the host URI cannot be determined..
             </summary>
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resource.DomainContext_InvalidServiceUri">
@@ -391,13 +630,56 @@
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resource.WebDomainClient_MaximumUriLengthExceeded">
             <summary>
-              Looks up a localized string similar to The maximum uri length of {0} was exceeded..
+              Looks up a localized string similar to The maximum URI length of {0} was exceeded..
             </summary>
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resource.WebDomainClient_OperationDoesNotExist">
             <summary>
               Looks up a localized string similar to Operation &apos;{0}&apos; does not exist..
             </summary>
+        </member>
+        <member name="T:System.ServiceModel.DomainServices.Client.MessageUtility">
+            <summary>
+            Utility class containing utility methods to read and/or modify messages.
+            It is mainly used to insert(read) query options to(from) the URL or message body of the outgoing(incoming) messages.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.MessageUtility.IsHttpPOSTMethod(System.ServiceModel.Channels.MessageProperties)">
+            <summary>
+            Checks if the HTTP method used is POST.
+            </summary>
+            <param name="properties">Properties for which the HTTP method is to be checked.</param>
+            <returns><c>true</c> if the <paramref name="properties"/> specifies HTTP POST method.</returns>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.MessageUtility.AddMessageQueryOptions(System.ServiceModel.Channels.Message@,System.Collections.Generic.IList{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Creates a new message with the QueryOptions and original message body embedded in it.
+            </summary>
+            <param name="message">The original message.</param>
+            <param name="queryOptions">The query options to embed in the new message.</param>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.MessageUtility.AddQueryToUrl(System.ServiceModel.Channels.Message,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Adds the query parameters to the URL of the message.
+            </summary>
+            <param name="request">The original message.</param>
+            <param name="queryOptions">The query parameters to be added to the message URL.</param>
+        </member>
+        <member name="T:System.ServiceModel.DomainServices.Client.MessageUtility.QueryOptionsBodyWriter">
+            <summary>
+            BodyWriter that writes a message with query options in the message body.
+            </summary>
+            <remarks>Reading and writing messages are expensive. Without a wrapping message or body
+            writer of some kind, we would require reading the original message, and rewriting both the
+            options and original message. With a wrapping body writer, we can reduce the write original
+            message/read original message/write altered message, to just one write.</remarks>
+        </member>
+        <member name="M:System.ServiceModel.DomainServices.Client.MessageUtility.QueryOptionsBodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)">
+            <summary>
+            Writes the message with the query options first and the original message last. This is
+            done inline.
+            </summary>
+            <param name="writer">The writer used to write out the message body.</param>
         </member>
         <member name="T:System.ServiceModel.DomainServices.Client.ApplicationServices.AuthenticationDomainContextBase">
             <summary>
@@ -1396,7 +1678,7 @@
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resources.QuerySerialization_UnsupportedType">
             <summary>
-              Looks up a localized string similar to Value of type &apos;{0}&apos; cannot be serialized as part of the query. &apos;{0}&apos; is not a supported Type..
+              Looks up a localized string similar to Value of type &apos;{0}&apos; cannot be serialized as part of the query. &apos;{0}&apos; is not a supported type..
             </summary>
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resources.QuerySerialization_UnsupportedUnaryOp">
@@ -1426,7 +1708,7 @@
         </member>
         <member name="P:System.ServiceModel.DomainServices.Client.Resources.WrongAsyncResult">
             <summary>
-              Looks up a localized string similar to IAsyncResult object did not come from the corresponding async method on this type..
+              Looks up a localized string similar to IAsyncResult object did not come from the corresponding async method on this Type..
             </summary>
         </member>
     </members>

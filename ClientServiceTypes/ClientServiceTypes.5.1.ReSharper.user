@@ -8,32 +8,22 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:SubsystemTypes.cs" caret="166" fromTop="8" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:SubsystemState.cs" caret="0" fromTop="0" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="0" fromTop="0" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ISubsystem.cs" caret="0" fromTop="0" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Chat/f:ChatMessage.cs" caret="0" fromTop="0" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Chat/f:ChatMessages.cs" caret="369" fromTop="15" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Vcs/f:Revision.cs" caret="230" fromTop="11" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:SubsystemInfo.cs" caret="298" fromTop="13" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="1269" fromTop="33" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="200" fromTop="0" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessMessages.cs" caret="0" fromTop="0" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkMessages.cs" caret="248" fromTop="11" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="660" fromTop="14" />
     </RecentFiles>
     <RecentEdits>
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Vcs/f:Revision.cs" caret="115" fromTop="6" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Vcs/f:Revision.cs" caret="275" fromTop="14" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="33" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="31" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="16" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="21" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="41" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="27" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="5" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="7" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="134" fromTop="7" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="1276" fromTop="34" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="68" fromTop="2" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="869" fromTop="24" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="309" fromTop="11" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="423" fromTop="17" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="15" fromTop="1" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="570" fromTop="10" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="570" fromTop="12" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="1224" fromTop="13" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="806" fromTop="14" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="1143" fromTop="16" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="188" fromTop="9" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/f:AESCrypto.cs" caret="501" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

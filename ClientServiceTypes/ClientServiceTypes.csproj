@@ -12,11 +12,13 @@
     <RootNamespace>ClientServiceTypes</RootNamespace>
     <AssemblyName>ClientServiceTypes</AssemblyName>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>false</SilverlightApplication>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <!-- This property group is only here to support building this project using the 
        MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
@@ -27,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>Bin\Debug</OutputPath>
     <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
     <NoStdLib>true</NoStdLib>
@@ -47,19 +49,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Runtime.Serialization.Json, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Net" />
-    <Reference Include="System.Windows.Browser" />
-    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\AESCrypto.cs" />
-    <Compile Include="Core\Subsystems\KernelTypes.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs" />
@@ -76,6 +71,7 @@
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextPosition.cs" />
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs" />
     <Compile Include="Core\Subsystems\ISubsystem.cs" />
+    <Compile Include="Core\Subsystems\KernelTypes.cs" />
     <Compile Include="Core\Subsystems\ServiceMessage.cs" />
     <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs" />
     <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs" />
@@ -85,6 +81,7 @@
     <Compile Include="Core\Subsystems\SubsystemInfo.cs" />
     <Compile Include="Core\Subsystems\SubsystemState.cs" />
     <Compile Include="Core\Subsystems\SubsystemTypes.cs" />
+    <Compile Include="Core\Validator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />

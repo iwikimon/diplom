@@ -317,8 +317,8 @@
       <returns>The collection of values to use when creating an instance of the filtering control.</returns>
     </member>
     <member name="M:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.Equals(System.Object)">
-      <summary>Returns a value indicating whether this instance has the same value as the specified object.</summary>
-      <returns>true if <paramref name="obj" /> is a <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> object and its value is the same as this instance; otherwise false.</returns>
+      <summary>Returns a value that indicates whether this instance has the same value as the specified object.</summary>
+      <returns>true if <paramref name="obj" /> is a <see cref="T:System.ComponentModel.DataAnnotations.FilterUIHintAttribute" /> object and its value is the same as this instance; otherwise, false.</returns>
       <param name="obj">The object to compare with this instance.</param>
     </member>
     <member name="P:System.ComponentModel.DataAnnotations.FilterUIHintAttribute.FilterUIHint">
@@ -403,6 +403,10 @@
     <member name="M:System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor">
       <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.RequiredAttribute" /> class. </summary>
     </member>
+    <member name="P:System.ComponentModel.DataAnnotations.RequiredAttribute.AllowEmptyStrings">
+      <summary>Gets or sets a value that indicates whether an empty string is allowed.</summary>
+      <returns>true if an empty string is allowed; otherwise, false. The default value is false.</returns>
+    </member>
     <member name="T:System.ComponentModel.DataAnnotations.StringLengthAttribute">
       <summary>Specifies the maximum and minimum number of characters that are allowed for an entity member.</summary>
     </member>
@@ -454,8 +458,8 @@
       <returns>A collection of values to use as parameters when creating an instance of the presentation control.</returns>
     </member>
     <member name="M:System.ComponentModel.DataAnnotations.UIHintAttribute.Equals(System.Object)">
-      <summary>Returns a value indicating whether this instance has the same value as the specified object.</summary>
-      <returns>true if <paramref name="obj" /> is a <see cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" /> object and its value is the same as this instance; otherwise false.</returns>
+      <summary>Returns a value that indicates whether this instance has the same value as the specified object.</summary>
+      <returns>true if <paramref name="obj" /> is a <see cref="T:System.ComponentModel.DataAnnotations.UIHintAttribute" /> object and its value is the same as this instance; otherwise, false.</returns>
       <param name="obj">The object to compare with this instance.</param>
     </member>
     <member name="M:System.ComponentModel.DataAnnotations.UIHintAttribute.GetHashCode">
@@ -630,6 +634,10 @@
     </member>
     <member name="F:System.ComponentModel.DataAnnotations.ValidationResult.Success">
       <summary>A value that indicates the entity member successfully validated.</summary>
+    </member>
+    <member name="M:System.ComponentModel.DataAnnotations.ValidationResult.ToString">
+      <summary>Returns a string value that represents the current validation result.</summary>
+      <returns>A string value that represents the current validation result.</returns>
     </member>
     <member name="T:System.ComponentModel.DataAnnotations.Validator">
       <summary>Provides members to help validate objects and members using values from the associated <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" /> attribute.</summary>

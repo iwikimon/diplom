@@ -27,13 +27,26 @@ namespace IDEService.Core
 
         public override bool Reload()
         {
-            throw new NotImplementedException();
+            Stop();
+            return Start();
         }
 
         public override ServiceMessage SendMessage(ServiceMessage message)
         {
-            throw new NotImplementedException();
+            switch ((NetworkMessages) message.Type)
+            {
+                case NetworkMessages.Decode:
+                    return new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Network,
+                                              SubsystemType.Network, NetworkMessages.Decode,
+                                              new object[] {_module.Decode((byte[]) message.Message[0])});
+                case NetworkMessages.Encode:
+                    return new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Network,
+                                              SubsystemType.Network, NetworkMessages.Decode,
+                                              new object[] {_module.Encode((ServiceMessage) message.Message[0])});
+                default:
+                    throw new SubsystemWorkingException("Неопознанный тип сообщения.");
+            }
+            
         }
-
     }
 }

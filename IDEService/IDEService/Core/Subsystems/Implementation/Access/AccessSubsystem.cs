@@ -75,8 +75,22 @@ namespace IDEService.Core
                     }
                 case AccessMessages.Register:
                     {
-                        User u = (User) message.Message[0];
-                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Access, SubsystemType.Access, AccessMessages.CheckLogin,
+                        var ui = new Userinfo()
+                                          {
+                                              Email = message.Message[0].ToString(),
+                                              Name = message.Message[1].ToString(),
+                                              Sname = message.Message[2].ToString(),
+                                              LastAccess = DateTime.Now,
+                                              Registred = DateTime.Now,
+                                          };
+                        var u = new User
+                                    {
+                                        Userinfo = ui,
+                                        Login = message.Message[3].ToString(),
+                                        Password = message.Message[4].ToString()
+                                    };
+
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Access, SubsystemType.Access, AccessMessages.Register,
                                                     new object[] {_acessModule.Register(u)});
                     }
                 case AccessMessages.Logout:

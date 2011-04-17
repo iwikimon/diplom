@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClientServiceTypesNet</RootNamespace>
+    <AssemblyName>ClientServiceTypesNet</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\AESCrypto.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessage.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Network\NetworkMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Prodject\ProdjectExceptions.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Prodject\ProdjectMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Report\ReportMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Vcs\Revision.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Vcs\VcsMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextMessage.cs" />
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextPosition.cs" />
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs" />
+    <Compile Include="Core\Subsystems\ISubsystem.cs" />
+    <Compile Include="Core\Subsystems\KernelTypes.cs" />
+    <Compile Include="Core\Subsystems\ServiceMessage.cs" />
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ProcessMessageException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemInfo.cs" />
+    <Compile Include="Core\Subsystems\SubsystemState.cs" />
+    <Compile Include="Core\Subsystems\SubsystemTypes.cs" />
+    <Compile Include="Core\Validator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

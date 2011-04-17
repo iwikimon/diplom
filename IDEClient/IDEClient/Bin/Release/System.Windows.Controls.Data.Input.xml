@@ -36,11 +36,11 @@
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetClassNameCore">
       <summary>Gets the name of the class for the object associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
-      <returns>A string value that represents the type of the validation summary.</returns>
+      <returns>The string ValidationSummary.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetNameCore">
       <summary>Gets the text label of the <see cref="T:System.Windows.Controls.ValidationSummary" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
-      <returns>The string name value from the owner control's header if available.</returns>
+      <returns>The string name value from the owner control's header if available. Otherwise, calls base.</returns>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)">
       <summary>Gets the control pattern for this <see cref="T:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer" />.</summary>
@@ -48,7 +48,7 @@
       <param name="patternInterface">One of the enumeration values.</param>
     </member>
     <member name="M:System.Windows.Automation.Peers.ValidationSummaryAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke">
-      <summary>Invokes a selection on the current item.</summary>
+      <summary>For a description of this member, see <see cref="M:System.Windows.Automation.Provider.IInvokeProvider.Invoke" />.</summary>
     </member>
     <member name="T:System.Windows.Controls.DescriptionViewer">
       <summary>Displays a description and tracks error state for an associated control.</summary>

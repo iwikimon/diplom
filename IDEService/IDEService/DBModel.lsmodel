@@ -52,6 +52,9 @@
         <oneToManyAssociation Id="45007b08-aa21-439b-b262-12210981ae4a" collectionName="Accesses" backreferenceName="Folder" isNullable="false">
           <entityMoniker name="/DBModel/Access" />
         </oneToManyAssociation>
+        <oneToManyAssociation Id="5e2a9c0b-50df-4677-8205-7f150bd1dab5" collectionName="Files" backreferenceName="Folder" isNullable="false">
+          <entityMoniker name="/DBModel/File" />
+        </oneToManyAssociation>
       </oneToManyAssociations>
     </entity>
     <entity name="Project" identityType="Int32" cacheExpiry="0">
@@ -72,9 +75,6 @@
       <oneToManyAssociations>
         <oneToManyAssociation Id="965989cd-9c12-4305-99b0-254144023630" collectionName="Chats" backreferenceName="Project" isNullable="false">
           <entityMoniker name="/DBModel/Chat" />
-        </oneToManyAssociation>
-        <oneToManyAssociation Id="e2347a18-5e63-41de-89ba-5301a5967120" collectionName="Files" backreferenceName="Project" isNullable="false">
-          <entityMoniker name="/DBModel/File" />
         </oneToManyAssociation>
         <oneToManyAssociation Id="bea54ec8-7ffc-4457-a9b8-c7642cee544b" collectionName="Folders" backreferenceName="Project" isNullable="false">
           <entityMoniker name="/DBModel/Folder" />
@@ -150,12 +150,10 @@
         <oneToManyAssociation Id="2a8289e7-d6ad-4edc-b2ad-94271d89fdac" collectionName="Chats" backreferenceName="User" isNullable="false">
           <entityMoniker name="/DBModel/Chat" />
         </oneToManyAssociation>
-      </oneToManyAssociations>
-      <targetEntity>
-        <oneToOneAssociation Id="8783b35a-8912-449e-8574-8b9e3b58d508" sourceName="User" targetName="Access" isSourceNullable="false" isTargetNullable="false">
+        <oneToManyAssociation Id="0cea83e8-c67a-42ed-81d2-535f67601719" collectionName="Accesses" backreferenceName="User" isNullable="false">
           <entityMoniker name="/DBModel/Access" />
-        </oneToOneAssociation>
-      </targetEntity>
+        </oneToManyAssociation>
+      </oneToManyAssociations>
     </entity>
     <entity name="Access" identityType="Int32" cacheExpiry="0">
       <entityProperties>

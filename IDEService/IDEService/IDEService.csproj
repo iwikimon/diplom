@@ -39,17 +39,13 @@
     <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClientServiceTypes">
-      <HintPath>..\..\ClientServiceTypes\Bin\Debug\ClientServiceTypes.dll</HintPath>
-    </Reference>
     <Reference Include="System">
     </Reference>
     <Reference Include="System.Data">
     </Reference>
     <Reference Include="System.Data.Linq">
     </Reference>
-    <Reference Include="System.Runtime.Serialization">
-    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security">
     </Reference>
     <Reference Include="System.Xml">
@@ -90,12 +86,8 @@
     <Compile Include="Core\Logger\LogLevels.cs" />
     <Compile Include="Core\Kernel\KernelExceptions.cs" />
     <Compile Include="Core\Kernel\Kernel.cs" />
-    <Compile Include="Core\Kernel\KernelTypes.cs" />
     <Compile Include="Core\Kernel\BootLoader.cs" />
     <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Core\Subsystems\Implementation\Access\AccessModule.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,9 +95,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\Implementation\Access\IAccessModule.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessage.cs">
@@ -126,14 +115,10 @@
     <Compile Include="Core\Subsystems\Implementation\DataBase\DataBaseSubsystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\Network\INetworkModule.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\Implementation\Network\NetwokrModule.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Network\NetworkMessages.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\Implementation\Network\NetworkSubsystem.cs">
@@ -197,10 +182,6 @@
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorSubsystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\ISubsystem.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\ServiceMessage.cs" />
     <Compile Include="Core\Subsystems\Subsystem.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -217,13 +198,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\SubsystemState.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\SubsystemTypes.cs" />
     <Compile Include="DBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -278,6 +252,12 @@
   <ItemGroup>
     <Content Include="DBScript.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ClientServiceTypesNet\ClientServiceTypesNet\ClientServiceTypesNet.csproj">
+      <Project>{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}</Project>
+      <Name>ClientServiceTypesNet</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -286,5 +266,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup />
 </Project>

@@ -34,9 +34,13 @@ namespace IDEService.service
         public ClientWorker(Socket client)
         {
             _client = client;
-            
-            _work = new Thread(Work);
-            _work.Start();
+            eventArgs = new SocketAsyncEventArgs();
+            buffer = new byte[1024 * 1024];//1Mb
+            eventArgs.SetBuffer(buffer, 0, buffer.Length);
+            eventArgs.Completed += eventArgsCompleted;
+            _client.ReceiveAsync(eventArgs);
+       
+
         }
 
         public void Dispose()
@@ -86,12 +90,15 @@ namespace IDEService.service
                 {
                     throw new Exception("Длинное сообщение. Необходимо увеличить буфер приема/передачи сообщений");
                 }
-                var answer = Kernel.GetKernel.SendMessage(e.Buffer, _client.RemoteEndPoint.ToString());
-
-                ProcessSend(e);
+                if (e.BytesTransferred > 0)
+                {
+                    var data = new byte[e.BytesTransferred];
+                    Array.Copy(e.Buffer, data, e.BytesTransferred);
+                    var answer = Kernel.GetKernel.SendMessage(data, _client.RemoteEndPoint.ToString());
+                    if (answer != null)
+                        SendAsync(answer);
+                }
             }
-            if(e.SocketError == SocketError.ConnectionReset)
-                ProcessDisconnect(e);
         }
 
         private void ReceiveAsync(SocketAsyncEventArgs e)
@@ -103,15 +110,15 @@ namespace IDEService.service
 
         public void SendAsync(byte[] msg)
         {
-            if (_client.Connected && msg != null)
+            if (msg != null)
             {
                 if (msg.Length > 950 * 1024)
                 {
                     throw new Exception("Длинное сообщение. Необходимо увеличить буфер приема/передачи сообщений");
                 }
                 var e = new SocketAsyncEventArgs();
-                e.SetBuffer(msg, 0, msg.Length);
                 e.Completed += eventArgsCompleted;
+                e.SetBuffer(msg, 0, msg.Length);
                 SendAsync(e);
             }
         }
@@ -133,11 +140,6 @@ namespace IDEService.service
 
         private void Work()
         {
-            eventArgs = new SocketAsyncEventArgs();
-            buffer = new byte[1024*1024];//1Mb
-            eventArgs.SetBuffer(buffer,0,buffer.Length);
-            eventArgs.Completed+=eventArgsCompleted;
-            _client.ReceiveAsync(eventArgs);
-        }
+             }
     }
 }

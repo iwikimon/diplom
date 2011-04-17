@@ -861,68 +861,61 @@
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.cs" caret="0" fromTop="0" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.Designer.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="757" fromTop="15" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:TextMessage.cs" caret="545" fromTop="11" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Cache/f:UserCache.cs" caret="1006" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="923" fromTop="14" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="308" fromTop="0" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:INetworkModule.cs" caret="157" fromTop="8" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Cache/f:Session.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="383" fromTop="8" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="213" fromTop="10" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectExceptions.cs" caret="495" fromTop="19" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:IReportModule.cs" caret="194" fromTop="8" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="747" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/f:SubsystemTypes.cs" caret="358" fromTop="18" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="458" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="5064" fromTop="14" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="0" fromTop="0" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="2550" fromTop="17" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="65" fromTop="4" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1117" fromTop="0" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessExceptions.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessMessages.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="58" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="619" fromTop="17" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="668" fromTop="10" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="1347" fromTop="14" />
       <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="306" fromTop="15" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="668" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="546" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="757" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="619" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="3286" fromTop="19" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="4137" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="288" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="802" fromTop="5" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="1716" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="2787" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1183" fromTop="29" />
     </RecentFiles>
     <RecentEdits>
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="358" fromTop="16" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="1925" fromTop="14" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="7473" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="360" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="65" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="546" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1117" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="3115" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessExceptions.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessMessages.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="2820" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="58" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="4270" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="134" fromTop="6" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="296" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="619" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="1373" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="221" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="1227" fromTop="28" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="668" fromTop="10" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="4356" fromTop="10" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="1347" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="2474" fromTop="14" />
-      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="0" fromTop="0" />
-      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="295" fromTop="14" />
-      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="318" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="668" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="761" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="4270" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="288" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1715" fromTop="18" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="2086" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="2720" fromTop="9" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="1683" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="323" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="796" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1780" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="2253" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="834" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1579" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="4435" fromTop="16" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="3938" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="2146" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="938" fromTop="9" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="802" fromTop="5" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="1735" fromTop="5" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="1716" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="6501" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="2787" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="4471" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1999" fromTop="12" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1183" fromTop="29" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="2314" fromTop="29" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

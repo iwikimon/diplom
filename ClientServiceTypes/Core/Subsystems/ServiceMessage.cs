@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
 
@@ -12,6 +9,10 @@ namespace IDEService.Core
     /// </summary>
     [DataContract]
     [KnownType(typeof(AccessMessages))]
+    [KnownType(typeof(NetworkMessages))]
+    [KnownType(typeof(ChatMessages))]
+    [KnownType(typeof(ProdjectMessages))]
+    [KnownType(typeof(ReportMessages))]
     public class ServiceMessage
     {
 
