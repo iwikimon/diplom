@@ -1,0 +1,16 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="IDEClient" EntryPointType="IDEClient.App" RuntimeVersion="3.0.40818.0">
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="IDEClient Application" EnableGPUAcceleration="False" ShowInstallMenuItem="False">
+      <OutOfBrowserSettings.Blurb>IDEClient Application on your desktop; at home, at work or on the go.</OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="IDEClient Application" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.Icons />
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+  <Deployment.Parts>
+    <AssemblyPart x:Name="IDEClient" Source="IDEClient.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+  </Deployment.Parts>
+</Deployment>

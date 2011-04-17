@@ -1,0 +1,10 @@
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\IDEServiceTests.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\IDEServiceTests.pdb
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\IDEService.exe
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\Mindscape.LightSpeed.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\Mindscape.LightSpeed.Linq.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\MySql.Data.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\bin\Debug\IDEService.pdb
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\ResolveAssemblyReference.cache
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\IDEServiceTests.dll
+E:\Dropbox\Diplom\IDEService\IDEServiceTests\obj\Debug\IDEServiceTests.pdb

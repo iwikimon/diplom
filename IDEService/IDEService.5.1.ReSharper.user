@@ -1,0 +1,939 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="0" />
+      <Item value="SubsystemState`0" priority="2" />
+      <Item value="State" priority="1" />
+      <Item value="ServiceKernel`0" priority="4" />
+      <Item value="public" priority="37" />
+      <Item value="List" priority="5" />
+      <Item value="ISubsystem`0" priority="6" />
+      <Item value="new" priority="115" />
+      <Item value="List&lt;ISubsystem&gt;" priority="0" />
+      <Item value="static" priority="8" />
+      <Item value="Kernel" priority="0" />
+      <Item value="private" priority="24" />
+      <Item value="object" priority="18" />
+      <Item value="lock" priority="2" />
+      <Item value="if" priority="20" />
+      <Item value="kernel" priority="6" />
+      <Item value="readonly" priority="1" />
+      <Item value="ServiceKernel" priority="1" />
+      <Item value="return" priority="52" />
+      <Item value="_state" priority="0" />
+      <Item value="SubsystemType`0" priority="33" />
+      <Item value="_type" priority="1" />
+      <Item value="type" priority="7" />
+      <Item value="volatile" priority="0" />
+      <Item value="null" priority="14" />
+      <Item value="ServiceMessage`0" priority="7" />
+      <Item value="void" priority="10" />
+      <Item value="Subsystems" priority="3" />
+      <Item value="subsystem" priority="15" />
+      <Item value="foreach" priority="5" />
+      <Item value="tmpsubsystem" priority="0" />
+      <Item value="throw" priority="9" />
+      <Item value="Exception`0" priority="9" />
+      <Item value="class" priority="4" />
+      <Item value="KernelExceptions`0" priority="1" />
+      <Item value="string" priority="24" />
+      <Item value="errorMsg" priority="0" />
+      <Item value="base" priority="4" />
+      <Item value="SubsystemStopException`0" priority="0" />
+      <Item value="this" priority="5" />
+      <Item value="_dispose" priority="0" />
+      <Item value="true" priority="21" />
+      <Item value="DBModelContainer`0" priority="5" />
+      <Item value="DBModelContainer" priority="4" />
+      <Item value="context" priority="13" />
+      <Item value="User" priority="6" />
+      <Item value="Login" priority="2" />
+      <Item value="User`0" priority="28" />
+      <Item value="newUser" priority="3" />
+      <Item value="LostTouchCaptureEvent" priority="0" />
+      <Item value="UserInfo`0" priority="3" />
+      <Item value="DateTime`0" priority="25" />
+      <Item value="try" priority="8" />
+      <Item value="Configure`0" priority="3" />
+      <Item value="switch" priority="5" />
+      <Item value="case" priority="26" />
+      <Item value="AccessSubsystem`0" priority="2" />
+      <Item value="break" priority="7" />
+      <Item value="ChatSubsystem`0" priority="0" />
+      <Item value="DataBaseSubsystem`0" priority="1" />
+      <Item value="NetworkSubsystem`0" priority="0" />
+      <Item value="ProdjectSubsystem`0" priority="2" />
+      <Item value="ReportSubystem`0" priority="0" />
+      <Item value="VcsSubsystem`0" priority="0" />
+      <Item value="WordProcessorSubsystem`0" priority="0" />
+      <Item value="SubsystemLoadException" priority="1" />
+      <Item value="catch" priority="6" />
+      <Item value="ex" priority="3" />
+      <Item value="var" priority="31" />
+      <Item value="in" priority="1" />
+      <Item value="Enum`0" priority="0" />
+      <Item value="typeof" priority="11" />
+      <Item value="LoadSubsystem`0" priority="0" />
+      <Item value="BootLoader`0" priority="5" />
+      <Item value="int" priority="11" />
+      <Item value="listView1" priority="12" />
+      <Item value="Kernel`0" priority="23" />
+      <Item value="SubsystemInfo`0" priority="0" />
+      <Item value="List&lt;SubsystemInfo&gt;" priority="2" />
+      <Item value="lst" priority="15" />
+      <Item value="LoadSubsystems`0" priority="1" />
+      <Item value="_info" priority="2" />
+      <Item value="Working" priority="0" />
+      <Item value="GetInfo`0" priority="0" />
+      <Item value="Info" priority="4" />
+      <Item value="Stopped" priority="0" />
+      <Item value="container" priority="0" />
+      <Item value="using" priority="2" />
+      <Item value="System" priority="10" />
+      <Item value="Linq" priority="5" />
+      <Item value="bool" priority="1" />
+      <Item value="false" priority="4" />
+      <Item value="loadFromFile" priority="2" />
+      <Item value="else" priority="0" />
+      <Item value="Type`0" priority="2" />
+      <Item value="assembly" priority="2" />
+      <Item value="t" priority="4" />
+      <Item value="T`0" priority="11" />
+      <Item value="LoadType`1" priority="0" />
+      <Item value="subsytem" priority="0" />
+      <Item value="Logger`0" priority="10" />
+      <Item value="LogLevels`0" priority="11" />
+      <Item value="String`0" priority="9" />
+      <Item value="file" priority="0" />
+      <Item value="SubsystemLoadException`0" priority="0" />
+      <Item value="finally" priority="0" />
+      <Item value="vc_attributes" priority="0" />
+      <Item value="end" priority="0" />
+      <Item value="start" priority="0" />
+      <Item value="u" priority="14" />
+      <Item value="uname" priority="0" />
+      <Item value="upasswd" priority="1" />
+      <Item value="login" priority="4" />
+      <Item value="passwd" priority="1" />
+      <Item value="browser" priority="1" />
+      <Item value="name" priority="1" />
+      <Item value="sname" priority="1" />
+      <Item value="email" priority="1" />
+      <Item value="ip" priority="1" />
+      <Item value="user" priority="23" />
+      <Item value="info" priority="5" />
+      <Item value="EnvironmentVariableTarget`0" priority="0" />
+      <Item value="LoginStatus`0" priority="2" />
+      <Item value="CheckLogin`0" priority="0" />
+      <Item value="Busy" priority="0" />
+      <Item value="AccessMessages`0" priority="20" />
+      <Item value="message" priority="16" />
+      <Item value="ServiceMessage" priority="12" />
+      <Item value="KernelTypes`0" priority="4" />
+      <Item value="Access" priority="5" />
+      <Item value="undefined" priority="0" />
+      <Item value="_acessModule" priority="3" />
+      <Item value="Password" priority="1" />
+      <Item value="default" priority="4" />
+      <Item value="SubsystemWorkingException`0" priority="0" />
+      <Item value="uInfo" priority="7" />
+      <Item value="uint" priority="0" />
+      <Item value="Exception" priority="2" />
+      <Item value="LoadException`0" priority="0" />
+      <Item value="Tt" priority="0" />
+      <Item value="AccessModule`0" priority="4" />
+      <Item value="ChatModule`0" priority="0" />
+      <Item value="Convert`0" priority="2" />
+      <Item value="subsysytem" priority="0" />
+      <Item value="Nullable`0" priority="1" />
+      <Item value="Nullable" priority="0" />
+      <Item value="where" priority="1" />
+      <Item value="module" priority="1" />
+      <Item value="endTime" priority="1" />
+      <Item value="startTime" priority="1" />
+      <Item value="for" priority="1" />
+      <Item value="i" priority="4" />
+      <Item value="IDisposable`0" priority="3" />
+      <Item value="_module" priority="6" />
+      <Item value="IDEService" priority="2" />
+      <Item value="enum" priority="0" />
+      <Item value="e" priority="12" />
+      <Item value="while" priority="5" />
+      <Item value="_user" priority="10" />
+      <Item value="ArgumentNullException`0" priority="0" />
+      <Item value="Subsystem`0" priority="0" />
+      <Item value="msg" priority="3" />
+      <Item value="Undefined" priority="2" />
+      <Item value="targetSubsystem" priority="2" />
+      <Item value="MessageBox`0" priority="2" />
+      <Item value="answer" priority="1" />
+      <Item value="StringBuilder`0" priority="0" />
+      <Item value="Message" priority="3" />
+      <Item value="obj" priority="0" />
+      <Item value="InPlaceBitmapMetadataWriter`0" priority="0" />
+      <Item value="MainWindow`0" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="ReturnEventArgs" priority="0" />
+      <Item value="SelectedCellsChangedEventArgs`0" priority="0" />
+      <Item value="x" priority="1" />
+      <Item value="ObservableCollection&lt;SubsystemInfo&gt;" priority="0" />
+      <Item value="MouseButton`0" priority="0" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="StartTime" priority="0" />
+      <Item value="value" priority="0" />
+      <Item value="Timer`0" priority="0" />
+      <Item value="Timer" priority="0" />
+      <Item value="Dispatcher" priority="1" />
+      <Item value="DispatcherTimer" priority="0" />
+      <Item value="TimeSpan" priority="0" />
+      <Item value="ChatMessages`0" priority="5" />
+      <Item value="_prodjectDir" priority="3" />
+      <Item value="Directory`0" priority="0" />
+      <Item value="ProdjectModule`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+      <Item value="Start`0" priority="0" />
+      <Item value="Prodject`0" priority="6" />
+      <Item value="Prodject" priority="0" />
+      <Item value="ProdjectMessages`0" priority="1" />
+      <Item value="prodject" priority="0" />
+      <Item value="p" priority="1" />
+      <Item value="pname" priority="1" />
+      <Item value="ProdjectExceptions`0" priority="2" />
+      <Item value="errMsg" priority="1" />
+      <Item value="_prodjectSubsystem" priority="2" />
+      <Item value="CreateProdjectFolderExceptions`0" priority="0" />
+      <Item value="prodjectsDir" priority="0" />
+      <Item value="userDir" priority="1" />
+      <Item value="AccessExceptions`0" priority="0" />
+      <Item value="AccessException`0" priority="0" />
+      <Item value="AccessFolderExcepton`0" priority="0" />
+      <Item value="_accessSubsystem" priority="0" />
+      <Item value="prj" priority="1" />
+      <Item value="DbSubsystemMessages`0" priority="5" />
+      <Item value="DataBase" priority="2" />
+      <Item value="_loginTime" priority="0" />
+      <Item value="Stack" priority="0" />
+      <Item value="date" priority="0" />
+      <Item value="UserLog`0" priority="1" />
+      <Item value="start`0" priority="0" />
+      <Item value="adress" priority="1" />
+      <Item value="DataContract" priority="2" />
+      <Item value="shost" priority="0" />
+      <Item value="cdhost" priority="1" />
+      <Item value="IO" priority="1" />
+      <Item value="File`0" priority="0" />
+      <Item value="EnumMember" priority="1" />
+      <Item value="DataMember" priority="1" />
+      <Item value="KnownType" priority="2" />
+      <Item value="result" priority="7" />
+      <Item value="EntityConnection" priority="0" />
+      <Item value="Console`0" priority="17" />
+      <Item value="Cache`0" priority="4" />
+      <Item value="Cache" priority="1" />
+      <Item value="_cache" priority="0" />
+      <Item value="_cacheLocker" priority="0" />
+      <Item value="ChatMessage`0" priority="0" />
+      <Item value="LinkedList" priority="4" />
+      <Item value="Username" priority="0" />
+      <Item value="username" priority="0" />
+      <Item value="WordProcessorMessages`0" priority="0" />
+      <Item value="TextMessage`0" priority="0" />
+      <Item value="UserCache`0" priority="5" />
+      <Item value="LinkedList&lt;UserCache&gt;" priority="0" />
+      <Item value="Session`0" priority="1" />
+      <Item value="UserCache" priority="0" />
+      <Item value="IClient`0" priority="0" />
+      <Item value="Client" priority="1" />
+      <Item value="UID" priority="1" />
+      <Item value="MarshalByRefObject`0" priority="1" />
+      <Item value="HashSet" priority="1" />
+      <Item value="LinkedList&lt;ChatMessages&gt;" priority="0" />
+      <Item value="TextMessages" priority="0" />
+      <Item value="LinkedList&lt;TextMessage&gt;" priority="0" />
+      <Item value="LoginTime" priority="0" />
+      <Item value="Attribute`0" priority="0" />
+      <Item value="Handler" priority="0" />
+      <Item value="handler" priority="0" />
+      <Item value="newuser" priority="1" />
+      <Item value="const" priority="0" />
+      <Item value="Uri`0" priority="0" />
+      <Item value="UserInfo" priority="2" />
+      <Item value="ChangeTracker" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Sname" priority="0" />
+      <Item value="LastAccess" priority="0" />
+      <Item value="Registred" priority="0" />
+      <Item value="LightSpeedContext&lt;DBModelUnitOfWork&gt;" priority="0" />
+      <Item value="_context" priority="4" />
+      <Item value="Userinfo" priority="1" />
+      <Item value="Userinfo`0" priority="0" />
+      <Item value="DBModelUnitOfWork`0" priority="0" />
+      <Item value="DBModelUnitOfWork" priority="0" />
+      <Item value="_c" priority="0" />
+      <Item value="Status" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Userlog" priority="2" />
+      <Item value="Date" priority="2" />
+      <Item value="notexit" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="Type" priority="0" />
+      <Item value="RecievedMessages" priority="0" />
+      <Item value="ProcessTime" priority="0" />
+      <Item value="OptionalField" priority="0" />
+      <Item value="ICrossDomainService`0" priority="2" />
+      <Item value="TcpListener" priority="2" />
+      <Item value="listener" priority="5" />
+      <Item value="client" priority="3" />
+      <Item value="ServiceHost`0" priority="0" />
+      <Item value="Mindscape.LightSpeed" priority="1" />
+      <Item value="Net" priority="0" />
+      <Item value="Sockets" priority="0" />
+      <Item value="TcpListener`0" priority="0" />
+      <Item value="IPAddress`0" priority="0" />
+      <Item value="socket" priority="6" />
+      <Item value="byte" priority="25" />
+      <Item value="buffer" priority="4" />
+      <Item value="Count`1" priority="0" />
+      <Item value="ASCIIEncoding`0" priority="0" />
+      <Item value="SocketAsyncEventArgs`0" priority="4" />
+      <Item value="SocketAsyncEventArgs" priority="1" />
+      <Item value="args" priority="4" />
+      <Item value="Receive" priority="0" />
+      <Item value="Success" priority="0" />
+      <Item value="args_Completed`0" priority="0" />
+      <Item value="SocketFlags" priority="0" />
+      <Item value="SocketFlags`0" priority="0" />
+      <Item value="ServerWorker`0" priority="1" />
+      <Item value="ThreadStaticAttribute`0" priority="0" />
+      <Item value="Thread" priority="2" />
+      <Item value="Work`0" priority="0" />
+      <Item value="work" priority="1" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="ClientWorker`0" priority="3" />
+      <Item value="Socket`0" priority="0" />
+      <Item value="_client" priority="5" />
+      <Item value="_work" priority="2" />
+      <Item value="Encoder`0" priority="0" />
+      <Item value="bytes" priority="0" />
+      <Item value="recieved" priority="4" />
+      <Item value="Debug" priority="0" />
+      <Item value="Encoding`0" priority="8" />
+      <Item value="List&lt;ClientWorker&gt;" priority="1" />
+      <Item value="clients" priority="1" />
+      <Item value="ClientWorker" priority="0" />
+      <Item value="totalBytes" priority="1" />
+      <Item value="BinaryFormatter" priority="0" />
+      <Item value="bf" priority="0" />
+      <Item value="DataContractSerializer" priority="1" />
+      <Item value="serializer" priority="0" />
+      <Item value="XmlWriter`0" priority="0" />
+      <Item value="writer" priority="2" />
+      <Item value="ClientKernel" priority="0" />
+      <Item value="Chat" priority="0" />
+      <Item value="StreamWriter" priority="0" />
+      <Item value="MemoryStream`0" priority="1" />
+      <Item value="XmlDictionaryReader`0" priority="1" />
+      <Item value="XmlDictionaryReaderQuotas" priority="0" />
+      <Item value="DataContractSerializer`0" priority="0" />
+      <Item value="deserializer" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="smsg" priority="0" />
+      <Item value="SerializationEntry`0" priority="0" />
+      <Item value="Service`0" priority="0" />
+      <Item value="DeserializeData`0" priority="0" />
+      <Item value="SerializeData`0" priority="0" />
+      <Item value="serviceAnswer" priority="0" />
+      <Item value="sendingData" priority="1" />
+      <Item value="eventArgs" priority="4" />
+      <Item value="Length" priority="2" />
+      <Item value="SocketAsyncOperation`0" priority="1" />
+      <Item value="eventArgsCompleted`0" priority="1" />
+      <Item value="ReceiveAsync`0" priority="0" />
+      <Item value="ProcessSend`0" priority="0" />
+      <Item value="buff" priority="0" />
+      <Item value="ConnectionReset" priority="0" />
+      <Item value="ProcessDisconnect`0" priority="1" />
+      <Item value="SocketError`0" priority="0" />
+      <Item value="LinqToSqlShared" priority="0" />
+      <Item value="Mapping" priority="0" />
+      <Item value="SortedDictionary" priority="0" />
+      <Item value="Clients" priority="0" />
+      <Item value="AESCrypto`0" priority="1" />
+      <Item value="data" priority="3" />
+      <Item value="decrypt" priority="1" />
+      <Item value="retval" priority="0" />
+      <Item value="key" priority="0" />
+      <Item value="iv" priority="0" />
+      <Item value="cs" priority="1" />
+      <Item value="ms" priority="0" />
+      <Item value="Network" priority="3" />
+      <Item value="network" priority="1" />
+      <Item value="INetworkModule`0" priority="1" />
+      <Item value="NetworkMessages`0" priority="1" />
+      <Item value="IAsyncResult`0" priority="0" />
+      <Item value="SendMessage`0" priority="0" />
+      <Item value="Core" priority="0" />
+      <Item value="AccessModule" priority="0" />
+      <Item value="AccessSubsystem" priority="0" />
+      <Item value="am" priority="1" />
+      <Item value="Assert`0" priority="0" />
+      <Item value="sizeof" priority="0" />
+      <Item value="sw" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Kernel.SubsystemState">
+      <Item value="unknown" priority="0" />
+      <Item value="Loading" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Kernel.ServiceKernel">
+      <Item value="Kernel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="4" />
+      <Item value="Count" priority="1" />
+      <Item value="ToDictionary`3" priority="0" />
+      <Item value="ForEach`0" priority="2" />
+      <Item value="Where`1" priority="3" />
+      <Item value="AsEnumerable`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Kernel.ISubsystem">
+      <Item value="Type`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.Subsystem">
+      <Item value="_info" priority="0" />
+      <Item value="Info" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.SubsystemInfo">
+      <Item value="Type" priority="5" />
+      <Item value="StartTime" priority="1" />
+      <Item value="State" priority="1" />
+      <Item value="RecievedMessages" priority="4" />
+      <Item value="ProcessTime" priority="1" />
+      <Item value="MeanTimeToMessage" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.DBModelContainer">
+      <Item value="AddToUserSet`0" priority="1" />
+      <Item value="SaveChanges`0" priority="3" />
+      <Item value="UserSet" priority="3" />
+      <Item value="AddToProdjectSet`0" priority="0" />
+      <Item value="ProdjectSet" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.User">
+      <Item value="CreateUser`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.User">
+      <Item value="Login" priority="12" />
+      <Item value="Password" priority="7" />
+      <Item value="UserInfo" priority="19" />
+      <Item value="Owner" priority="2" />
+      <Item value="Status" priority="0" />
+      <Item value="Log" priority="0" />
+      <Item value="GetHashCode`0" priority="2" />
+      <Item value="Userlogs" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.UserInfo">
+      <Item value="CreateUserInfo`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="22" />
+      <Item value="MinValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.Configure">
+      <Item value="Cfg" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.Configure">
+      <Item value="Read`1" priority="3" />
+      <Item value="Write`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.SubsystemType">
+      <Item value="ToString`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.SubsystemType">
+      <Item value="Access" priority="9" />
+      <Item value="Chat" priority="2" />
+      <Item value="DataBase" priority="4" />
+      <Item value="Network" priority="2" />
+      <Item value="Prodject" priority="10" />
+      <Item value="Report" priority="2" />
+      <Item value="Vcs" priority="2" />
+      <Item value="WordProcessor" priority="2" />
+      <Item value="Undefined" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.SubsystemFactory">
+      <Item value="GetSubsystem`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Enum">
+      <Item value="GetValues`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.BootLoader">
+      <Item value="Init`0" priority="2" />
+      <Item value="LoadSubsystem`0" priority="0" />
+      <Item value="LoadSubsystemModule`1" priority="1" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListView">
+      <Item value="ItemsSource" priority="8" />
+      <Item value="SourceUpdated" priority="1" />
+      <Item value="Items" priority="1" />
+      <Item value="BitmapEffect" priority="0" />
+      <Item value="DataContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.Kernel">
+      <Item value="GetKernel" priority="20" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.Kernel">
+      <Item value="Subsystems" priority="8" />
+      <Item value="RegisterSubsystem`0" priority="1" />
+      <Item value="UnRegisterSubsystem`0" priority="0" />
+      <Item value="SendMessage`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ISubsystem">
+      <Item value="GetInfo`0" priority="11" />
+      <Item value="Start`0" priority="0" />
+      <Item value="Type`0" priority="3" />
+      <Item value="Stop`0" priority="1" />
+      <Item value="Dispose`0" priority="1" />
+      <Item value="SendMessage`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="LoadFrom`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="GetTypes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="IsAssignableFrom`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Activator">
+      <Item value="CreateInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.Logger">
+      <Item value="Log" priority="12" />
+      <Item value="WriteLog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.Logger">
+      <Item value="Write`0" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.LogLevels">
+      <Item value="Error" priority="1" />
+      <Item value="Debug" priority="4" />
+      <Item value="Emerg" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="7" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.TimeSpan">
+      <Item value="TotalMilliseconds" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="Select`0" priority="1" />
+      <Item value="AddObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Count`1" priority="4" />
+      <Item value="First`1" priority="6" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.LoginStatus">
+      <Item value="Busy" priority="1" />
+      <Item value="Free" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ServiceMessage">
+      <Item value="Type" priority="0" />
+      <Item value="Message" priority="15" />
+      <Item value="To" priority="0" />
+      <Item value="From" priority="2" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.AccessSubsystem">
+      <Item value="Type`0" priority="0" />
+      <Item value="Stop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.AccessMessages">
+      <Item value="CheckLogin" priority="1" />
+      <Item value="GetInfo" priority="2" />
+      <Item value="Login" priority="3" />
+      <Item value="Register" priority="2" />
+      <Item value="GetUser" priority="1" />
+      <Item value="Logout" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.KernelTypes">
+      <Item value="ClientKernel" priority="2" />
+      <Item value="ServiceKernel" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.IAccessModule">
+      <Item value="CheckLogin`0" priority="0" />
+      <Item value="GetInfo`0" priority="0" />
+      <Item value="Login`0" priority="0" />
+      <Item value="Register`0" priority="0" />
+      <Item value="GetUser`0" priority="0" />
+      <Item value="Logout`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.UserInfo">
+      <Item value="Email" priority="1" />
+      <Item value="Browser" priority="2" />
+      <Item value="LastAccess" priority="1" />
+      <Item value="LastIP" priority="0" />
+      <Item value="Name" priority="2" />
+      <Item value="Sname" priority="1" />
+      <Item value="Registred" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ChangeType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.IChatModule">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.NetworkModule">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ReportModule">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.VcsModule">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.TextModule">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ProdjectModule">
+      <Item value="DeleteProdject`0" priority="0" />
+      <Item value="AddProdject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.CancelEventArgs">
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Void">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.MainWindow">
+      <Item value="Resources" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.ResourceDictionary">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.DispatcherTimer">
+      <Item value="Interval" priority="0" />
+      <Item value="Tick" priority="0" />
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="Exists`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.ProdjectMessages">
+      <Item value="CreateProdject" priority="1" />
+      <Item value="Undefined" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Prodject">
+      <Item value="CreateProdject`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.DataClasses.EntityCollection`1">
+      <Item value="Add`0" priority="2" />
+      <Item value="First`1" priority="0" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Prodject">
+      <Item value="Name" priority="1" />
+      <Item value="User" priority="0" />
+      <Item value="Members" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count`1" priority="0" />
+      <Item value="First`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ProdjectSubsystem">
+      <Item value="ProdjectDir" priority="0" />
+      <Item value="CurrentUser" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.DbSubsystemMessages">
+      <Item value="GetContext" priority="2" />
+      <Item value="SaveContext" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Status">
+      <Item value="CreateStatus`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.UserLog">
+      <Item value="CreateUserLog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.SecurityMode">
+      <Item value="TransportWithMessageCredential" priority="0" />
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.SessionMode">
+      <Item value="NotAllowed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ServiceHost">
+      <Item value="Open`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Write`0" priority="0" />
+      <Item value="ReadLine`0" priority="0" />
+      <Item value="WriteLine`0" priority="15" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToLower`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.Cache">
+      <Item value="Get" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.Session">
+      <Item value="Cache" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.LinkedList`1">
+      <Item value="Find`0" priority="0" />
+      <Item value="AddLast`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.Session">
+      <Item value="Get" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.HashSet`1">
+      <Item value="First`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.UserCache">
+      <Item value="UID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Mindscape.LightSpeed.LightSpeedContext`1">
+      <Item value="CreateUnitOfWork`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.DBModelUnitOfWork">
+      <Item value="UserInfos" priority="0" />
+      <Item value="Users" priority="6" />
+      <Item value="Add`0" priority="2" />
+      <Item value="SaveChanges`0" priority="0" />
+      <Item value="Userinfos" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Userinfo">
+      <Item value="Email" priority="0" />
+      <Item value="LastAccess" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Registred" priority="0" />
+      <Item value="Sname" priority="0" />
+      <Item value="User" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Fileaccess">
+      <Item value="Files" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Mindscape.LightSpeed.EntityCollection`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.TcpListener">
+      <Item value="AcceptTcpClient`0" priority="1" />
+      <Item value="AcceptSocket`0" priority="1" />
+      <Item value="Start`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.IPAddress">
+      <Item value="Parse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.Socket">
+      <Item value="Accept`0" priority="0" />
+      <Item value="Receive`0" priority="2" />
+      <Item value="ReceiveAsync`0" priority="2" />
+      <Item value="RemoteEndPoint" priority="1" />
+      <Item value="Send`0" priority="0" />
+      <Item value="LocalEndPoint" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.Encoding">
+      <Item value="GetString`0" priority="4" />
+      <Item value="GetBytes`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.SocketAsyncEventArgs">
+      <Item value="Buffer" priority="3" />
+      <Item value="Completed" priority="1" />
+      <Item value="LastOperation" priority="1" />
+      <Item value="SocketError" priority="2" />
+      <Item value="UserToken" priority="1" />
+      <Item value="BytesTransferred" priority="1" />
+      <Item value="RemoteEndPoint" priority="0" />
+      <Item value="AcceptSocket" priority="0" />
+      <Item value="SetBuffer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.SocketAsyncOperation">
+      <Item value="Receive" priority="1" />
+      <Item value="Connect" priority="0" />
+      <Item value="Send" priority="0" />
+      <Item value="Disconnect" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.SocketFlags">
+      <Item value="Broadcast" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Start`0" priority="1" />
+      <Item value="Abort`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.service.ClientWorker">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter">
+      <Item value="Serialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.DataContractSerializer">
+      <Item value="WriteObject`0" priority="0" />
+      <Item value="ReadObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlWriter">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.MemoryStream">
+      <Item value="ToArray`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlDictionaryReader">
+      <Item value="CreateTextReader`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.SocketError">
+      <Item value="ConnectionReset" priority="0" />
+      <Item value="ConnectionAborted" priority="0" />
+      <Item value="ConnectionRefused" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.SortedDictionary`2">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.AESCrypto">
+      <Item value="Decrypt`0" priority="0" />
+      <Item value="Encrypt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadToEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Security.Cryptography.CryptoStreamMode">
+      <Item value="Write" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Cryptography.CryptoStream">
+      <Item value="Write`0" priority="0" />
+      <Item value="FlushFinalBlock`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.NetworkMessages">
+      <Item value="Decode" priority="0" />
+      <Item value="Encode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.AccessModule">
+      <Item value="CheckLogin`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="AreEqual`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Runtime.InteropServices.Marshal">
+      <Item value="SizeOf`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.service.ServerWorker">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.Designer.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="757" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:TextMessage.cs" caret="545" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Cache/f:UserCache.cs" caret="1006" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="923" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="308" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:INetworkModule.cs" caret="157" fromTop="8" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Cache/f:Session.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="383" fromTop="8" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="213" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectExceptions.cs" caret="495" fromTop="19" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:IReportModule.cs" caret="194" fromTop="8" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="747" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/f:SubsystemTypes.cs" caret="358" fromTop="18" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="458" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="5064" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="2550" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="65" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1117" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessExceptions.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessMessages.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="58" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="619" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="668" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="1347" fromTop="14" />
+      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="306" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="668" fromTop="11" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="358" fromTop="16" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="1925" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="7473" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="360" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="65" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="546" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1117" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="3115" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessExceptions.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessMessages.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="2820" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="58" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="4270" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="134" fromTop="6" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="296" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="619" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="1373" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="221" fromTop="4" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="1227" fromTop="28" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="668" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="4356" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="1347" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="2474" fromTop="14" />
+      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="0" fromTop="0" />
+      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="295" fromTop="14" />
+      <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="318" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="668" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="761" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

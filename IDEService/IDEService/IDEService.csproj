@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76A057E7-BEC6-4BCE-9A3F-4F115349B877}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDEService</RootNamespace>
+    <AssemblyName>IDEService</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <StartupObject>IDEService.Program</StartupObject>
+    <CodePage>65001</CodePage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\mono\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\mono\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientServiceTypes">
+      <HintPath>..\..\ClientServiceTypes\Bin\Debug\ClientServiceTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+    <Reference Include="System.Data.Linq">
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+    </Reference>
+    <Reference Include="System.Security">
+    </Reference>
+    <Reference Include="System.Xml">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files %28x86%29\Mindscape\LightSpeed\Providers\MySQL5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mindscape.LightSpeed, Version=3.1.2576.16584, Culture=neutral, PublicKeyToken=360c8f37b466ebb2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\mono\Mindscape.LightSpeed.dll</HintPath>
+    </Reference>
+    <Reference Include="Mindscape.LightSpeed.Linq, Version=3.1.2576.16584, Culture=neutral, PublicKeyToken=360c8f37b466ebb2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\mono\Mindscape.LightSpeed.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\mono\System.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Cache\UserCache.cs" />
+    <Compile Include="Core\Configuration\Configure.cs" />
+    <Compile Include="Core\Cache\Session.cs" />
+    <Compile Include="Core\Kernel\SubsystemFactory.cs" />
+    <Compile Include="Core\Logger\Logger.cs" />
+    <Compile Include="Core\Logger\LogLevels.cs" />
+    <Compile Include="Core\Kernel\KernelExceptions.cs" />
+    <Compile Include="Core\Kernel\Kernel.cs" />
+    <Compile Include="Core\Kernel\KernelTypes.cs" />
+    <Compile Include="Core\Kernel\BootLoader.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Access\AccessSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Access\IAccessModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Chat\ChatSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Chat\IChatModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\DataBase\DataBaseSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Network\INetworkModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Network\NetwokrModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Network\NetworkMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Network\NetworkSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Project\IProjectModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectExceptions.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Report\IReportModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Report\ReportMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Report\ReportModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Report\ReportSubystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Vcs\IVcsModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Vcs\Revision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Vcs\VcsMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Vcs\VcsModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\Vcs\VcsSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\ITextModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorSubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\ISubsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\ServiceMessage.cs" />
+    <Compile Include="Core\Subsystems\Subsystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemExceptions\ProcessMessageException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs" />
+    <Compile Include="Core\Subsystems\SubsystemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Subsystems\SubsystemTypes.cs" />
+    <Compile Include="DBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.lsmodel</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel.Designer.cs">
+      <DependentUpon>DBModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="service\ClientWorker.cs" />
+    <Compile Include="service\ServerWorker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBModel.lsmodel">
+      <Generator>LightSpeedModelGenerator</Generator>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBModel.lsmodel.diagram">
+      <DependentUpon>DBModel.lsmodel</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBScript.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup />
+</Project>

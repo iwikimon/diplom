@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="76A057E7-BEC6-4BCE-9A3F-4F115349B877" ModuleId="IDEService" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
+  <Module PersistentId="84640A0D-B64E-4044-8898-30964797DC4A" ModuleId="IDEServiceTests" />
+</Modules>

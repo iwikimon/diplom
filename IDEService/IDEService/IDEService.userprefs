@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ActiveRuntime="Mono 2.10.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="service\CrossDomainService.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="20" Column="3" />
+      <File FileName="Properties\Resources.Designer.cs" Line="1" Column="1" />
+      <File FileName="Properties\Settings.Designer.cs" Line="34" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="IDEService" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="Properties" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

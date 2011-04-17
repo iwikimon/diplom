@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.1.0.0" name="DBModel" targetNamespace="IDEService" databaseProvider="MySql5" connectionString="server=localhost;User Id=root;password=123456;database=ideservice" pluralizedInDatabase="true" mediumTrustCompatibility="false" xmlns="http://namespaces.mindscape.co.nz/lightspeed">
+  <entities>
+    <entity name="Chat" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Date" dataType="DateTime" />
+        <entityProperty name="Message">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+    </entity>
+    <entity name="File" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Name">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Path">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="755e0fad-b35b-4208-9fb8-71846d73edd0" collectionName="Accesses" backreferenceName="File" isNullable="false">
+          <entityMoniker name="/DBModel/Access" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Folder" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Name">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Path">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="45007b08-aa21-439b-b262-12210981ae4a" collectionName="Accesses" backreferenceName="Folder" isNullable="false">
+          <entityMoniker name="/DBModel/Access" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Project" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Name">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Sourcedir">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="965989cd-9c12-4305-99b0-254144023630" collectionName="Chats" backreferenceName="Project" isNullable="false">
+          <entityMoniker name="/DBModel/Chat" />
+        </oneToManyAssociation>
+        <oneToManyAssociation Id="e2347a18-5e63-41de-89ba-5301a5967120" collectionName="Files" backreferenceName="Project" isNullable="false">
+          <entityMoniker name="/DBModel/File" />
+        </oneToManyAssociation>
+        <oneToManyAssociation Id="bea54ec8-7ffc-4457-a9b8-c7642cee544b" collectionName="Folders" backreferenceName="Project" isNullable="false">
+          <entityMoniker name="/DBModel/Folder" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Userinfo" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Registred" dataType="DateTime" />
+        <entityProperty name="LastAccess" dataType="DateTime" />
+        <entityProperty name="Name">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Sname">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Email">
+          <validations>
+            <presenceValidation />
+            <emailValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <targetEntity>
+        <oneToOneAssociation Id="4a04382e-67e6-436f-8ea5-955ead17e9a6" sourceName="Userinfo" targetName="User" isSourceNullable="false" isTargetNullable="false">
+          <entityMoniker name="/DBModel/User" />
+        </oneToOneAssociation>
+      </targetEntity>
+    </entity>
+    <entity name="Userlog" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Date" dataType="DateTime" />
+        <entityProperty name="Message">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+    </entity>
+    <entity name="User" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Login">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+        <entityProperty name="Password">
+          <validations>
+            <presenceValidation />
+            <lengthValidation minimumLength="0" maximumLength="65535" />
+          </validations>
+        </entityProperty>
+      </entityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="59512483-ba51-4f89-adcc-668a1b885c03" collectionName="ProjectsOwner" backreferenceName="Owner" isNullable="false">
+          <entityMoniker name="/DBModel/Project" />
+        </oneToManyAssociation>
+        <oneToManyAssociation Id="25c96810-1cef-47c9-a011-315e9d62ce15" collectionName="ProjectsMember" backreferenceName="Member" isNullable="false">
+          <entityMoniker name="/DBModel/Project" />
+        </oneToManyAssociation>
+        <oneToManyAssociation Id="fafe633b-ddbb-427f-b627-d5d5cfc5ccc9" collectionName="Userlogs" backreferenceName="User" isNullable="false">
+          <entityMoniker name="/DBModel/Userlog" />
+        </oneToManyAssociation>
+        <oneToManyAssociation Id="2a8289e7-d6ad-4edc-b2ad-94271d89fdac" collectionName="Chats" backreferenceName="User" isNullable="false">
+          <entityMoniker name="/DBModel/Chat" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+      <targetEntity>
+        <oneToOneAssociation Id="8783b35a-8912-449e-8574-8b9e3b58d508" sourceName="User" targetName="Access" isSourceNullable="false" isTargetNullable="false">
+          <entityMoniker name="/DBModel/Access" />
+        </oneToOneAssociation>
+      </targetEntity>
+    </entity>
+    <entity name="Access" identityType="Int32" cacheExpiry="0">
+      <entityProperties>
+        <entityProperty name="Rule" />
+      </entityProperties>
+    </entity>
+  </entities>
+  <quickViews>
+    <modelView name="All Entities" includedEntities="SelectedOnly" />
+  </quickViews>
+</model>

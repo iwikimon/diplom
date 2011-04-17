@@ -1,0 +1,5 @@
+E:\Dropbox\Диплом\IDEClient\IDEClient.Web\bin\IDEClient.Web.dll
+E:\Dropbox\Диплом\IDEClient\IDEClient.Web\bin\IDEClient.Web.pdb
+E:\Dropbox\Диплом\IDEClient\IDEClient.Web\obj\Release\ResolveAssemblyReference.cache
+E:\Dropbox\Диплом\IDEClient\IDEClient.Web\obj\Release\IDEClient.Web.dll
+E:\Dropbox\Диплом\IDEClient\IDEClient.Web\obj\Release\IDEClient.Web.pdb

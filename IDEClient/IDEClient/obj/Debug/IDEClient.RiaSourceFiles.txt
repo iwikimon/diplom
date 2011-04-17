@@ -1,0 +1,1 @@
+E:\Dropbox\Diplom\IDEClient\IDEClient.Web\IDEClient.Web.csproj,634379543097724081,Properties\AssemblyInfo.cs,

@@ -1,0 +1,436 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:IDEClientTestPage.html" caret="0" fromTop="0" />
+      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.config" caret="0" fromTop="0" />
+      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Debug.config" caret="0" fromTop="0" />
+      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Release.config" caret="0" fromTop="0" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3937" fromTop="20" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="15" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="15" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="18" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="16" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="5" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4334" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="1184" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3368" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2502" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4903" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2970" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="3710" fromTop="18" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2644" fromTop="12" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4346" fromTop="8" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="5313" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4253" fromTop="2" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="4627" fromTop="6" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="2788" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="IDEClient" priority="6" />
+      <Item value="IService`0" priority="3" />
+      <Item value="using" priority="1" />
+      <Item value="IServiceCallback`0" priority="1" />
+      <Item value="Client`0" priority="0" />
+      <Item value="Window`0" priority="0" />
+      <Item value="MessageBox`0" priority="12" />
+      <Item value="msg" priority="11" />
+      <Item value="client" priority="3" />
+      <Item value="System" priority="4" />
+      <Item value="ServiceModel" priority="0" />
+      <Item value="BasicHttpBinding`0" priority="0" />
+      <Item value="BasicHttpSecurityMode`0" priority="0" />
+      <Item value="ServiceReference1" priority="2" />
+      <Item value="ServiceClient`0" priority="2" />
+      <Item value="new" priority="33" />
+      <Item value="ServiceMessage" priority="3" />
+      <Item value="SubsystemType`0" priority="3" />
+      <Item value="AccessViolationException`0" priority="0" />
+      <Item value="object" priority="7" />
+      <Item value="var" priority="4" />
+      <Item value="ServiceMessage`0" priority="7" />
+      <Item value="Access" priority="7" />
+      <Item value="ObservableCollection&lt;object&gt;" priority="8" />
+      <Item value="e" priority="21" />
+      <Item value="textBlock1" priority="1" />
+      <Item value="Enum`0" priority="0" />
+      <Item value="if" priority="15" />
+      <Item value="null" priority="1" />
+      <Item value="_loginBox" priority="3" />
+      <Item value="PasswordBox`0" priority="0" />
+      <Item value="_passwdBox" priority="1" />
+      <Item value="p" priority="0" />
+      <Item value="public" priority="6" />
+      <Item value="static" priority="4" />
+      <Item value="Regex`0" priority="1" />
+      <Item value="Regex" priority="1" />
+      <Item value="Validation`0" priority="2" />
+      <Item value="ServiceClient" priority="2" />
+      <Item value="MainPage`0" priority="0" />
+      <Item value="try" priority="2" />
+      <Item value="Client" priority="4" />
+      <Item value="returnedMsg" priority="0" />
+      <Item value="void" priority="3" />
+      <Item value="CommunicationException`0" priority="0" />
+      <Item value="ce" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="exception" priority="1" />
+      <Item value="true" priority="4" />
+      <Item value="rta" priority="0" />
+      <Item value="is" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="targetSubsystem" priority="0" />
+      <Item value="Kernel`0" priority="7" />
+      <Item value="ClientKernel" priority="0" />
+      <Item value="return" priority="8" />
+      <Item value="private" priority="8" />
+      <Item value="SendMessage`0" priority="0" />
+      <Item value="KernelTypes`0" priority="4" />
+      <Item value="ServiceKernel" priority="0" />
+      <Item value="ForegroundProperty" priority="0" />
+      <Item value="Type`0" priority="0" />
+      <Item value="ProjectionProperty" priority="0" />
+      <Item value="result" priority="1" />
+      <Item value="ISubsystem`0" priority="0" />
+      <Item value="AccessControl`0" priority="2" />
+      <Item value="prev" priority="1" />
+      <Item value="false" priority="3" />
+      <Item value="step" priority="2" />
+      <Item value="label" priority="0" />
+      <Item value="inputBox" priority="0" />
+      <Item value="User" priority="1" />
+      <Item value="u" priority="0" />
+      <Item value="Validator`0" priority="1" />
+      <Item value="loginBox" priority="2" />
+      <Item value="infoLabel" priority="1" />
+      <Item value="passwordBox1" priority="2" />
+      <Item value="passwordBox2" priority="0" />
+      <Item value="bool" priority="3" />
+      <Item value="mailBox" priority="1" />
+      <Item value="CheckMail`0" priority="2" />
+      <Item value="CheckPasswd`0" priority="1" />
+      <Item value="CheckLogin`0" priority="1" />
+      <Item value="KeyUpEvent" priority="0" />
+      <Item value="ActualWidthProperty" priority="0" />
+      <Item value="AccessMessages`0" priority="2" />
+      <Item value="button1" priority="0" />
+      <Item value="RegistrationControl`0" priority="0" />
+      <Item value="Subsystems" priority="0" />
+      <Item value="x" priority="0" />
+      <Item value="AccessSubsystem`0" priority="0" />
+      <Item value="this" priority="4" />
+      <Item value="parent" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Browser" priority="3" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="WebBrowser`0" priority="0" />
+      <Item value="Windows" priority="1" />
+      <Item value="BrowserInformation`0" priority="1" />
+      <Item value="HtmlPage`0" priority="0" />
+      <Item value="LastIP" priority="1" />
+      <Item value="HttpUtility`0" priority="0" />
+      <Item value="WebRequestCreator`0" priority="0" />
+      <Item value="DnsEndPoint`0" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="nameBox" priority="0" />
+      <Item value="Sname" priority="0" />
+      <Item value="snameBox" priority="0" />
+      <Item value="LastAccess" priority="1" />
+      <Item value="DateTime`0" priority="2" />
+      <Item value="Login" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="UserInfo" priority="2" />
+      <Item value="info" priority="1" />
+      <Item value="user" priority="1" />
+      <Item value="Registred" priority="0" />
+      <Item value="Message" priority="5" />
+      <Item value="foreach" priority="2" />
+      <Item value="message" priority="0" />
+      <Item value="LoginStatus`0" priority="0" />
+      <Item value="binding" priority="0" />
+      <Item value="Binding`0" priority="0" />
+      <Item value="EndpointAddress" priority="1" />
+      <Item value="HttpStyleUriParser`0" priority="0" />
+      <Item value="ChannelFactory" priority="0" />
+      <Item value="_syncObj" priority="0" />
+      <Item value="_login" priority="0" />
+      <Item value="_password" priority="0" />
+      <Item value="_userinfo" priority="0" />
+      <Item value="for" priority="3" />
+      <Item value="in" priority="0" />
+      <Item value="Net" priority="0" />
+      <Item value="Sockets" priority="0" />
+      <Item value="Socket`0" priority="2" />
+      <Item value="Socket" priority="0" />
+      <Item value="AddressFamily`0" priority="0" />
+      <Item value="Stream" priority="0" />
+      <Item value="Tcp" priority="0" />
+      <Item value="s" priority="3" />
+      <Item value="socketEventArg" priority="4" />
+      <Item value="Http" priority="0" />
+      <Item value="int" priority="2" />
+      <Item value="i" priority="2" />
+      <Item value="string" priority="5" />
+      <Item value="Encoding`0" priority="1" />
+      <Item value="invoke" priority="0" />
+      <Item value="getResult`0" priority="2" />
+      <Item value="delegate" priority="0" />
+      <Item value="connected" priority="2" />
+      <Item value="lock" priority="1" />
+      <Item value="sock" priority="2" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="byte" priority="3" />
+      <Item value="GetSendedData`0" priority="0" />
+      <Item value="ProcessReceive`0" priority="1" />
+      <Item value="sendEventArgs" priority="1" />
+      <Item value="SocketAsyncEventArgs" priority="0" />
+      <Item value="EventHandler&lt;SocketAsyncEventArgs&gt;" priority="0" />
+      <Item value="ConnectCompleted`0" priority="1" />
+      <Item value="buffer" priority="2" />
+      <Item value="BUFFER_SIZE" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="socket" priority="2" />
+      <Item value="while" priority="0" />
+      <Item value="WriteResult`0" priority="1" />
+      <Item value="SendAsync`0" priority="0" />
+      <Item value="ConnectAsync`0" priority="0" />
+      <Item value="SockAsyncArgs" priority="0" />
+      <Item value="buff" priority="0" />
+      <Item value="XmlDictionaryReaderQuotas" priority="0" />
+      <Item value="DeserializeData`0" priority="0" />
+      <Item value="SerializeData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.client.ServiceMessage">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.BasicHttpSecurityMode">
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ServiceReference1.ServiceClient">
+      <Item value="OpenAsync`0" priority="0" />
+      <Item value="ChannelFactory" priority="0" />
+      <Item value="ProcessMesssageAsync`0" priority="3" />
+      <Item value="ProcessMesssageCompleted" priority="1" />
+      <Item value="InnerChannel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ChannelFactory`1">
+      <Item value="CreateChannel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.ServiceReference1.SubsystemType">
+      <Item value="Access" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.AccessMessages">
+      <Item value="Login" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ServiceReference1.ServiceMessage">
+      <Item value="From" priority="0" />
+      <Item value="To" priority="0" />
+      <Item value="Type" priority="0" />
+      <Item value="Message" priority="4" />
+      <Item value="Handler" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ServiceReference1.ProcessMesssageCompletedEventArgs">
+      <Item value="Result" priority="6" />
+      <Item value="Error" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.PasswordBox">
+      <Item value="Password" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Regex">
+      <Item value="IsMatch`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.Validator">
+      <Item value="Login" priority="2" />
+      <Item value="Passwd" priority="1" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.MainPage">
+      <Item value="Client" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.ApplicationUnhandledExceptionEventArgs">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Handled" priority="0" />
+      <Item value="ExceptionObject" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.CommunicationException">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.IClientChannel">
+      <Item value="Faulted" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.EventArgs">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Message" priority="0" />
+      <Item value="InnerException" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.UserControl">
+      <Item value="MinWidth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEService.Core.ISubsystem">
+      <Item value="SendMessage`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.Kernel">
+      <Item value="GetKernel" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.Kernel">
+      <Item value="SendMessage`0" priority="4" />
+      <Item value="Subsystems" priority="2" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.ServiceReference1.KernelTypes">
+      <Item value="ClientKernel" priority="0" />
+      <Item value="ServiceKernel" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Substring`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="2" />
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="IsEnabled" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Label">
+      <Item value="Content" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ServiceReference1.User">
+      <Item value="Login" priority="0" />
+      <Item value="_userinfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.ServiceReference1.AccessMessages">
+      <Item value="CheckLogin" priority="0" />
+      <Item value="Register" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ISubsystem">
+      <Item value="Type`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="First`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.AccessSubsystem">
+      <Item value="AccControl" priority="0" />
+      <Item value="RegControl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.AccessControl">
+      <Item value="Parent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.MainPage">
+      <Item value="stackPanel1" priority="0" />
+      <Item value="Dispatcher" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="Children" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.UIElementCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.WebBrowser">
+      <Item value="NameProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Browser.HtmlPage">
+      <Item value="BrowserInformation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Browser.BrowserInformation">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Browser.WebRequestCreator">
+      <Item value="BrowserHttp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Dns">
+      <Item value="GetHostAddresses`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Add`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.ServiceReference1.EntityHolderOfUserinfooGsNn7oC">
+      <Item value="_value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.AddressFamily">
+      <Item value="InterNetwork" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.Socket">
+      <Item value="ConnectAsync`0" priority="1" />
+      <Item value="ReceiveAsync`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.SocketAsyncEventArgs">
+      <Item value="Buffer" priority="3" />
+      <Item value="BytesTransferred" priority="2" />
+      <Item value="RemoteEndPoint" priority="0" />
+      <Item value="Completed" priority="1" />
+      <Item value="SetBuffer`0" priority="0" />
+      <Item value="Offset" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="UTF8" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.Encoding">
+      <Item value="GetString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="CheckAccess`0" priority="0" />
+      <Item value="BeginInvoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.KernelTypes">
+      <Item value="ServiceKernel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.AccessMessages">
+      <Item value="CheckLogin" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

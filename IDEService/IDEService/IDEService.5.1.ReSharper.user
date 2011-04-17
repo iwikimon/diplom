@@ -1,0 +1,33 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel.diagram" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.cs" caret="716" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="41" fromTop="2" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.cs" caret="1101" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="41" fromTop="2" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="1101" fromTop="2" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
