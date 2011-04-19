@@ -8,8 +8,6 @@ namespace IDEService.Core
 
         bool Register(User user);
 
-        Userinfo GetInfo(User u);
-
         LoginStatus CheckLogin(string login);
 
         void Logout(User user);

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ClientServiceTypesNet.Core;
 using IDEService.Contracts.Data;
-using ClientServiceTypesNet.Core;
+
 namespace IDEService.Core
 {
     class ReportModule :IReportModule
@@ -28,9 +28,9 @@ namespace IDEService.Core
             throw new NotImplementedException();
         }
 
-        public List<UserlogDto> GetUserLogs(User u)
+        public List<ClientServiceTypesNet.Core.UserlogDto> GetUserLogs(User u)
         {
-            return u.Userlogs.Select(ul => new UserlogDto() {Date = ul.Date, Message = ul.Message}).ToList();
+            return u.Userlogs.Select(ul => new ClientServiceTypesNet.Core.UserlogDto() { Date = ul.Date, Message = ul.Message }).OrderByDescending(x => x.Date).Take(10).ToList();
         }
 
         public void Dispose()

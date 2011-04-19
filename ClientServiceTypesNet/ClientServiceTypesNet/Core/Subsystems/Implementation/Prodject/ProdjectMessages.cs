@@ -1,11 +1,11 @@
 ﻿namespace IDEService.Core
 {
-    enum ProdjectMessages
+    public enum ProjectMessages
     {
-        CreateProdject,
-        DeleteProdject,
-        SelectProdject,
-        RunProdject,
+        CreateProject,
+        DeleteProject,
+        SelectProject,
+        RunProject,
         AddFolder,
         AddFile,
         AddMember, 

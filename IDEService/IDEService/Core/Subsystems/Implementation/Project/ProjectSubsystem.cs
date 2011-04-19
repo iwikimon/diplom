@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using IDEService.Core;
 namespace IDEService.Core
 {
     class ProjectSubsystem :Subsystem
@@ -9,8 +9,6 @@ namespace IDEService.Core
         public ProjectModule Module { get; private set; }
 
         public string ProjectDir { get; private set; }
-
-        public User CurrentUser = null;
 
         public ProjectSubsystem() : base(SubsystemType.Project)
         {
@@ -53,10 +51,10 @@ namespace IDEService.Core
                     (User)
                     Kernel.GetKernel.SendMessage(new ServiceMessage(SubsystemType.Prodject, SubsystemType.Access,
                                                                     AccessMessages.GetUser, new object[]{})).Message[0];
-            */var msgType = ProjectMessages.Undefined;
+            */var msgType =  ProjectMessages.Undefined;
             try
             {
-                msgType = (ProjectMessages)Convert.ChangeType(message.Type, typeof(ProjectMessages));
+                msgType = (IDEService.Core.ProjectMessages)Convert.ChangeType(message.Type, typeof(ProjectMessages));
             }
             catch (Exception)
             {

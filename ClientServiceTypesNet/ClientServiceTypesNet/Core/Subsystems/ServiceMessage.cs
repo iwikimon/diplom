@@ -15,7 +15,7 @@ namespace IDEService.Core
     [KnownType(typeof(AccessMessages))]
     [KnownType(typeof(NetworkMessages))]
     [KnownType(typeof(ChatMessages))]
-    [KnownType(typeof(ProdjectMessages))]
+    [KnownType(typeof(ProjectMessages))]
     [KnownType(typeof(ReportMessages))]
     [KnownType(typeof(UserlogDto))]
     [KnownType(typeof(DateTime))]

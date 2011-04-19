@@ -4,7 +4,7 @@ namespace IDEService.Core
 {
     interface IProjectModule :IDisposable
     {
-        void AddProject(string pname);
+        void AddProject(User u,string pname);
 
         void DeleteProject(Project prodject);
 

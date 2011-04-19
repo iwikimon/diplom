@@ -127,10 +127,6 @@
     <Compile Include="Core\Subsystems\Implementation\Project\IProjectModule.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Project\ProjectExceptions.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Project\ProjectMessages.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Core\Subsystems\Implementation\Project\ProjectModule.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -200,9 +196,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBModel.lsmodel</DependentUpon>
     </Compile>
-    <Compile Include="DBModel.Designer.cs">
-      <DependentUpon>DBModel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="service\ClientWorker.cs" />
     <Compile Include="service\ServerWorker.cs" />
@@ -230,8 +223,8 @@
     </None>
     <None Include="DBModel.lsmodel">
       <Generator>LightSpeedModelGenerator</Generator>
-      <LastGenOutput>DBModel.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
     </None>
     <None Include="DBModel.lsmodel.diagram">
       <DependentUpon>DBModel.lsmodel</DependentUpon>

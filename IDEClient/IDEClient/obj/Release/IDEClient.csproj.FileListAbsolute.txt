@@ -286,3 +286,4 @@ E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\uk\System.Windows.Controls.res
 E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\vi\System.Windows.Controls.resources.dll
 E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\zh-Hans\System.Windows.Controls.resources.dll
 E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\zh-Hant\System.Windows.Controls.resources.dll
+E:\Dropbox\Diplom\IDEClient\IDEClient\obj\Release\Core\Controls\ChatControl.g.i.cs

@@ -79,37 +79,10 @@
         <oneToManyAssociation Id="bea54ec8-7ffc-4457-a9b8-c7642cee544b" collectionName="Folders" backreferenceName="Project" isNullable="false">
           <entityMoniker name="/DBModel/Folder" />
         </oneToManyAssociation>
+        <oneToManyAssociation Id="ae6d3e2c-464a-4e72-9c5e-2adb7bc533ab" collectionName="ProdjectMembers" backreferenceName="Project" isNullable="false">
+          <entityMoniker name="/DBModel/ProdjectMembers" />
+        </oneToManyAssociation>
       </oneToManyAssociations>
-    </entity>
-    <entity name="Userinfo" identityType="Int32" cacheExpiry="0">
-      <entityProperties>
-        <entityProperty name="Registred" dataType="DateTime" />
-        <entityProperty name="LastAccess" dataType="DateTime" />
-        <entityProperty name="Name">
-          <validations>
-            <presenceValidation />
-            <lengthValidation minimumLength="0" maximumLength="65535" />
-          </validations>
-        </entityProperty>
-        <entityProperty name="Sname">
-          <validations>
-            <presenceValidation />
-            <lengthValidation minimumLength="0" maximumLength="65535" />
-          </validations>
-        </entityProperty>
-        <entityProperty name="Email">
-          <validations>
-            <presenceValidation />
-            <emailValidation />
-            <lengthValidation minimumLength="0" maximumLength="65535" />
-          </validations>
-        </entityProperty>
-      </entityProperties>
-      <targetEntity>
-        <oneToOneAssociation Id="4a04382e-67e6-436f-8ea5-955ead17e9a6" sourceName="Userinfo" targetName="User" isSourceNullable="false" isTargetNullable="false">
-          <entityMoniker name="/DBModel/User" />
-        </oneToOneAssociation>
-      </targetEntity>
     </entity>
     <entity name="Userlog" identityType="Int32" cacheExpiry="0">
       <entityProperties>
@@ -136,12 +109,14 @@
             <lengthValidation minimumLength="0" maximumLength="65535" />
           </validations>
         </entityProperty>
+        <entityProperty name="Registred" dataType="DateTime" />
+        <entityProperty name="LastAccess" dataType="DateTime" />
+        <entityProperty name="Name" />
+        <entityProperty name="Sname" />
+        <entityProperty name="Email" />
       </entityProperties>
       <oneToManyAssociations>
         <oneToManyAssociation Id="59512483-ba51-4f89-adcc-668a1b885c03" collectionName="ProjectsOwner" backreferenceName="Owner" isNullable="false">
-          <entityMoniker name="/DBModel/Project" />
-        </oneToManyAssociation>
-        <oneToManyAssociation Id="25c96810-1cef-47c9-a011-315e9d62ce15" collectionName="ProjectsMember" backreferenceName="Member" isNullable="false">
           <entityMoniker name="/DBModel/Project" />
         </oneToManyAssociation>
         <oneToManyAssociation Id="fafe633b-ddbb-427f-b627-d5d5cfc5ccc9" collectionName="Userlogs" backreferenceName="User" isNullable="false">
@@ -153,13 +128,25 @@
         <oneToManyAssociation Id="0cea83e8-c67a-42ed-81d2-535f67601719" collectionName="Accesses" backreferenceName="User" isNullable="false">
           <entityMoniker name="/DBModel/Access" />
         </oneToManyAssociation>
+        <oneToManyAssociation Id="cf46d2fb-ff5e-435c-ba9e-916e65b7b023" collectionName="ProdjectMembers" backreferenceName="User" isNullable="false">
+          <entityMoniker name="/DBModel/ProdjectMembers" />
+        </oneToManyAssociation>
       </oneToManyAssociations>
+      <throughAssociationTargets>
+        <throughAssociation Id="c99bf7fd-8680-4d6a-bbfc-925ebb16878b" sourceCollectionName="Members" targetCollectionName="ProjectMembers">
+          <entityMoniker name="/DBModel/Project" />
+          <throughEntity>
+            <entityMoniker name="/DBModel/ProdjectMembers" />
+          </throughEntity>
+        </throughAssociation>
+      </throughAssociationTargets>
     </entity>
     <entity name="Access" identityType="Int32" cacheExpiry="0">
       <entityProperties>
         <entityProperty name="Rule" />
       </entityProperties>
     </entity>
+    <entity name="ProdjectMembers" identityType="Int32" cacheExpiry="0" />
   </entities>
   <quickViews>
     <modelView name="All Entities" includedEntities="SelectedOnly" />

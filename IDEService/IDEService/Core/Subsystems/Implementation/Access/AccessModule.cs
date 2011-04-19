@@ -38,7 +38,7 @@ namespace IDEService.Core
             {
                 //TODO: тестирование.
                 var user = _context.Users.Where(u => (u. Login == uname) && (u.Password == upasswd)).First();
-                user.Userinfo.LastAccess = DateTime.Now;
+                user.LastAccess = DateTime.Now;
                 _loginTime = DateTime.Now;
                 user.Userlogs.Add(new Userlog(){ Date = DateTime.Now, Message = "Вход в систему"});
                 var cache = new UserCache(user);
@@ -58,17 +58,13 @@ namespace IDEService.Core
             var newuser = new User()
                               {
                                   Login = user.Login,
-                                  Password = user.Password
+                                  Password = user.Password,
+                                  Email = user.Email,
+                                  Name = user.Name,
+                                  Sname = user.Sname,
+                                  LastAccess = DateTime.Now,
+                                  Registred = DateTime.Now,
                               };
-            var info = new Userinfo()
-                           {
-                               Email = user.Userinfo.Email,
-                               Name = user.Userinfo.Name,
-                               Sname = user.Userinfo.Sname,
-                               LastAccess = DateTime.Now,
-                               Registred = DateTime.Now,
-                           };
-            newuser.Userinfo = info;
             _context.Add(newuser);
             var prodjectsDir = Configure.Cfg.Read<string>(SubsystemType.Project.ToString(), "ProdjectDirectory", "Path");
             var userDir = prodjectsDir + "\\" + newuser.Login;
@@ -87,12 +83,6 @@ namespace IDEService.Core
                                                DbSubsystemMessages.SaveContext, new object[] {}));
             return true;
         }
-
-        public Userinfo GetInfo(User u)
-        {
-             return _context.Users.Where(user => (user.Login == u.Login) && (user.Password == u.Password)).First().Userinfo;
-        }
-
 
         public void Logout(User user)
         {

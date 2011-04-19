@@ -24,11 +24,11 @@ namespace IDEService.Core
                                                DbSubsystemMessages.GetContext, new object[] { })).Message[0];
         }
 
-        public void AddProject(string pname)
+        public void AddProject(User user, string pname)
         {
-            /*if (_prodjectSubsystem.CurrentUser.Owner.Where(p => p.Name == pname).Count() > 0)
+            if (user.ProjectsOwner.Where(p => p.Name == pname).Count() > 0)
                 throw new CreateProdjectException("Проект с такими названием уже существует");
-            string dir = _prodjectSubsystem.ProdjectDir + "\\" + _prodjectSubsystem.CurrentUser.Login + "\\" + pname;
+            string dir = _prodjectSubsystem.ProjectDir + "\\" + user.Login + "\\" + pname;
             try
             {
                 Directory.CreateDirectory(dir);
@@ -39,13 +39,15 @@ namespace IDEService.Core
                     String.Format("Невозможно создать директорию проекта {0}. Проверьте путь и права доступа.", dir));
                 throw new CreateProdjectFolderException("Невозможно создать директорию проекта. Проверьте путь и права доступа.");
             }
-            var prj = Prodject.CreateProdject(0, pname, dir);
-            context.ProdjectSet.AddObject(prj);
-            prj.User = _prodjectSubsystem.CurrentUser;
-            prj.Members = _prodjectSubsystem.CurrentUser;
-            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Prodject, SubsystemType.DataBase,
+            var prj = new Project();
+            context.Add(prj);
+            prj.Owner = user;
+            prj.Sourcedir = dir;
+            prj.Name = pname;
+            prj.Members.Add(user);
+            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Project, SubsystemType.DataBase,
                                                             DbSubsystemMessages.SaveContext, new object[] {}));
-       */ }
+        }
 
         public void DeleteProject(Project prodject)
         {

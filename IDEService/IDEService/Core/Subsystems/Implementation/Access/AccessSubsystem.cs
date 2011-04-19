@@ -49,21 +49,7 @@ namespace IDEService.Core
                                               new object[] { _acessModule.CheckLogin((string)message.Message[0]).ToString() });
                 case AccessMessages.GetInfo:
                     {
-                        var user = new User()
-                                        {
-                                            Login = (string)message.Message[0],
-                                            Password = (string)message.Message[1]
-                                        };
-                        var uInfo = _acessModule.GetInfo(user);
-                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Access, SubsystemType.Access, AccessMessages.GetInfo,
-                                                  new object[]
-                                                    {
-                                                        uInfo.Email,
-                                                        uInfo.LastAccess,
-                                                        uInfo.Name,
-                                                        uInfo.Sname,
-                                                        uInfo.Registred,
-                                                    });
+                        throw new NotImplementedException();
                     }
                 case AccessMessages.Login:
                     {
@@ -75,19 +61,16 @@ namespace IDEService.Core
                     }
                 case AccessMessages.Register:
                     {
-                        var ui = new Userinfo()
-                                          {
-                                              Email = message.Message[0].ToString(),
-                                              Name = message.Message[1].ToString(),
-                                              Sname = message.Message[2].ToString(),
-                                              LastAccess = DateTime.Now,
-                                              Registred = DateTime.Now,
-                                          };
                         var u = new User
                                     {
-                                        Userinfo = ui,
+                                        
                                         Login = message.Message[3].ToString(),
-                                        Password = message.Message[4].ToString()
+                                        Password = message.Message[4].ToString(),
+                                        Email = message.Message[0].ToString(),
+                                        Name = message.Message[1].ToString(),
+                                        Sname = message.Message[2].ToString(),
+                                        LastAccess = DateTime.Now,
+                                        Registred = DateTime.Now,
                                     };
 
                         return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Access, SubsystemType.Access, AccessMessages.Register,

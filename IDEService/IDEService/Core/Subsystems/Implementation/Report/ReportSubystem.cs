@@ -31,9 +31,9 @@ namespace IDEService.Core
         {
             switch ((ReportMessages)message.Type)
             {
-                case ReportMessages.GetUserLog:
+                case ReportMessages.GetLastUserLog:
                     return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Report, SubsystemType.Report,
-                                              ReportMessages.GetUserLog, new object[]
+                                              ReportMessages.GetLastUserLog, new object[]
                                                                              {
                                                                                  _module.GetUserLogs(
                                                                                      ((UserCache) message.Message[0]).

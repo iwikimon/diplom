@@ -11,7 +11,7 @@ namespace IDEService.Core
 
         void ProdjectReport(Project prodject, DateTime from, DateTime to);
 
-        List<UserlogDto> GetUserLogs(User u);
+        List<ClientServiceTypesNet.Core.UserlogDto> GetUserLogs(User u);
 
     }
 }

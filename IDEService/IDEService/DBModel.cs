@@ -1,5 +1,5 @@
 using System;
-using ClientServiceTypesNet.Core;
+
 using Mindscape.LightSpeed;
 using Mindscape.LightSpeed.Validation;
 using Mindscape.LightSpeed.Linq;
@@ -264,7 +264,6 @@ namespace IDEService
     [ValidateLength(0, 65535)]
     private string _sourcedir;
     private int _ownerId;
-    private int _memberId;
 
     #endregion
     
@@ -276,8 +275,6 @@ namespace IDEService
     public const string SourcedirField = "Sourcedir";
     /// <summary>Identifies the OwnerId entity attribute.</summary>
     public const string OwnerIdField = "OwnerId";
-    /// <summary>Identifies the MemberId entity attribute.</summary>
-    public const string MemberIdField = "MemberId";
 
 
     #endregion
@@ -288,11 +285,12 @@ namespace IDEService
     private readonly EntityCollection<Chat> _chats = new EntityCollection<Chat>();
     [ReverseAssociation("Project")]
     private readonly EntityCollection<Folder> _folders = new EntityCollection<Folder>();
+    [ReverseAssociation("Project")]
+    private readonly EntityCollection<ProdjectMembers> _prodjectMembers = new EntityCollection<ProdjectMembers>();
     [ReverseAssociation("ProjectsOwner")]
     private readonly EntityHolder<User> _owner = new EntityHolder<User>();
-    [ReverseAssociation("ProjectsMember")]
-    private readonly EntityHolder<User> _member = new EntityHolder<User>();
 
+    private ThroughAssociation<ProdjectMembers, User> _members;
 
     #endregion
     
@@ -308,18 +306,29 @@ namespace IDEService
       get { return Get(_folders); }
     }
 
+    public EntityCollection<ProdjectMembers> ProdjectMembers
+    {
+      get { return Get(_prodjectMembers); }
+    }
+
     public User Owner
     {
       get { return Get(_owner); }
       set { Set(_owner, value); }
     }
 
-    public User Member
+    public ThroughAssociation<ProdjectMembers, User> Members
     {
-      get { return Get(_member); }
-      set { Set(_member, value); }
+      get
+      {
+        if (_members == null)
+        {
+          _members = new ThroughAssociation<ProdjectMembers, User>(_prodjectMembers);
+        }
+        return Get(_members);
+      }
     }
-
+    
 
     public string Name
     {
@@ -338,111 +347,6 @@ namespace IDEService
     {
       get { return Get(ref _ownerId, "OwnerId"); }
       set { Set(ref _ownerId, value, "OwnerId"); }
-    }
-
-    /// <summary>Gets or sets the ID for the <see cref="Member" /> property.</summary>
-    public int MemberId
-    {
-      get { return Get(ref _memberId, "MemberId"); }
-      set { Set(ref _memberId, value, "MemberId"); }
-    }
-
-    #endregion
-  }
-
-
-  [Serializable]
-  [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
-  [System.ComponentModel.DataObject]
-  public partial class Userinfo : Entity<int>
-  {
-    #region Fields
-  
-    private System.DateTime _registred;
-    private System.DateTime _lastAccess;
-    [ValidatePresence]
-    [ValidateLength(0, 65535)]
-    private string _name;
-    [ValidatePresence]
-    [ValidateLength(0, 65535)]
-    private string _sname;
-    [ValidatePresence]
-    [ValidateEmailAddress]
-    [ValidateLength(0, 65535)]
-    private string _email;
-    private int _userId;
-
-    #endregion
-    
-    #region Field attribute and view names
-    
-    /// <summary>Identifies the Registred entity attribute.</summary>
-    public const string RegistredField = "Registred";
-    /// <summary>Identifies the LastAccess entity attribute.</summary>
-    public const string LastAccessField = "LastAccess";
-    /// <summary>Identifies the Name entity attribute.</summary>
-    public const string NameField = "Name";
-    /// <summary>Identifies the Sname entity attribute.</summary>
-    public const string SnameField = "Sname";
-    /// <summary>Identifies the Email entity attribute.</summary>
-    public const string EmailField = "Email";
-    /// <summary>Identifies the UserId entity attribute.</summary>
-    public const string UserIdField = "UserId";
-
-
-    #endregion
-    
-    #region Relationships
-
-    [ReverseAssociation("Userinfo")]
-    private readonly EntityHolder<User> _user = new EntityHolder<User>();
-
-
-    #endregion
-    
-    #region Properties
-
-    public User User
-    {
-      get { return Get(_user); }
-      set { Set(_user, value); }
-    }
-
-
-    public System.DateTime Registred
-    {
-      get { return Get(ref _registred, "Registred"); }
-      set { Set(ref _registred, value, "Registred"); }
-    }
-
-    public System.DateTime LastAccess
-    {
-      get { return Get(ref _lastAccess, "LastAccess"); }
-      set { Set(ref _lastAccess, value, "LastAccess"); }
-    }
-
-    public string Name
-    {
-      get { return Get(ref _name, "Name"); }
-      set { Set(ref _name, value, "Name"); }
-    }
-
-    public string Sname
-    {
-      get { return Get(ref _sname, "Sname"); }
-      set { Set(ref _sname, value, "Sname"); }
-    }
-
-    public string Email
-    {
-      get { return Get(ref _email, "Email"); }
-      set { Set(ref _email, value, "Email"); }
-    }
-
-    public int UserId
-    {
-      get { return Get(ref _userId, "UserId"); }
-      set { Set(ref _userId, value, "UserId"); }
     }
 
     #endregion
@@ -529,6 +433,11 @@ namespace IDEService
     [ValidatePresence]
     [ValidateLength(0, 65535)]
     private string _password;
+    private System.DateTime _registred;
+    private System.DateTime _lastAccess;
+    private string _name;
+    private string _sname;
+    private string _email;
 
     #endregion
     
@@ -538,6 +447,16 @@ namespace IDEService
     public const string LoginField = "Login";
     /// <summary>Identifies the Password entity attribute.</summary>
     public const string PasswordField = "Password";
+    /// <summary>Identifies the Registred entity attribute.</summary>
+    public const string RegistredField = "Registred";
+    /// <summary>Identifies the LastAccess entity attribute.</summary>
+    public const string LastAccessField = "LastAccess";
+    /// <summary>Identifies the Name entity attribute.</summary>
+    public const string NameField = "Name";
+    /// <summary>Identifies the Sname entity attribute.</summary>
+    public const string SnameField = "Sname";
+    /// <summary>Identifies the Email entity attribute.</summary>
+    public const string EmailField = "Email";
 
 
     #endregion
@@ -546,8 +465,6 @@ namespace IDEService
 
     [ReverseAssociation("Owner")]
     private readonly EntityCollection<Project> _projectsOwner = new EntityCollection<Project>();
-    [ReverseAssociation("Member")]
-    private readonly EntityCollection<Project> _projectsMember = new EntityCollection<Project>();
     [ReverseAssociation("User")]
     private readonly EntityCollection<Userlog> _userlogs = new EntityCollection<Userlog>();
     [ReverseAssociation("User")]
@@ -555,8 +472,9 @@ namespace IDEService
     [ReverseAssociation("User")]
     private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
     [ReverseAssociation("User")]
-    private readonly EntityHolder<Userinfo> _userinfo = new EntityHolder<Userinfo>();
+    private readonly EntityCollection<ProdjectMembers> _prodjectMembers = new EntityCollection<ProdjectMembers>();
 
+    private ThroughAssociation<ProdjectMembers, Project> _projectMembers;
 
     #endregion
     
@@ -565,11 +483,6 @@ namespace IDEService
     public EntityCollection<Project> ProjectsOwner
     {
       get { return Get(_projectsOwner); }
-    }
-
-    public EntityCollection<Project> ProjectsMember
-    {
-      get { return Get(_projectsMember); }
     }
 
     public EntityCollection<Userlog> Userlogs
@@ -587,12 +500,23 @@ namespace IDEService
       get { return Get(_accesses); }
     }
 
-    public Userinfo Userinfo
+    public EntityCollection<ProdjectMembers> ProdjectMembers
     {
-      get { return Get(_userinfo); }
-      set { Set(_userinfo, value); }
+      get { return Get(_prodjectMembers); }
     }
 
+    public ThroughAssociation<ProdjectMembers, Project> ProjectMembers
+    {
+      get
+      {
+        if (_projectMembers == null)
+        {
+          _projectMembers = new ThroughAssociation<ProdjectMembers, Project>(_prodjectMembers);
+        }
+        return Get(_projectMembers);
+      }
+    }
+    
 
     public string Login
     {
@@ -604,6 +528,36 @@ namespace IDEService
     {
       get { return Get(ref _password, "Password"); }
       set { Set(ref _password, value, "Password"); }
+    }
+
+    public System.DateTime Registred
+    {
+      get { return Get(ref _registred, "Registred"); }
+      set { Set(ref _registred, value, "Registred"); }
+    }
+
+    public System.DateTime LastAccess
+    {
+      get { return Get(ref _lastAccess, "LastAccess"); }
+      set { Set(ref _lastAccess, value, "LastAccess"); }
+    }
+
+    public string Name
+    {
+      get { return Get(ref _name, "Name"); }
+      set { Set(ref _name, value, "Name"); }
+    }
+
+    public string Sname
+    {
+      get { return Get(ref _sname, "Sname"); }
+      set { Set(ref _sname, value, "Sname"); }
+    }
+
+    public string Email
+    {
+      get { return Get(ref _email, "Email"); }
+      set { Set(ref _email, value, "Email"); }
     }
 
     #endregion
@@ -702,6 +656,71 @@ namespace IDEService
   }
 
 
+  [Serializable]
+  [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+  [System.ComponentModel.DataObject]
+  public partial class ProdjectMembers : Entity<int>
+  {
+    #region Fields
+  
+    private int _projectId;
+    private int _userId;
+
+    #endregion
+    
+    #region Field attribute and view names
+    
+    /// <summary>Identifies the ProjectId entity attribute.</summary>
+    public const string ProjectIdField = "ProjectId";
+    /// <summary>Identifies the UserId entity attribute.</summary>
+    public const string UserIdField = "UserId";
+
+
+    #endregion
+    
+    #region Relationships
+
+    [ReverseAssociation("ProdjectMembers")]
+    private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
+    [ReverseAssociation("ProdjectMembers")]
+    private readonly EntityHolder<User> _user = new EntityHolder<User>();
+
+
+    #endregion
+    
+    #region Properties
+
+    public Project Project
+    {
+      get { return Get(_project); }
+      set { Set(_project, value); }
+    }
+
+    public User User
+    {
+      get { return Get(_user); }
+      set { Set(_user, value); }
+    }
+
+
+    /// <summary>Gets or sets the ID for the <see cref="Project" /> property.</summary>
+    public int ProjectId
+    {
+      get { return Get(ref _projectId, "ProjectId"); }
+      set { Set(ref _projectId, value, "ProjectId"); }
+    }
+
+    /// <summary>Gets or sets the ID for the <see cref="User" /> property.</summary>
+    public int UserId
+    {
+      get { return Get(ref _userId, "UserId"); }
+      set { Set(ref _userId, value, "UserId"); }
+    }
+
+    #endregion
+  }
+
+
 
   /// <summary>
   /// Provides a strong-typed unit of work for working with the DBModel model.
@@ -730,11 +749,6 @@ namespace IDEService
       get { return this.Query<Project>(); }
     }
     
-    public System.Linq.IQueryable<Userinfo> Userinfos
-    {
-      get { return this.Query<Userinfo>(); }
-    }
-    
     public System.Linq.IQueryable<Userlog> Userlogs
     {
       get { return this.Query<Userlog>(); }
@@ -750,13 +764,128 @@ namespace IDEService
       get { return this.Query<Access>(); }
     }
     
+    public System.Linq.IQueryable<ProdjectMembers> ProdjectMembers
+    {
+      get { return this.Query<ProdjectMembers>(); }
+    }
+    
   }
 
   namespace Contracts.Data
   {
-    
+    [System.Runtime.Serialization.DataContract(Name="DBModelDtoBase")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class DBModelDtoBase
+    {
+    }
 
-    
+    [System.Runtime.Serialization.DataContract(Name="Chat")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class ChatDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public System.DateTime Date { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Message { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int ProjectId { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int UserId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="File")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class FileDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public string Name { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Path { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int FolderId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="Folder")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class FolderDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public string Name { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Path { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int ProjectId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="Project")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class ProjectDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public string Name { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Sourcedir { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int OwnerId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="Userlog")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class UserlogDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public System.DateTime Date { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Message { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int UserId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="User")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class UserDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public string Login { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Password { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public System.DateTime Registred { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public System.DateTime LastAccess { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Name { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Sname { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public string Email { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="Access")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class AccessDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public string Rule { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int FileId { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int FolderId { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int UserId { get; set; }
+    }
+
+    [System.Runtime.Serialization.DataContract(Name="ProdjectMembers")]
+    [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
+    public partial class ProdjectMembersDto : DBModelDtoBase
+    {
+      [System.Runtime.Serialization.DataMember]
+      public int ProjectId { get; set; }
+      [System.Runtime.Serialization.DataMember]
+      public int UserId { get; set; }
+    }
+
+
     
     [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
     public static partial class DBModelDtoExtensions
@@ -892,7 +1021,6 @@ namespace IDEService
         dto.Name = entity.Name;
         dto.Sourcedir = entity.Sourcedir;
         dto.OwnerId = entity.OwnerId;
-        dto.MemberId = entity.MemberId;
         AfterCopyProject(entity, dto);
       }
       
@@ -903,7 +1031,6 @@ namespace IDEService
         entity.Name = dto.Name;
         entity.Sourcedir = dto.Sourcedir;
         entity.OwnerId = dto.OwnerId;
-        entity.MemberId = dto.MemberId;
         AfterCopyProject(dto, entity);
       }
       
@@ -917,50 +1044,6 @@ namespace IDEService
       public static Project CopyTo(this ProjectDto source, Project entity)
       {
         CopyProject(source, entity);
-        return entity;
-      }
-
-      static partial void BeforeCopyUserinfo(Userinfo entity, UserinfoDto dto);
-      static partial void AfterCopyUserinfo(Userinfo entity, UserinfoDto dto);
-      static partial void BeforeCopyUserinfo(UserinfoDto dto, Userinfo entity);
-      static partial void AfterCopyUserinfo(UserinfoDto dto, Userinfo entity);
-      
-      private static void CopyUserinfo(Userinfo entity, UserinfoDto dto)
-      {
-        BeforeCopyUserinfo(entity, dto);
-        CopyDBModelDtoBase(entity, dto);
-        dto.Registred = entity.Registred;
-        dto.LastAccess = entity.LastAccess;
-        dto.Name = entity.Name;
-        dto.Sname = entity.Sname;
-        dto.Email = entity.Email;
-        dto.UserId = entity.UserId;
-        AfterCopyUserinfo(entity, dto);
-      }
-      
-      private static void CopyUserinfo(UserinfoDto dto, Userinfo entity)
-      {
-        BeforeCopyUserinfo(dto, entity);
-        CopyDBModelDtoBase(dto, entity);
-        entity.Registred = dto.Registred;
-        entity.LastAccess = dto.LastAccess;
-        entity.Name = dto.Name;
-        entity.Sname = dto.Sname;
-        entity.Email = dto.Email;
-        entity.UserId = dto.UserId;
-        AfterCopyUserinfo(dto, entity);
-      }
-      
-      public static UserinfoDto AsDto(this Userinfo entity)
-      {
-        UserinfoDto dto = new UserinfoDto();
-        CopyUserinfo(entity, dto);
-        return dto;
-      }
-      
-      public static Userinfo CopyTo(this UserinfoDto source, Userinfo entity)
-      {
-        CopyUserinfo(source, entity);
         return entity;
       }
 
@@ -1013,6 +1096,11 @@ namespace IDEService
         CopyDBModelDtoBase(entity, dto);
         dto.Login = entity.Login;
         dto.Password = entity.Password;
+        dto.Registred = entity.Registred;
+        dto.LastAccess = entity.LastAccess;
+        dto.Name = entity.Name;
+        dto.Sname = entity.Sname;
+        dto.Email = entity.Email;
         AfterCopyUser(entity, dto);
       }
       
@@ -1022,6 +1110,11 @@ namespace IDEService
         CopyDBModelDtoBase(dto, entity);
         entity.Login = dto.Login;
         entity.Password = dto.Password;
+        entity.Registred = dto.Registred;
+        entity.LastAccess = dto.LastAccess;
+        entity.Name = dto.Name;
+        entity.Sname = dto.Sname;
+        entity.Email = dto.Email;
         AfterCopyUser(dto, entity);
       }
       
@@ -1075,6 +1168,42 @@ namespace IDEService
       public static Access CopyTo(this AccessDto source, Access entity)
       {
         CopyAccess(source, entity);
+        return entity;
+      }
+
+      static partial void BeforeCopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto);
+      static partial void AfterCopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto);
+      static partial void BeforeCopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity);
+      static partial void AfterCopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity);
+      
+      private static void CopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto)
+      {
+        BeforeCopyProdjectMembers(entity, dto);
+        CopyDBModelDtoBase(entity, dto);
+        dto.ProjectId = entity.ProjectId;
+        dto.UserId = entity.UserId;
+        AfterCopyProdjectMembers(entity, dto);
+      }
+      
+      private static void CopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity)
+      {
+        BeforeCopyProdjectMembers(dto, entity);
+        CopyDBModelDtoBase(dto, entity);
+        entity.ProjectId = dto.ProjectId;
+        entity.UserId = dto.UserId;
+        AfterCopyProdjectMembers(dto, entity);
+      }
+      
+      public static ProdjectMembersDto AsDto(this ProdjectMembers entity)
+      {
+        ProdjectMembersDto dto = new ProdjectMembersDto();
+        CopyProdjectMembers(entity, dto);
+        return dto;
+      }
+      
+      public static ProdjectMembers CopyTo(this ProdjectMembersDto source, ProdjectMembers entity)
+      {
+        CopyProdjectMembers(source, entity);
         return entity;
       }
 

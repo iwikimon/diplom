@@ -99,6 +99,9 @@
     </Compile>
     <Compile Include="ClientWorker.cs" />
     <Compile Include="Core\BootLoader.cs" />
+    <Compile Include="Core\Controls\ChatControl.xaml.cs">
+      <DependentUpon>ChatControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Core\Controls\IDEControl.xaml.cs">
       <DependentUpon>IDEControl.xaml</DependentUpon>
     </Compile>
@@ -126,6 +129,10 @@
     <Page Include="Core\Controls\AccessControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\Controls\ChatControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Core\Controls\IDEControl.xaml">
       <SubType>Designer</SubType>
