@@ -9,8 +9,6 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:IDEClientTestPage.html" caret="0" fromTop="0" />
-      <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.config" caret="0" fromTop="0" />
       <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Debug.config" caret="0" fromTop="0" />
       <File id="E877D86D-9EC8-4EE9-AF33-A11308446E97/f:Web.Release.config" caret="0" fromTop="0" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:Validator.cs" caret="39" fromTop="1" />
@@ -22,50 +20,57 @@
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:RegistrationControl.xaml" caret="2306" fromTop="3" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:RegistrationControl.xaml.cs" caret="3916" fromTop="8" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/f:MainPage.xaml.cs" caret="911" fromTop="0" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportMessages.cs" caret="270" fromTop="15" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportMessages.cs" caret="274" fromTop="15" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:BootLoader.cs" caret="636" fromTop="14" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="2111" fromTop="20" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:AccessControl.xaml.cs" caret="767" fromTop="19" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3325" fromTop="17" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:NetworkSubsystem.cs" caret="2712" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="793" fromTop="17" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1222" fromTop="10" />
       <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:AccessSubsystem.cs" caret="1110" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml" caret="702" fromTop="2" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="784" fromTop="13" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2415" fromTop="3" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml" caret="642" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="851" fromTop="18" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ProjectControl.xaml" caret="1037" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="820" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml" caret="0" fromTop="0" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:QueryBox.xaml.cs" caret="485" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="1369" fromTop="24" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:UserDialog.xaml" caret="1123" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:UserDialog.xaml.cs" caret="403" fromTop="10" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="2110" fromTop="62" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="41" fromTop="2" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="1493" fromTop="28" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2721" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="963" fromTop="1" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="1387" fromTop="3" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="5024" fromTop="13" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="5251" fromTop="19" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:AccessControl.xaml.cs" caret="2433" fromTop="18" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="3811" fromTop="11" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportMessages.cs" caret="270" fromTop="15" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="0" fromTop="0" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="0" fromTop="0" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="1003" fromTop="6" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="529" fromTop="11" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="425" fromTop="9" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="347" fromTop="4" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="268" fromTop="6" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="180" fromTop="4" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:BootLoader.cs" caret="635" fromTop="14" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml" caret="1" fromTop="0" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1570" fromTop="21" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1021" fromTop="10" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:ReportSubsystem.cs" caret="900" fromTop="20" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Subsystems/f:AccessSubsystem.cs" caret="1123" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="458" fromTop="4" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/f:Kernel.cs" caret="1740" fromTop="11" />
-      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="2111" fromTop="20" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1099" fromTop="19" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1300" fromTop="11" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml" caret="683" fromTop="2" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="1449" fromTop="16" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="657" fromTop="12" />
-      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2369" fromTop="1" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="727" fromTop="22" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml" caret="755" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="1092" fromTop="19" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="1873" fromTop="22" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="1583" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="2106" fromTop="19" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="1316" fromTop="13" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ChatControl.xaml.cs" caret="861" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:ProjectControl.xaml" caret="924" fromTop="3" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2797" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:LogControl.xaml.cs" caret="820" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="1" fromTop="0" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="3443" fromTop="6" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2028" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="561" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:QueryBox.xaml.cs" caret="485" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:QueryBox.xaml.cs" caret="485" fromTop="14" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="530" fromTop="7" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="964" fromTop="16" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="976" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="3059" fromTop="11" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:UserDialog.xaml" caret="1123" fromTop="4" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:UserDialog.xaml.cs" caret="586" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:UserDialog.xaml.cs" caret="403" fromTop="10" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="1170" fromTop="20" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="1113" fromTop="18" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="160" fromTop="7" />
+      <File id="99132EBB-A738-4142-B00B-7BA850BA7CBE/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="41" fromTop="2" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml.cs" caret="1456" fromTop="25" />
+      <File id="7628BB95-EFCB-4C60-8BE1-6C956DBA511C/d:Core/d:Controls/f:IDEControl.xaml" caret="2853" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -87,8 +92,8 @@
       <Item value="IServiceCallback`0" priority="1" />
       <Item value="Client`0" priority="0" />
       <Item value="Window`0" priority="0" />
-      <Item value="MessageBox`0" priority="12" />
-      <Item value="msg" priority="11" />
+      <Item value="MessageBox`0" priority="14" />
+      <Item value="msg" priority="12" />
       <Item value="client" priority="3" />
       <Item value="System" priority="4" />
       <Item value="ServiceModel" priority="0" />
@@ -96,25 +101,25 @@
       <Item value="BasicHttpSecurityMode`0" priority="0" />
       <Item value="ServiceReference1" priority="2" />
       <Item value="ServiceClient`0" priority="2" />
-      <Item value="new" priority="33" />
-      <Item value="ServiceMessage" priority="3" />
+      <Item value="new" priority="40" />
+      <Item value="ServiceMessage" priority="4" />
       <Item value="SubsystemType`0" priority="3" />
       <Item value="AccessViolationException`0" priority="0" />
-      <Item value="object" priority="7" />
-      <Item value="var" priority="4" />
+      <Item value="object" priority="8" />
+      <Item value="var" priority="7" />
       <Item value="ServiceMessage`0" priority="7" />
       <Item value="Access" priority="7" />
       <Item value="ObservableCollection&lt;object&gt;" priority="8" />
-      <Item value="e" priority="21" />
+      <Item value="e" priority="22" />
       <Item value="textBlock1" priority="1" />
       <Item value="Enum`0" priority="0" />
-      <Item value="if" priority="15" />
+      <Item value="if" priority="17" />
       <Item value="null" priority="1" />
       <Item value="_loginBox" priority="3" />
       <Item value="PasswordBox`0" priority="0" />
       <Item value="_passwdBox" priority="1" />
       <Item value="p" priority="0" />
-      <Item value="public" priority="6" />
+      <Item value="public" priority="7" />
       <Item value="static" priority="4" />
       <Item value="Regex`0" priority="1" />
       <Item value="Regex" priority="1" />
@@ -130,17 +135,17 @@
       <Item value="catch" priority="0" />
       <Item value="Exception`0" priority="0" />
       <Item value="exception" priority="1" />
-      <Item value="true" priority="4" />
+      <Item value="true" priority="5" />
       <Item value="rta" priority="0" />
       <Item value="is" priority="0" />
       <Item value="else" priority="1" />
       <Item value="targetSubsystem" priority="0" />
-      <Item value="Kernel`0" priority="7" />
+      <Item value="Kernel`0" priority="8" />
       <Item value="ClientKernel" priority="0" />
       <Item value="return" priority="8" />
       <Item value="private" priority="8" />
       <Item value="SendMessage`0" priority="0" />
-      <Item value="KernelTypes`0" priority="4" />
+      <Item value="KernelTypes`0" priority="5" />
       <Item value="ServiceKernel" priority="0" />
       <Item value="ForegroundProperty" priority="0" />
       <Item value="Type`0" priority="0" />
@@ -173,7 +178,7 @@
       <Item value="Subsystems" priority="0" />
       <Item value="x" priority="0" />
       <Item value="AccessSubsystem`0" priority="0" />
-      <Item value="this" priority="4" />
+      <Item value="this" priority="7" />
       <Item value="parent" priority="0" />
       <Item value="Email" priority="0" />
       <Item value="Browser" priority="3" />
@@ -200,7 +205,7 @@
       <Item value="Registred" priority="0" />
       <Item value="Message" priority="5" />
       <Item value="foreach" priority="2" />
-      <Item value="message" priority="0" />
+      <Item value="message" priority="1" />
       <Item value="LoginStatus`0" priority="0" />
       <Item value="binding" priority="0" />
       <Item value="Binding`0" priority="0" />
@@ -225,7 +230,7 @@
       <Item value="Http" priority="0" />
       <Item value="int" priority="2" />
       <Item value="i" priority="2" />
-      <Item value="string" priority="5" />
+      <Item value="string" priority="7" />
       <Item value="Encoding`0" priority="1" />
       <Item value="invoke" priority="0" />
       <Item value="getResult`0" priority="2" />
@@ -254,9 +259,31 @@
       <Item value="XmlDictionaryReaderQuotas" priority="0" />
       <Item value="DeserializeData`0" priority="0" />
       <Item value="SerializeData`0" priority="0" />
+      <Item value="UserControl`0" priority="0" />
+      <Item value="Liquid" priority="1" />
+      <Item value="popupBase" priority="0" />
+      <Item value="PopupBase`0" priority="0" />
+      <Item value="Dialog`0" priority="2" />
+      <Item value="Dialog" priority="0" />
+      <Item value="dialog" priority="16" />
+      <Item value="StackPanel`0" priority="1" />
+      <Item value="StackPanel" priority="0" />
+      <Item value="sp" priority="3" />
+      <Item value="Stretch" priority="1" />
+      <Item value="TextBlock`0" priority="2" />
+      <Item value="tb" priority="1" />
+      <Item value="DialogButtons`0" priority="0" />
+      <Item value="LayoutRoot" priority="0" />
+      <Item value="prjDialog" priority="1" />
+      <Item value="text" priority="0" />
+      <Item value="title" priority="0" />
+      <Item value="UserDialog`0" priority="1" />
+      <Item value="dialog_Closed`0" priority="0" />
+      <Item value="Project" priority="1" />
+      <Item value="ProjectMessages`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.MessageBox">
-      <Item value="Show`0" priority="14" />
+      <Item value="Show`0" priority="16" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEClient.client.ServiceMessage">
       <Item value="ToString`0" priority="0" />
@@ -295,10 +322,10 @@
       <Item value="ToString`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
-      <Item value="Text" priority="1" />
+      <Item value="Text" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
-      <Item value="Text" priority="11" />
+      <Item value="Text" priority="13" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.PasswordBox">
       <Item value="Password" priority="5" />
@@ -363,7 +390,7 @@
       <Item value="IsEnabled" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.Label">
-      <Item value="Content" priority="3" />
+      <Item value="Content" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEClient.ServiceReference1.User">
       <Item value="Login" priority="0" />
@@ -391,10 +418,12 @@
       <Item value="Dispatcher" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
-      <Item value="Children" priority="0" />
+      <Item value="Children" priority="3" />
+      <Item value="VerticalAlignment" priority="0" />
+      <Item value="HorizontalAlignment" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.UIElementCollection">
-      <Item value="Add`0" priority="0" />
+      <Item value="Add`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Controls.WebBrowser">
       <Item value="NameProperty" priority="0" />
@@ -447,10 +476,54 @@
       <Item value="BeginInvoke`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.KernelTypes">
-      <Item value="ServiceKernel" priority="0" />
+      <Item value="ServiceKernel" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.AccessMessages">
       <Item value="CheckLogin" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TabControl">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Liquid.Dialog">
+      <Item value="Title" priority="0" />
+      <Item value="Content" priority="2" />
+      <Item value="Show`0" priority="2" />
+      <Item value="Closed" priority="0" />
+      <Item value="Result" priority="0" />
+      <Item value="Parent" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Liquid.DialogEventArgs">
+      <Item value="Parameter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Liquid.DialogButtons">
+      <Item value="OK" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.UIElement">
+      <Item value="AddHandler`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.Core.Controls.IDEControl">
+      <Item value="Connect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Grid">
+      <Item value="Children" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.Core.Controls.UserDialog">
+      <Item value="Title" priority="0" />
+      <Item value="Closed" priority="0" />
+      <Item value="inputBox" priority="1" />
+      <Item value="DialogResult" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEClient.Core.Kernel">
+      <Item value="GetKernel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:IDEClient.Core.Kernel">
+      <Item value="SendToServer`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDEService.Core.ProjectMessages">
+      <Item value="CreateProject" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

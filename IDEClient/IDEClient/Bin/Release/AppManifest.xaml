@@ -16,6 +16,7 @@
     <AssemblyPart x:Name="ClientServiceTypes" Source="ClientServiceTypes.dll" />
     <AssemblyPart x:Name="Liquid" Source="Liquid.dll" />
     <AssemblyPart x:Name="Liquid.Menu" Source="Liquid.Menu.dll" />
+    <AssemblyPart x:Name="Liquid.Popup" Source="Liquid.Popup.dll" />
     <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
     <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client" Source="System.ServiceModel.DomainServices.Client.dll" />
     <AssemblyPart x:Name="System.ServiceModel.DomainServices.Client.Web" Source="System.ServiceModel.DomainServices.Client.Web.dll" />

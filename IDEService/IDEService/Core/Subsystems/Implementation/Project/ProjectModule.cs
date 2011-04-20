@@ -9,7 +9,7 @@ namespace IDEService.Core
 {
     class ProjectModule :IProjectModule
     {
-        private ProjectSubsystem _prodjectSubsystem;
+        private Projectubsystem _prodjectSubsystem;
 
         private DBModelUnitOfWork context;
 
@@ -17,7 +17,7 @@ namespace IDEService.Core
         {
             if (prodjectSubsystem.Type() != SubsystemType.Project)
                 throw new ModuleLoadException("Неправильный тип подсистемы");
-            _prodjectSubsystem = (ProjectSubsystem)prodjectSubsystem;
+            _prodjectSubsystem = (Projectubsystem)prodjectSubsystem;
 
             context = (DBModelUnitOfWork)Kernel.GetKernel.
                 SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Project, SubsystemType.DataBase,
@@ -26,7 +26,9 @@ namespace IDEService.Core
 
         public void AddProject(User user, string pname)
         {
-            if (user.ProjectsOwner.Where(p => p.Name == pname).Count() > 0)
+            if(pname.ToCharArray().Contains('/'))
+                return;
+            if (user.ProjectOwner.Where(p => p.Name == pname).Count() > 0)
                 throw new CreateProdjectException("Проект с такими названием уже существует");
             string dir = _prodjectSubsystem.ProjectDir + "\\" + user.Login + "\\" + pname;
             try
@@ -45,8 +47,10 @@ namespace IDEService.Core
             prj.Sourcedir = dir;
             prj.Name = pname;
             prj.Members.Add(user);
+            user.Userlog.Add(new Userlog(){Date = DateTime.Now, Message = "Создан проект "+pname});
             Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Project, SubsystemType.DataBase,
                                                             DbSubsystemMessages.SaveContext, new object[] {}));
+            
         }
 
         public void DeleteProject(Project prodject)

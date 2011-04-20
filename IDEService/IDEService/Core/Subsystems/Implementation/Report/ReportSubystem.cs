@@ -35,7 +35,7 @@ namespace IDEService.Core
                     return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Report, SubsystemType.Report,
                                               ReportMessages.GetLastUserLog, new object[]
                                                                              {
-                                                                                 _module.GetUserLogs(
+                                                                                 _module.GetUserlog(
                                                                                      ((UserCache) message.Message[0]).
                                                                                          Client)
                                                                              });

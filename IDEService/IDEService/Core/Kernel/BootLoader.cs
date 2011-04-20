@@ -25,7 +25,7 @@ namespace IDEService.Core
         /// <returns></returns>
         public static T LoadType<T>(string file)
         {
-            /*IEnumerable<T> a = Directory.GetFiles(folder, "*.dll", SearchOption.TopDirectoryOnly).
+            /*IEnumerable<T> a = Directory.GetFile(folder, "*.dll", SearchOption.TopDirectoryOnly).
                 Select(Assembly.LoadFrom).
                 SelectMany(assembly => assembly.GetTypes(), (assembly, type) => new { assembly, type }).
                 Where(@t => typeof(T).IsAssignableFrom(@t.type)).

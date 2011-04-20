@@ -143,10 +143,17 @@ namespace IDEService.Core
 
         public void DisconnectUser(string ip)
         {
-            var v = Clients.Where(x => x.Value.IP == ip).First();
-            SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,
-                                           AccessMessages.Logout, new object[] {v.Value}));
-            Clients.Remove(v.Key);
+            try
+            {
+                var v = Clients.Where(x => x.Value.IP == ip).First();
+                SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,
+                                               AccessMessages.Logout, new object[] { v.Value }));
+                Clients.Remove(v.Key);
+            }
+            catch (Exception ex)
+            {
+                Logger.Log.Write(LogLevels.Debug, ex.ToString());
+            }
         }
 
         /// <summary>

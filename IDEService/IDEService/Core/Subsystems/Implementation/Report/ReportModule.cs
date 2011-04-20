@@ -28,9 +28,9 @@ namespace IDEService.Core
             throw new NotImplementedException();
         }
 
-        public List<ClientServiceTypesNet.Core.UserlogDto> GetUserLogs(User u)
+        public List<ClientServiceTypesNet.Core.UserlogDto> GetUserlog(User u)
         {
-            return u.Userlogs.Select(ul => new ClientServiceTypesNet.Core.UserlogDto() { Date = ul.Date, Message = ul.Message }).OrderByDescending(x => x.Date).Take(10).ToList();
+            return u.Userlog.Select(ul => new ClientServiceTypesNet.Core.UserlogDto() { Date = ul.Date, Message = ul.Message }).OrderByDescending(x => x.Date).Take(10).OrderBy(x => x.Date).ToList();
         }
 
         public void Dispose()

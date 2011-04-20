@@ -3,14 +3,14 @@ using System.IO;
 using IDEService.Core;
 namespace IDEService.Core
 {
-    class ProjectSubsystem :Subsystem
+    class Projectubsystem :Subsystem
     {
 
         public ProjectModule Module { get; private set; }
 
         public string ProjectDir { get; private set; }
 
-        public ProjectSubsystem() : base(SubsystemType.Project)
+        public Projectubsystem() : base(SubsystemType.Project)
         {
         }
 
@@ -68,7 +68,7 @@ namespace IDEService.Core
                     {
                         try
                         {
-                            Module.AddProject((string)message.Message[0]);
+                            Module.AddProject(((UserCache)message.Message[0]).Client, (string)message.Message[1]);
                             return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.Undefined, new object[] { "Проект успешно создан" });
                         }
                         catch(Exception ex)

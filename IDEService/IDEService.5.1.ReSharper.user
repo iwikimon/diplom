@@ -16,18 +16,18 @@
       <Item value="public" priority="37" />
       <Item value="List" priority="5" />
       <Item value="ISubsystem`0" priority="6" />
-      <Item value="new" priority="115" />
+      <Item value="new" priority="116" />
       <Item value="List&lt;ISubsystem&gt;" priority="0" />
       <Item value="static" priority="8" />
       <Item value="Kernel" priority="0" />
       <Item value="private" priority="24" />
       <Item value="object" priority="18" />
       <Item value="lock" priority="2" />
-      <Item value="if" priority="20" />
+      <Item value="if" priority="21" />
       <Item value="kernel" priority="6" />
       <Item value="readonly" priority="1" />
       <Item value="ServiceKernel" priority="1" />
-      <Item value="return" priority="52" />
+      <Item value="return" priority="53" />
       <Item value="_state" priority="0" />
       <Item value="SubsystemType`0" priority="33" />
       <Item value="_type" priority="1" />
@@ -56,12 +56,12 @@
       <Item value="context" priority="13" />
       <Item value="User" priority="6" />
       <Item value="Login" priority="2" />
-      <Item value="User`0" priority="28" />
+      <Item value="User`0" priority="29" />
       <Item value="newUser" priority="3" />
       <Item value="LostTouchCaptureEvent" priority="0" />
       <Item value="UserInfo`0" priority="3" />
-      <Item value="DateTime`0" priority="25" />
-      <Item value="try" priority="8" />
+      <Item value="DateTime`0" priority="26" />
+      <Item value="try" priority="9" />
       <Item value="Configure`0" priority="3" />
       <Item value="switch" priority="5" />
       <Item value="case" priority="26" />
@@ -76,7 +76,7 @@
       <Item value="WordProcessorSubsystem`0" priority="0" />
       <Item value="SubsystemLoadException" priority="1" />
       <Item value="catch" priority="6" />
-      <Item value="ex" priority="3" />
+      <Item value="ex" priority="4" />
       <Item value="var" priority="31" />
       <Item value="in" priority="1" />
       <Item value="Enum`0" priority="0" />
@@ -85,7 +85,7 @@
       <Item value="BootLoader`0" priority="5" />
       <Item value="int" priority="11" />
       <Item value="listView1" priority="12" />
-      <Item value="Kernel`0" priority="23" />
+      <Item value="Kernel`0" priority="24" />
       <Item value="SubsystemInfo`0" priority="0" />
       <Item value="List&lt;SubsystemInfo&gt;" priority="2" />
       <Item value="lst" priority="15" />
@@ -109,8 +109,8 @@
       <Item value="T`0" priority="11" />
       <Item value="LoadType`1" priority="0" />
       <Item value="subsytem" priority="0" />
-      <Item value="Logger`0" priority="10" />
-      <Item value="LogLevels`0" priority="11" />
+      <Item value="Logger`0" priority="11" />
+      <Item value="LogLevels`0" priority="12" />
       <Item value="String`0" priority="9" />
       <Item value="file" priority="0" />
       <Item value="SubsystemLoadException`0" priority="0" />
@@ -176,7 +176,7 @@
       <Item value="MessageBox`0" priority="2" />
       <Item value="answer" priority="1" />
       <Item value="StringBuilder`0" priority="0" />
-      <Item value="Message" priority="3" />
+      <Item value="Message" priority="4" />
       <Item value="obj" priority="0" />
       <Item value="InPlaceBitmapMetadataWriter`0" priority="0" />
       <Item value="MainWindow`0" priority="0" />
@@ -205,7 +205,7 @@
       <Item value="ProdjectMessages`0" priority="1" />
       <Item value="prodject" priority="0" />
       <Item value="p" priority="1" />
-      <Item value="pname" priority="1" />
+      <Item value="pname" priority="3" />
       <Item value="ProdjectExceptions`0" priority="2" />
       <Item value="errMsg" priority="1" />
       <Item value="_prodjectSubsystem" priority="2" />
@@ -281,8 +281,8 @@
       <Item value="_c" priority="0" />
       <Item value="Status" priority="0" />
       <Item value="Add`0" priority="0" />
-      <Item value="Userlog" priority="2" />
-      <Item value="Date" priority="2" />
+      <Item value="Userlog" priority="3" />
+      <Item value="Date" priority="3" />
       <Item value="notexit" priority="0" />
       <Item value="override" priority="0" />
       <Item value="Type" priority="0" />
@@ -388,6 +388,7 @@
       <Item value="Assert`0" priority="0" />
       <Item value="sizeof" priority="0" />
       <Item value="sw" priority="0" />
+      <Item value="Contains`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Kernel.SubsystemState">
       <Item value="unknown" priority="0" />
@@ -439,12 +440,13 @@
       <Item value="Log" priority="0" />
       <Item value="GetHashCode`0" priority="2" />
       <Item value="Userlogs" priority="2" />
+      <Item value="Userlog" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.UserInfo">
       <Item value="CreateUserInfo`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="22" />
+      <Item value="Now" priority="23" />
       <Item value="MinValue" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.Configure">
@@ -488,13 +490,13 @@
       <Item value="DataContext" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.Kernel">
-      <Item value="GetKernel" priority="20" />
+      <Item value="GetKernel" priority="21" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEService.Core.Kernel">
       <Item value="Subsystems" priority="8" />
       <Item value="RegisterSubsystem`0" priority="1" />
       <Item value="UnRegisterSubsystem`0" priority="0" />
-      <Item value="SendMessage`0" priority="6" />
+      <Item value="SendMessage`0" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEService.Core.ISubsystem">
       <Item value="GetInfo`0" priority="11" />
@@ -517,15 +519,15 @@
       <Item value="CreateInstance`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.Logger">
-      <Item value="Log" priority="12" />
+      <Item value="Log" priority="13" />
       <Item value="WriteLog`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEService.Core.Logger">
-      <Item value="Write`0" priority="11" />
+      <Item value="Write`0" priority="12" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.LogLevels">
       <Item value="Error" priority="1" />
-      <Item value="Debug" priority="4" />
+      <Item value="Debug" priority="5" />
       <Item value="Emerg" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
@@ -533,7 +535,7 @@
       <Item value="Empty" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Exception">
-      <Item value="ToString`0" priority="1" />
+      <Item value="ToString`0" priority="2" />
       <Item value="Message" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.TimeSpan">
@@ -677,6 +679,7 @@
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
       <Item value="Count`1" priority="0" />
       <Item value="First`1" priority="1" />
+      <Item value="OrderBy`2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEService.Core.ProdjectSubsystem">
       <Item value="ProdjectDir" priority="0" />
@@ -709,6 +712,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="ToLower`0" priority="0" />
+      <Item value="ToCharArray`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@IDEService.Core.Cache">
       <Item value="Get" priority="0" />
@@ -728,6 +732,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:IDEService.Core.UserCache">
       <Item value="UID" priority="0" />
+      <Item value="Client" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Mindscape.LightSpeed.LightSpeedContext`1">
       <Item value="CreateUnitOfWork`0" priority="5" />
@@ -751,7 +756,7 @@
       <Item value="Files" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Mindscape.LightSpeed.EntityCollection`1">
-      <Item value="Add`0" priority="1" />
+      <Item value="Add`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Net.Sockets.TcpListener">
       <Item value="AcceptTcpClient`0" priority="1" />
@@ -861,68 +866,67 @@
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:INetworkModule.cs" caret="157" fromTop="8" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Cache/f:Session.cs" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectMessages.cs" caret="213" fromTop="10" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectExceptions.cs" caret="495" fromTop="19" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:IReportModule.cs" caret="194" fromTop="8" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="747" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="458" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="65" fromTop="4" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1117" fromTop="0" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessExceptions.cs" caret="0" fromTop="0" />
       <File id="84640A0D-B64E-4044-8898-30964797DC4A/f:UnitTest1.cs" caret="306" fromTop="15" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:WordProcessor/f:WordProcessorSubsystem.cs" caret="668" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="619" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="3286" fromTop="19" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:BootLoader.cs" caret="3285" fromTop="19" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:Program.cs" caret="288" fromTop="14" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:IAccessModule.cs" caret="284" fromTop="10" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="4127" fromTop="16" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="4718" fromTop="10" />
       <File id="CF3AB06B-F8FC-406A-8DDC-D4504B663A14/d:Core/f:DtoClasses.cs" caret="3527" fromTop="10" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetwokrModule.cs" caret="1648" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportSubystem.cs" caret="1210" fromTop="20" />
-      <File id="CF3AB06B-F8FC-406A-8DDC-D4504B663A14/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="2117" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1953" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="6095" fromTop="17" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1409" fromTop="20" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="601" fromTop="13" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="7738" fromTop="15" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="2408" fromTop="35" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2422" fromTop="19" />
       <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Network/f:NetworkSubsystem.cs" caret="1641" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportSubystem.cs" caret="794" fromTop="15" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.cs" caret="36190" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:IReportModule.cs" caret="395" fromTop="11" />
+      <File id="CF3AB06B-F8FC-406A-8DDC-D4504B663A14/d:Core/d:Subsystems/d:Implementation/d:Prodject/f:ProdjectExceptions.cs" caret="418" fromTop="17" />
+      <File id="CF3AB06B-F8FC-406A-8DDC-D4504B663A14/d:Core/d:Subsystems/d:Implementation/d:Prodject/f:ProdjectMessages.cs" caret="115" fromTop="5" />
+      <File id="CF3AB06B-F8FC-406A-8DDC-D4504B663A14/d:Core/d:Subsystems/f:ServiceMessage.cs" caret="498" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessSubsystem.cs" caret="2481" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:AccessModule.cs" caret="4044" fromTop="11" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Access/f:IAccessModule.cs" caret="193" fromTop="10" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="144" fromTop="7" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="632" fromTop="18" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1592" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2553" fromTop="32" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="3502" fromTop="7" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="2406" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="1988" fromTop="27" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="671" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2456" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1785" fromTop="12" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1958" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="2007" fromTop="27" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="3837" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="1313" fromTop="14" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="1326" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="1313" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="6911" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="6095" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="4374" fromTop="116" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="636" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="1219" fromTop="19" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1314" fromTop="9" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="255" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="531" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="840" fromTop="19" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1753" fromTop="17" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1427" fromTop="7" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1605" fromTop="11" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="911" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1110" fromTop="9" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1409" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ServerWorker.cs" caret="1776" fromTop="20" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="0" fromTop="0" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="327" fromTop="6" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:App.Config" caret="601" fromTop="13" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="7738" fromTop="15" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="2408" fromTop="35" />
-      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:service/f:ClientWorker.cs" caret="4449" fromTop="35" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:IProjectModule.cs" caret="123" fromTop="6" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBModel.lsmodel" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2553" fromTop="8" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2553" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2056" fromTop="16" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1890" fromTop="36" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="1214" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="2366" fromTop="3" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="780" fromTop="21" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="1103" fromTop="28" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="632" fromTop="18" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:SubsystemFactory.cs" caret="2473" fromTop="18" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1592" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:DataBase/f:DataBaseSubsystem.cs" caret="1958" fromTop="14" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="0" fromTop="0" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/f:DBScript.sql" caret="2553" fromTop="32" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="6304" fromTop="32" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="5887" fromTop="22" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="3149" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="2668" fromTop="37" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="1063" fromTop="8" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="3502" fromTop="7" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Kernel/f:Kernel.cs" caret="7107" fromTop="7" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectSubsystem.cs" caret="2406" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="2351" fromTop="31" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="1696" fromTop="20" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="1988" fromTop="27" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Project/f:ProjectModule.cs" caret="3534" fromTop="27" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="1222" fromTop="17" />
+      <File id="76A057E7-BEC6-4BCE-9A3F-4F115349B877/d:Core/d:Subsystems/d:Implementation/d:Report/f:ReportModule.cs" caret="1129" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

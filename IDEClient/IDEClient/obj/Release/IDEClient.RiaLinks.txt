@@ -1,1 +1,1 @@
-E:\Dropbox\Diplom\ClientServiceTypes\ClientServiceTypes.csproj,634386743343509838,
+E:\Dropbox\Diplom\ClientServiceTypes\ClientServiceTypes.csproj,634386743340000000,

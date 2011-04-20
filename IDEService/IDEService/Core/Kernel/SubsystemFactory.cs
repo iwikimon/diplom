@@ -17,7 +17,7 @@ namespace IDEService.Core
                 case  SubsystemType.Network:
                     return new NetworkSubsystem();
                 case SubsystemType.Project:
-                    return new ProjectSubsystem();
+                    return new Projectubsystem();
                 case SubsystemType.Report:
                     return new ReportSubystem();
                 case SubsystemType.Vcs:

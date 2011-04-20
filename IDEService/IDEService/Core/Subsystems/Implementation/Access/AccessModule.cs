@@ -37,10 +37,10 @@ namespace IDEService.Core
             try
             {
                 //TODO: тестирование.
-                var user = _context.Users.Where(u => (u. Login == uname) && (u.Password == upasswd)).First();
+                var user = _context.User.Where(u => (u. Login == uname) && (u.Password == upasswd)).First();
                 user.LastAccess = DateTime.Now;
                 _loginTime = DateTime.Now;
-                user.Userlogs.Add(new Userlog(){ Date = DateTime.Now, Message = "Вход в систему"});
+                user.Userlog.Add(new Userlog(){ Date = DateTime.Now, Message = "Вход в систему"});
                 var cache = new UserCache(user);
                 Kernel.GetKernel.Clients.Add(cache.GetHashCode(), cache);
                 return cache.GetHashCode();
@@ -77,7 +77,7 @@ namespace IDEService.Core
                 Logger.Log.Write(LogLevels.Emerg, "Неудалось создать дирекотрию пользователя."+userDir);
                 throw new AccessFolderExcepton("Неудалось создать дирекотрию пользователя."+userDir);
             }
-            newuser.Userlogs.Add(new Userlog(){Date = DateTime.Now, Message = "Регистрация"});
+            newuser.Userlog.Add(new Userlog(){Date = DateTime.Now, Message = "Регистрация"});
             Kernel.GetKernel.
                 SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.DataBase,
                                                DbSubsystemMessages.SaveContext, new object[] {}));
@@ -86,7 +86,7 @@ namespace IDEService.Core
 
         public void Logout(User user)
         {
-            user.Userlogs.Add(new Userlog(){Date = DateTime.Now, Message = "Выход из системы"});
+            user.Userlog.Add(new Userlog(){Date = DateTime.Now, Message = "Выход из системы"});
             Kernel.GetKernel.
                SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.DataBase,
                                               DbSubsystemMessages.SaveContext, new object[] { }));
@@ -95,7 +95,7 @@ namespace IDEService.Core
 
         public LoginStatus CheckLogin(string login)
         {
-            if (_context.Users.Where(user => user.Login == login).Count() > 0)
+            if (_context.User.Where(user => user.Login == login).Count() > 0)
                 return LoginStatus.Busy;
             return LoginStatus.Free;
         }

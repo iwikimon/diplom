@@ -1,11 +1,12 @@
-﻿<xapCache source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\IDEClient.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="19.04.2011 22:23:40">
-  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\obj\Release\IDEClient.dll" archivePath="IDEClient.dll" lastWriteTime="19.04.2011 22:23:39" />
-  <file source="E:\Dropbox\Diplom\ClientServiceTypes\Bin\Release\ClientServiceTypes.dll" archivePath="ClientServiceTypes.dll" lastWriteTime="19.04.2011 21:45:03" />
-  <file source="C:\Users\iwikimon\Desktop\Liquid Controls 5.3.3\Liquid.dll" archivePath="Liquid.dll" lastWriteTime="17.04.2011 20:51:43" />
-  <file source="C:\Users\iwikimon\Desktop\Liquid Controls 5.3.3\Liquid.Menu.dll" archivePath="Liquid.Menu.dll" lastWriteTime="17.04.2011 20:51:44" />
+﻿<xapCache source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\IDEClient.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="20.04.2011 22:57:36">
+  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\obj\Release\IDEClient.dll" archivePath="IDEClient.dll" lastWriteTime="20.04.2011 22:57:35" />
+  <file source="E:\Dropbox\Diplom\ClientServiceTypes\Bin\Release\ClientServiceTypes.dll" archivePath="ClientServiceTypes.dll" lastWriteTime="20.04.2011 22:51:37" />
+  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\Liquid.dll" archivePath="Liquid.dll" lastWriteTime="17.04.2011 20:51:43" />
+  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\Liquid.Menu.dll" archivePath="Liquid.Menu.dll" lastWriteTime="17.04.2011 20:51:44" />
+  <file source="E:\Dropbox\Diplom\IDEClient\Liquid Controls 5.3.3\Liquid.Popup.dll" archivePath="Liquid.Popup.dll" lastWriteTime="20.04.2011 21:33:11" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="26.08.2010 3:17:48" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="14.01.2011 14:13:36" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="14.01.2011 14:13:32" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="06.05.2010 15:24:00" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="06.05.2010 15:23:58" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Web.Extensions.dll" archivePath="System.ServiceModel.Web.Extensions.dll" lastWriteTime="26.08.2010 3:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="26.08.2010 3:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="26.08.2010 3:17:48" />
@@ -13,5 +14,5 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="26.08.2010 3:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="26.08.2010 3:17:48" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="26.08.2010 3:17:48" />
-  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="17.04.2011 23:23:33" />
+  <file source="E:\Dropbox\Diplom\IDEClient\IDEClient\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="20.04.2011 21:37:10" />
 </xapCache>

@@ -38,9 +38,9 @@ namespace IDEService
     
     #region Relationships
 
-    [ReverseAssociation("Chats")]
+    [ReverseAssociation("Chat")]
     private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
-    [ReverseAssociation("Chats")]
+    [ReverseAssociation("Chat")]
     private readonly EntityHolder<User> _user = new EntityHolder<User>();
 
 
@@ -123,8 +123,8 @@ namespace IDEService
     #region Relationships
 
     [ReverseAssociation("File")]
-    private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
-    [ReverseAssociation("Files")]
+    private readonly EntityCollection<Access> _Access = new EntityCollection<Access>();
+    [ReverseAssociation("File")]
     private readonly EntityHolder<Folder> _folder = new EntityHolder<Folder>();
 
 
@@ -132,9 +132,9 @@ namespace IDEService
     
     #region Properties
 
-    public EntityCollection<Access> Accesses
+    public EntityCollection<Access> Access
     {
-      get { return Get(_accesses); }
+      get { return Get(_Access); }
     }
 
     public Folder Folder
@@ -199,10 +199,10 @@ namespace IDEService
     #region Relationships
 
     [ReverseAssociation("Folder")]
-    private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
+    private readonly EntityCollection<Access> _Access = new EntityCollection<Access>();
     [ReverseAssociation("Folder")]
-    private readonly EntityCollection<File> _files = new EntityCollection<File>();
-    [ReverseAssociation("Folders")]
+    private readonly EntityCollection<File> _File = new EntityCollection<File>();
+    [ReverseAssociation("Folder")]
     private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
 
 
@@ -210,14 +210,14 @@ namespace IDEService
     
     #region Properties
 
-    public EntityCollection<Access> Accesses
+    public EntityCollection<Access> Access
     {
-      get { return Get(_accesses); }
+      get { return Get(_Access); }
     }
 
-    public EntityCollection<File> Files
+    public EntityCollection<File> File
     {
-      get { return Get(_files); }
+      get { return Get(_File); }
     }
 
     public Project Project
@@ -282,33 +282,33 @@ namespace IDEService
     #region Relationships
 
     [ReverseAssociation("Project")]
-    private readonly EntityCollection<Chat> _chats = new EntityCollection<Chat>();
+    private readonly EntityCollection<Chat> _Chat = new EntityCollection<Chat>();
     [ReverseAssociation("Project")]
-    private readonly EntityCollection<Folder> _folders = new EntityCollection<Folder>();
+    private readonly EntityCollection<Folder> _Folder = new EntityCollection<Folder>();
     [ReverseAssociation("Project")]
-    private readonly EntityCollection<ProdjectMembers> _prodjectMembers = new EntityCollection<ProdjectMembers>();
-    [ReverseAssociation("ProjectsOwner")]
+    private readonly EntityCollection<ProdjectMember> _ProdjectMember = new EntityCollection<ProdjectMember>();
+    [ReverseAssociation("ProjectOwner")]
     private readonly EntityHolder<User> _owner = new EntityHolder<User>();
 
-    private ThroughAssociation<ProdjectMembers, User> _members;
+    private ThroughAssociation<ProdjectMember, User> _members;
 
     #endregion
     
     #region Properties
 
-    public EntityCollection<Chat> Chats
+    public EntityCollection<Chat> Chat
     {
-      get { return Get(_chats); }
+      get { return Get(_Chat); }
     }
 
-    public EntityCollection<Folder> Folders
+    public EntityCollection<Folder> Folder
     {
-      get { return Get(_folders); }
+      get { return Get(_Folder); }
     }
 
-    public EntityCollection<ProdjectMembers> ProdjectMembers
+    public EntityCollection<ProdjectMember> ProdjectMember
     {
-      get { return Get(_prodjectMembers); }
+      get { return Get(_ProdjectMember); }
     }
 
     public User Owner
@@ -317,13 +317,13 @@ namespace IDEService
       set { Set(_owner, value); }
     }
 
-    public ThroughAssociation<ProdjectMembers, User> Members
+    public ThroughAssociation<ProdjectMember, User> Members
     {
       get
       {
         if (_members == null)
         {
-          _members = new ThroughAssociation<ProdjectMembers, User>(_prodjectMembers);
+          _members = new ThroughAssociation<ProdjectMember, User>(_ProdjectMember);
         }
         return Get(_members);
       }
@@ -382,7 +382,7 @@ namespace IDEService
     
     #region Relationships
 
-    [ReverseAssociation("Userlogs")]
+    [ReverseAssociation("Userlog")]
     private readonly EntityHolder<User> _user = new EntityHolder<User>();
 
 
@@ -464,54 +464,54 @@ namespace IDEService
     #region Relationships
 
     [ReverseAssociation("Owner")]
-    private readonly EntityCollection<Project> _projectsOwner = new EntityCollection<Project>();
+    private readonly EntityCollection<Project> _ProjectOwner = new EntityCollection<Project>();
     [ReverseAssociation("User")]
-    private readonly EntityCollection<Userlog> _userlogs = new EntityCollection<Userlog>();
+    private readonly EntityCollection<Userlog> _Userlog = new EntityCollection<Userlog>();
     [ReverseAssociation("User")]
-    private readonly EntityCollection<Chat> _chats = new EntityCollection<Chat>();
+    private readonly EntityCollection<Chat> _Chat = new EntityCollection<Chat>();
     [ReverseAssociation("User")]
-    private readonly EntityCollection<Access> _accesses = new EntityCollection<Access>();
+    private readonly EntityCollection<Access> _Access = new EntityCollection<Access>();
     [ReverseAssociation("User")]
-    private readonly EntityCollection<ProdjectMembers> _prodjectMembers = new EntityCollection<ProdjectMembers>();
+    private readonly EntityCollection<ProdjectMember> _ProdjectMember = new EntityCollection<ProdjectMember>();
 
-    private ThroughAssociation<ProdjectMembers, Project> _projectMembers;
+    private ThroughAssociation<ProdjectMember, Project> _projectMembers;
 
     #endregion
     
     #region Properties
 
-    public EntityCollection<Project> ProjectsOwner
+    public EntityCollection<Project> ProjectOwner
     {
-      get { return Get(_projectsOwner); }
+      get { return Get(_ProjectOwner); }
     }
 
-    public EntityCollection<Userlog> Userlogs
+    public EntityCollection<Userlog> Userlog
     {
-      get { return Get(_userlogs); }
+      get { return Get(_Userlog); }
     }
 
-    public EntityCollection<Chat> Chats
+    public EntityCollection<Chat> Chat
     {
-      get { return Get(_chats); }
+      get { return Get(_Chat); }
     }
 
-    public EntityCollection<Access> Accesses
+    public EntityCollection<Access> Access
     {
-      get { return Get(_accesses); }
+      get { return Get(_Access); }
     }
 
-    public EntityCollection<ProdjectMembers> ProdjectMembers
+    public EntityCollection<ProdjectMember> ProdjectMember
     {
-      get { return Get(_prodjectMembers); }
+      get { return Get(_ProdjectMember); }
     }
 
-    public ThroughAssociation<ProdjectMembers, Project> ProjectMembers
+    public ThroughAssociation<ProdjectMember, Project> ProjectMembers
     {
       get
       {
         if (_projectMembers == null)
         {
-          _projectMembers = new ThroughAssociation<ProdjectMembers, Project>(_prodjectMembers);
+          _projectMembers = new ThroughAssociation<ProdjectMember, Project>(_ProdjectMember);
         }
         return Get(_projectMembers);
       }
@@ -594,11 +594,11 @@ namespace IDEService
     
     #region Relationships
 
-    [ReverseAssociation("Accesses")]
+    [ReverseAssociation("Access")]
     private readonly EntityHolder<File> _file = new EntityHolder<File>();
-    [ReverseAssociation("Accesses")]
+    [ReverseAssociation("Access")]
     private readonly EntityHolder<Folder> _folder = new EntityHolder<Folder>();
-    [ReverseAssociation("Accesses")]
+    [ReverseAssociation("Access")]
     private readonly EntityHolder<User> _user = new EntityHolder<User>();
 
 
@@ -659,7 +659,7 @@ namespace IDEService
   [Serializable]
   [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
   [System.ComponentModel.DataObject]
-  public partial class ProdjectMembers : Entity<int>
+  public partial class ProdjectMember : Entity<int>
   {
     #region Fields
   
@@ -680,9 +680,9 @@ namespace IDEService
     
     #region Relationships
 
-    [ReverseAssociation("ProdjectMembers")]
+    [ReverseAssociation("ProdjectMember")]
     private readonly EntityHolder<Project> _project = new EntityHolder<Project>();
-    [ReverseAssociation("ProdjectMembers")]
+    [ReverseAssociation("ProdjectMember")]
     private readonly EntityHolder<User> _user = new EntityHolder<User>();
 
 
@@ -729,44 +729,44 @@ namespace IDEService
   public partial class DBModelUnitOfWork : Mindscape.LightSpeed.DataServices.DataServiceUnitOfWork
   {
 
-    public System.Linq.IQueryable<Chat> Chats
+    public System.Linq.IQueryable<Chat> Chat
     {
       get { return this.Query<Chat>(); }
     }
     
-    public System.Linq.IQueryable<File> Files
+    public System.Linq.IQueryable<File> File
     {
       get { return this.Query<File>(); }
     }
     
-    public System.Linq.IQueryable<Folder> Folders
+    public System.Linq.IQueryable<Folder> Folder
     {
       get { return this.Query<Folder>(); }
     }
     
-    public System.Linq.IQueryable<Project> Projects
+    public System.Linq.IQueryable<Project> Project
     {
       get { return this.Query<Project>(); }
     }
     
-    public System.Linq.IQueryable<Userlog> Userlogs
+    public System.Linq.IQueryable<Userlog> Userlog
     {
       get { return this.Query<Userlog>(); }
     }
     
-    public System.Linq.IQueryable<User> Users
+    public System.Linq.IQueryable<User> User
     {
       get { return this.Query<User>(); }
     }
     
-    public System.Linq.IQueryable<Access> Accesses
+    public System.Linq.IQueryable<Access> Access
     {
       get { return this.Query<Access>(); }
     }
     
-    public System.Linq.IQueryable<ProdjectMembers> ProdjectMembers
+    public System.Linq.IQueryable<ProdjectMember> ProdjectMember
     {
-      get { return this.Query<ProdjectMembers>(); }
+      get { return this.Query<ProdjectMember>(); }
     }
     
   }
@@ -875,9 +875,9 @@ namespace IDEService
       public int UserId { get; set; }
     }
 
-    [System.Runtime.Serialization.DataContract(Name="ProdjectMembers")]
+    [System.Runtime.Serialization.DataContract(Name="ProdjectMember")]
     [System.CodeDom.Compiler.GeneratedCode("LightSpeedModelGenerator", "1.0.0.0")]
-    public partial class ProdjectMembersDto : DBModelDtoBase
+    public partial class ProdjectMemberDto : DBModelDtoBase
     {
       [System.Runtime.Serialization.DataMember]
       public int ProjectId { get; set; }
@@ -1171,39 +1171,39 @@ namespace IDEService
         return entity;
       }
 
-      static partial void BeforeCopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto);
-      static partial void AfterCopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto);
-      static partial void BeforeCopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity);
-      static partial void AfterCopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity);
+      static partial void BeforeCopyProdjectMember(ProdjectMember entity, ProdjectMemberDto dto);
+      static partial void AfterCopyProdjectMember(ProdjectMember entity, ProdjectMemberDto dto);
+      static partial void BeforeCopyProdjectMember(ProdjectMemberDto dto, ProdjectMember entity);
+      static partial void AfterCopyProdjectMember(ProdjectMemberDto dto, ProdjectMember entity);
       
-      private static void CopyProdjectMembers(ProdjectMembers entity, ProdjectMembersDto dto)
+      private static void CopyProdjectMember(ProdjectMember entity, ProdjectMemberDto dto)
       {
-        BeforeCopyProdjectMembers(entity, dto);
+        BeforeCopyProdjectMember(entity, dto);
         CopyDBModelDtoBase(entity, dto);
         dto.ProjectId = entity.ProjectId;
         dto.UserId = entity.UserId;
-        AfterCopyProdjectMembers(entity, dto);
+        AfterCopyProdjectMember(entity, dto);
       }
       
-      private static void CopyProdjectMembers(ProdjectMembersDto dto, ProdjectMembers entity)
+      private static void CopyProdjectMember(ProdjectMemberDto dto, ProdjectMember entity)
       {
-        BeforeCopyProdjectMembers(dto, entity);
+        BeforeCopyProdjectMember(dto, entity);
         CopyDBModelDtoBase(dto, entity);
         entity.ProjectId = dto.ProjectId;
         entity.UserId = dto.UserId;
-        AfterCopyProdjectMembers(dto, entity);
+        AfterCopyProdjectMember(dto, entity);
       }
       
-      public static ProdjectMembersDto AsDto(this ProdjectMembers entity)
+      public static ProdjectMemberDto AsDto(this ProdjectMember entity)
       {
-        ProdjectMembersDto dto = new ProdjectMembersDto();
-        CopyProdjectMembers(entity, dto);
+        ProdjectMemberDto dto = new ProdjectMemberDto();
+        CopyProdjectMember(entity, dto);
         return dto;
       }
       
-      public static ProdjectMembers CopyTo(this ProdjectMembersDto source, ProdjectMembers entity)
+      public static ProdjectMember CopyTo(this ProdjectMemberDto source, ProdjectMember entity)
       {
-        CopyProdjectMembers(source, entity);
+        CopyProdjectMember(source, entity);
         return entity;
       }
 
