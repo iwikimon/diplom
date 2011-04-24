@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ClientServiceTypesNet.Core;
+
 using IDEService.Contracts.Data;
 
 namespace IDEService.Core
@@ -28,9 +28,9 @@ namespace IDEService.Core
             throw new NotImplementedException();
         }
 
-        public List<ClientServiceTypesNet.Core.UserlogDto> GetUserlog(User u)
+        public List<UserlogDto> GetUserlog(User u)
         {
-            return u.Userlog.Select(ul => new ClientServiceTypesNet.Core.UserlogDto() { Date = ul.Date, Message = ul.Message }).OrderByDescending(x => x.Date).Take(10).OrderBy(x => x.Date).ToList();
+            return u.Userlogs.Select(ul => new UserlogDto() { Date = ul.Date, Message = ul.Message }).OrderByDescending(x => x.Date).Take(10).OrderBy(x => x.Date).ToList();
         }
 
         public void Dispose()

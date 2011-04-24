@@ -1,1 +1,1 @@
-E:\Dropbox\Diplom\IDEClient\IDEClient.Web\IDEClient.Web.csproj,634379543090000000,Properties\AssemblyInfo.cs,
+E:\Dropbox\Diplom\IDEClient\IDEClient.Web\IDEClient.Web.csproj,634392050095430384,Properties\AssemblyInfo.cs,

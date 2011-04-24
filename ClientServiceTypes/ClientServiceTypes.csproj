@@ -54,35 +54,99 @@
     <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\AESCrypto.cs" />
-    <Compile Include="Core\DtoClasses.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Access\AccessExceptions.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Access\AccessMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Access\LoginStatus.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessage.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Network\NetworkMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Project\ProjectExceptions.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Project\ProjectMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Report\ReportMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Vcs\Revision.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Vcs\VcsMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextMessage.cs" />
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextPosition.cs" />
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs" />
-    <Compile Include="Core\Subsystems\ISubsystem.cs" />
-    <Compile Include="Core\Subsystems\KernelTypes.cs" />
-    <Compile Include="Core\Subsystems\ServiceMessage.cs" />
-    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemExceptions\ProcessMessageException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs" />
-    <Compile Include="Core\Subsystems\SubsystemInfo.cs" />
-    <Compile Include="Core\Subsystems\SubsystemState.cs" />
-    <Compile Include="Core\Subsystems\SubsystemTypes.cs" />
-    <Compile Include="Core\Validator.cs" />
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\AESCrypto.cs">
+      <Link>Core\AESCrypto.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\DtoClasses.cs">
+      <Link>Core\DtoClasses.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Access\AccessExceptions.cs">
+      <Link>Core\Subsystems\Implementation\Access\AccessExceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Access\AccessMessages.cs">
+      <Link>Core\Subsystems\Implementation\Access\AccessMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Access\LoginStatus.cs">
+      <Link>Core\Subsystems\Implementation\Access\LoginStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Chat\ChatMessage.cs">
+      <Link>Core\Subsystems\Implementation\Chat\ChatMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Chat\ChatMessages.cs">
+      <Link>Core\Subsystems\Implementation\Chat\ChatMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs">
+      <Link>Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Network\NetworkMessages.cs">
+      <Link>Core\Subsystems\Implementation\Network\NetworkMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Project\ProdjectExceptions.cs">
+      <Link>Core\Subsystems\Implementation\Project\ProdjectExceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Project\ProdjectMessages.cs">
+      <Link>Core\Subsystems\Implementation\Project\ProdjectMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Project\ProjectInfo.cs">
+      <Link>Core\Subsystems\Implementation\Project\ProjectInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Project\ProjectStructure.cs">
+      <Link>Core\Subsystems\Implementation\Project\ProjectStructure.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Report\ReportMessages.cs">
+      <Link>Core\Subsystems\Implementation\Report\ReportMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Vcs\Revision.cs">
+      <Link>Core\Subsystems\Implementation\Vcs\Revision.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\Vcs\VcsMessages.cs">
+      <Link>Core\Subsystems\Implementation\Vcs\VcsMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\WordProcessor\TextMessage.cs">
+      <Link>Core\Subsystems\Implementation\WordProcessor\TextMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\WordProcessor\TextPosition.cs">
+      <Link>Core\Subsystems\Implementation\WordProcessor\TextPosition.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs">
+      <Link>Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\ISubsystem.cs">
+      <Link>Core\Subsystems\ISubsystem.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\KernelTypes.cs">
+      <Link>Core\Subsystems\KernelTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\ServiceMessage.cs">
+      <Link>Core\Subsystems\ServiceMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs">
+      <Link>Core\Subsystems\SubsystemExceptions\ModuleLoadException.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs">
+      <Link>Core\Subsystems\SubsystemExceptions\ModuleProcessException.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemExceptions\ProcessMessageException.cs">
+      <Link>Core\Subsystems\SubsystemExceptions\ProcessMessageException.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemExceptions\SubsystemException.cs">
+      <Link>Core\Subsystems\SubsystemExceptions\SubsystemException.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs">
+      <Link>Core\Subsystems\SubsystemExceptions\SubsystemStopException.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemInfo.cs">
+      <Link>Core\Subsystems\SubsystemInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemState.cs">
+      <Link>Core\Subsystems\SubsystemState.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Subsystems\SubsystemTypes.cs">
+      <Link>Core\Subsystems\SubsystemTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\ClientServiceTypesNet\ClientServiceTypesNet\Core\Validator.cs">
+      <Link>Core\Validator.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />

@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="7628BB95-EFCB-4C60-8BE1-6C956DBA511C" ModuleId="IDEClient" />
-  <Module PersistentId="d:Miscellaneous Files" ModuleId="ClientServiceTypes" />
-  <Module PersistentId="99132EBB-A738-4142-B00B-7BA850BA7CBE" ModuleId="ClientServiceTypes_1" />
-  <Module PersistentId="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" ModuleId="System.Windows" />
-</Modules>

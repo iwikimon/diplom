@@ -66,6 +66,11 @@ namespace IDEClient
         {
             
         }
+
+        private void LayoutRoot_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            e.Handled = true;
+        }
         
     }
 }

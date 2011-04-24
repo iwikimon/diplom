@@ -27,14 +27,18 @@ namespace IDEService.Core
         [DataMember]
         public int UID { get; set; }
         [DataMember]
-        public LinkedList<ChatMessage> ChatMessages { get; set; }
+        public List<ChatMessage> ChatMessages { get; set; }
         [DataMember]
-        public LinkedList<TextMessage> TextMessages { get; set; }
+        public List<TextMessage> TextMessages { get; set; }
+
+        [DataMember]
+        public List<UserlogDto> LogMessages { get; set; }
 
         public UserCache(User user)
         {
-            ChatMessages = new LinkedList<ChatMessage>();
-            TextMessages = new LinkedList<TextMessage>();
+            ChatMessages = new List<ChatMessage>();
+            TextMessages = new List<TextMessage>();
+            LogMessages = new List<UserlogDto>();
             LoginTime = DateTime.Now;
             Client = user;
         }

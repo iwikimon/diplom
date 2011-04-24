@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `File`;
 DROP TABLE IF EXISTS `Chat`;
 DROP TABLE IF EXISTS `Access`;
 DROP TABLE IF EXISTS `Keytable`;
-DROP TABLE IF EXISTS `ProdjectMember`;
+DROP TABLE IF EXISTS `ProdjectMembers`;
 
 -- Add table KeyTable to the database
 CREATE TABLE KeyTable
@@ -38,7 +38,7 @@ CREATE TABLE `Project` (Id INT NOT NULL PRIMARY KEY ,
 FOREIGN KEY (OwnerId) REFERENCES `User`(Id));
 
 -- Add table ProdjectMember to the database
-CREATE TABLE `ProdjectMember` (Id INT NOT NULL PRIMARY KEY ,
+CREATE TABLE `ProdjectMembers` (Id INT NOT NULL PRIMARY KEY ,
 `ProjectId` INT NOT NULL DEFAULT 0,
 `UserId` INT NOT NULL DEFAULT 0,
 FOREIGN KEY (ProjectId) REFERENCES `Project`(Id),

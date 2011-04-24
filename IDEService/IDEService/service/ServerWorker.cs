@@ -23,7 +23,7 @@ namespace IDEService.service
         private Thread Watcher;
         public ServerWorker(string host, int port)
         {
-            listener = new TcpListener(IPAddress.Parse(host), port);
+            listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
             work = new Thread(Work);
             work.Start();

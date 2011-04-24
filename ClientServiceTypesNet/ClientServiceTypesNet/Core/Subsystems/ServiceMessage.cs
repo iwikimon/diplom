@@ -4,7 +4,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
-using ClientServiceTypesNet.Core;
+
+
 
 namespace IDEService.Core
 {
@@ -20,6 +21,8 @@ namespace IDEService.Core
     [KnownType(typeof(UserlogDto))]
     [KnownType(typeof(DateTime))]
     [KnownType(typeof(List<UserlogDto>))]
+    [KnownType(typeof(List<ProjectInfo>))]
+    [KnownType(typeof(ProjectStructure))]
     public class ServiceMessage
     {
 

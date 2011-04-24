@@ -9,7 +9,8 @@ namespace IDEService
         public static void Main(String[] args)
         {
             BootLoader.Init();
-            var sw = new ServerWorker("127.0.0.1", 4532);
+            var sw = new ServerWorker("192.168.1.34", 4505);
+          
         }
     }
 }

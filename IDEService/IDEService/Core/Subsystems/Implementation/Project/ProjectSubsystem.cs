@@ -45,13 +45,8 @@ namespace IDEService.Core
 
         public override ServiceMessage SendMessage(ServiceMessage message)
         {
-          //TODO: переделать
-           /* if (CurrentUser == null)
-                CurrentUser =
-                    (User)
-                    Kernel.GetKernel.SendMessage(new ServiceMessage(SubsystemType.Prodject, SubsystemType.Access,
-                                                                    AccessMessages.GetUser, new object[]{})).Message[0];
-            */var msgType =  ProjectMessages.Undefined;
+            var cache = (UserCache)message.Message[0];
+            var msgType =  ProjectMessages.Undefined;
             try
             {
                 msgType = (IDEService.Core.ProjectMessages)Convert.ChangeType(message.Type, typeof(ProjectMessages));
@@ -69,12 +64,25 @@ namespace IDEService.Core
                         try
                         {
                             Module.AddProject(((UserCache)message.Message[0]).Client, (string)message.Message[1]);
-                            return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.Undefined, new object[] { "Проект успешно создан" });
+                            var answer = new  ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.Undefined, new object[] { true });
+                            ((UserCache)message.Message[0]).LogMessages.Add((new UserlogDto() { Date = DateTime.Now, Message = "Создан проект " + (string)message.Message[1] }));
+                            return answer;
                         }
                         catch(Exception ex)
                         {
                             return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project,SubsystemType.Project,ProjectMessages.Undefined,new object[]{ex.Message});
                         }
+                    }
+                case ProjectMessages.GetProjectList:
+                    {
+                        var lst = Module.GetProjectList(((UserCache)message.Message[0]).Client);
+                        return new ServiceMessage(KernelTypes.ClientKernel,SubsystemType.Project,SubsystemType.Project,ProjectMessages.GetProjectList, new object[]{ lst});
+                    }
+                case  ProjectMessages.GetStructure:
+                    {
+                        var structure = Module.GetStructure(((UserCache) message.Message[0]).Client,
+                                                            (string) message.Message[1]);
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.GetStructure, new object[] { structure });
                     }
             }
             throw new Exception();

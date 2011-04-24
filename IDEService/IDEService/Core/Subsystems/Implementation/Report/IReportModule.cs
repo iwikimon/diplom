@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ClientServiceTypesNet.Core;
+
 using IDEService.Contracts.Data;
 
 namespace IDEService.Core
@@ -11,7 +11,7 @@ namespace IDEService.Core
 
         void ProdjectReport(Project prodject, DateTime from, DateTime to);
 
-        List<ClientServiceTypesNet.Core.UserlogDto> GetUserlog(User u);
+        List<UserlogDto> GetUserlog(User u);
 
     }
 }

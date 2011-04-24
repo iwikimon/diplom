@@ -46,8 +46,10 @@
     <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\DataBase\DBSubsystemMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\Network\NetworkMessages.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Prodject\ProdjectExceptions.cs" />
-    <Compile Include="Core\Subsystems\Implementation\Prodject\ProdjectMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Project\ProdjectExceptions.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Project\ProdjectMessages.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectInfo.cs" />
+    <Compile Include="Core\Subsystems\Implementation\Project\ProjectStructure.cs" />
     <Compile Include="Core\Subsystems\Implementation\Report\ReportMessages.cs" />
     <Compile Include="Core\Subsystems\Implementation\Vcs\Revision.cs" />
     <Compile Include="Core\Subsystems\Implementation\Vcs\VcsMessages.cs" />

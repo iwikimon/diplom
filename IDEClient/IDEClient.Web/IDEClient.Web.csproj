@@ -68,7 +68,36 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ClientBin\System.ComponentModel.DataAnnotations.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.ServiceModel.DomainServices.Client.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.ServiceModel.DomainServices.Client.Web.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.ServiceModel.Web.Extensions.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Windows.Controls.Data.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Windows.Controls.Data.Input.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Windows.Controls.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Windows.Data.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Xml.Linq.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\System.Xml.Serialization.zip" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

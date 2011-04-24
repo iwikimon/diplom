@@ -39,6 +39,9 @@
     <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClientServiceTypesNet">
+      <HintPath>..\..\ClientServiceTypesNet\ClientServiceTypesNet\bin\Debug\ClientServiceTypesNet.dll</HintPath>
+    </Reference>
     <Reference Include="System">
     </Reference>
     <Reference Include="System.Data">
@@ -80,7 +83,6 @@
   <ItemGroup>
     <Compile Include="Core\Cache\UserCache.cs" />
     <Compile Include="Core\Configuration\Configure.cs" />
-    <Compile Include="Core\Cache\Session.cs" />
     <Compile Include="Core\Kernel\SubsystemFactory.cs" />
     <Compile Include="Core\Logger\Logger.cs" />
     <Compile Include="Core\Logger\LogLevels.cs" />
@@ -197,7 +199,10 @@
       <DependentUpon>DBModel.lsmodel</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="service\ClientConnect.cs" />
     <Compile Include="service\ClientWorker.cs" />
+    <Compile Include="service\PolicyServer.cs" />
+    <Compile Include="service\Program.cs" />
     <Compile Include="service\ServerWorker.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -241,12 +246,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DBScript.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ClientServiceTypesNet\ClientServiceTypesNet\ClientServiceTypesNet.csproj">
-      <Project>{CF3AB06B-F8FC-406A-8DDC-D4504B663A14}</Project>
-      <Name>ClientServiceTypesNet</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

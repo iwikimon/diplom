@@ -1,9 +1,0 @@
-<Modules>
-  <Module PersistentId="76A057E7-BEC6-4BCE-9A3F-4F115349B877" ModuleId="IDEService" />
-  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
-  <Module PersistentId="84640A0D-B64E-4044-8898-30964797DC4A" ModuleId="IDEServiceTests" />
-  <Module PersistentId="ClientServiceTypes, Version=1.0.0.0, Culture=neutral" ModuleId="ClientServiceTypes" />
-  <Module PersistentId="99132EBB-A738-4142-B00B-7BA850BA7CBE" ModuleId="ClientServiceTypes_1" />
-  <Module PersistentId="ClientServiceTypesNet, Version=1.0.0.0, Culture=neutral" ModuleId="ClientServiceTypesNet" />
-  <Module PersistentId="CF3AB06B-F8FC-406A-8DDC-D4504B663A14" ModuleId="ClientServiceTypesNet_1" />
-</Modules>

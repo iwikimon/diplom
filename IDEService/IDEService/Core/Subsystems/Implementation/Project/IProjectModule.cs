@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace IDEService.Core
 {
@@ -9,6 +10,10 @@ namespace IDEService.Core
         void DeleteProject(Project prodject);
 
         void SelectProject(Project prodject);
+
+        List<ProjectInfo> GetProjectList(User u);
+
+        ProjectStructure GetStructure(User u, string pname);
 
         void RunProject(Project prodject);
 

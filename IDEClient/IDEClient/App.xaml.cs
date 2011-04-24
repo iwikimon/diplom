@@ -40,7 +40,7 @@ namespace IDEClient
             // If the app is running outside of the debugger then report the exception using
             // the browser's exception mechanism. On IE this will display it a yellow alert 
             // icon in the status bar and Firefox will display a script error.
-            /*if (!System.Diagnostics.Debugger.IsAttached)
+            if (!System.Diagnostics.Debugger.IsAttached)
             {
 
                 // NOTE: This will allow the application to continue running after an exception has been thrown
@@ -49,10 +49,10 @@ namespace IDEClient
                 // report the error to the website and stop the application.
                 e.Handled = true;
                 Deployment.Current.Dispatcher.BeginInvoke(delegate { ReportErrorToDOM(e); });
-            }*/
-            //if(e.ExceptionObject.InnerException is CommunicationException)
-                MessageBox.Show(e.ExceptionObject.InnerException.Message.ToString());
-            e.Handled = true;
+            }
+           
+            
+
         }
 
         private void ReportErrorToDOM(ApplicationUnhandledExceptionEventArgs e)
