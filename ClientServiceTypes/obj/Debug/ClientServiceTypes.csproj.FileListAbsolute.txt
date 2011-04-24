@@ -1,5 +1,0 @@
-E:\Dropbox\Diplom\ClientServiceTypes\Bin\Debug\ClientServiceTypes.dll
-E:\Dropbox\Diplom\ClientServiceTypes\Bin\Debug\ClientServiceTypes.pdb
-E:\Dropbox\Diplom\ClientServiceTypes\obj\Debug\ResolveAssemblyReference.cache
-E:\Dropbox\Diplom\ClientServiceTypes\obj\Debug\ClientServiceTypes.dll
-E:\Dropbox\Diplom\ClientServiceTypes\obj\Debug\ClientServiceTypes.pdb
