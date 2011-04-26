@@ -117,6 +117,12 @@ namespace IDEService.service
                 }
                 var e = new SocketAsyncEventArgs();
                 e.Completed += eventArgsCompleted;
+                string data = "";
+                foreach (var b in msg)
+                {
+                    data += b.ToString() + " ";
+                }
+                Logger.Log.Write(LogLevels.Debug,"sended: "+msg.Length +" bytes: \t\t"+data);
                 e.SetBuffer(msg, 0, msg.Length);
                 SendAsync(e);
             }

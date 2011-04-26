@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace IDEService.Core
 {
-    class ChatMessage
+    [DataContract]
+    public class ChatMessage
     {
+        [DataMember]
         public string User { get; set; }
-
+        [DataMember]
         public DateTime Date { get; set; }
-
+        [DataMember]
         public string Message { get; set; }
 
         public ChatMessage()

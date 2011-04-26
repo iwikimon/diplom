@@ -3,7 +3,7 @@
 namespace IDEService.Core
 {
     [DataContract]
-    class TextPosition
+    public class TextPosition
     {
         [DataMember] 
         public int Line { get; set; }

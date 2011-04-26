@@ -50,8 +50,9 @@ namespace IDEClient
                 e.Handled = true;
                 Deployment.Current.Dispatcher.BeginInvoke(delegate { ReportErrorToDOM(e); });
             }
-           
+            MessageBox.Show(e.ExceptionObject.ToString());
             
+
 
         }
 

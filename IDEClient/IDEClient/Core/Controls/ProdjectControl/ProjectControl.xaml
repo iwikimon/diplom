@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="IDEClient.Core.Controls.ProjectControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input" 
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"    
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" 
+>
+    <UserControl.Resources>
+        <telerik:HierarchicalDataTemplate x:Key="hTemplate" ItemsSource="{Binding Children}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Icon}" />
+                <TextBlock Text="{Binding Name}" Margin="5 0 0 0" />
+            </StackPanel>
+        </telerik:HierarchicalDataTemplate>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>     
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        <Controls:Label Name="label1" Content="Проекты:"/>
+        <ComboBox Grid.Column="1" Name="prjList" SelectionChanged="prjList_SelectionChanged" />
+        <telerik:RadTreeView Grid.ColumnSpan="2" Grid.Row="1" Name="project" ItemTemplate="{StaticResource hTemplate}">
+            <telerik:RadContextMenu.ContextMenu>
+                <telerik:RadContextMenu x:Name="cMenu" Opened="RadContextMenu_Opened">
+                    
+                </telerik:RadContextMenu>
+            </telerik:RadContextMenu.ContextMenu>
+
+        </telerik:RadTreeView>
+
+        <telerik:RadContextMenu x:Name="folderMenu" Visibility="Collapsed">
+            <telerik:RadMenuItem Header="Add">
+                <telerik:RadMenuItem Header="File" Click="addFile"/>
+                <telerik:RadMenuItem Header="Folder" Click="addFolder"/>
+            </telerik:RadMenuItem>
+            <telerik:RadMenuItem IsSeparator="True"/>
+            <telerik:RadMenuItem Header="Remove" Click="removeFolder"/>
+        </telerik:RadContextMenu>
+
+        <telerik:RadContextMenu x:Name="fileMenu" Visibility="Collapsed">
+            <telerik:RadMenuItem Header="Add">
+                <telerik:RadMenuItem Header="File"/>
+                <telerik:RadMenuItem Header="Folder"/>
+            </telerik:RadMenuItem>
+            <telerik:RadMenuItem IsSeparator="True"/>
+            <telerik:RadMenuItem Header="Remove" Click="removeFile">
+            </telerik:RadMenuItem>
+        </telerik:RadContextMenu>
+
+    </Grid>
+</UserControl>

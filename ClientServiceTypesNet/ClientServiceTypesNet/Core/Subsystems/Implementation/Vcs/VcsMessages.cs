@@ -6,6 +6,7 @@
         DeleteRepository,
         Commit,
         GetRevisionList,
-        ViewRevision
+        ViewRevision,
+        Update
     }
 }

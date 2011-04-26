@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IDEService.Core
 {
-    class ChatSubsystem :Subsystem
+    class ChatSubsystem : Subsystem
     {
         private IChatModule _module;
         public ChatSubsystem() : base(SubsystemType.Chat)

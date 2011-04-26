@@ -63,7 +63,7 @@ namespace IDEService.Core
                     {
                         try
                         {
-                            Module.AddProject(((UserCache)message.Message[0]).Client, (string)message.Message[1]);
+                            Module.AddProject(((UserCache)message.Message[0]), (string)message.Message[1]);
                             var answer = new  ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.Undefined, new object[] { true });
                             ((UserCache)message.Message[0]).LogMessages.Add((new UserlogDto() { Date = DateTime.Now, Message = "Создан проект " + (string)message.Message[1] }));
                             return answer;
@@ -80,9 +80,67 @@ namespace IDEService.Core
                     }
                 case  ProjectMessages.GetStructure:
                     {
-                        var structure = Module.GetStructure(((UserCache) message.Message[0]).Client,
+                        var structure = Module.GetStructure(((UserCache) message.Message[0]),
                                                             (string) message.Message[1]);
                         return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.GetStructure, new object[] { structure });
+                    }
+                case ProjectMessages.AddFile:
+                    {
+                        var userCache = (UserCache) message.Message[0];
+                        var parenFolder = (FolderDto) message.Message[1];
+                        var file = (FileDto) message.Message[2];
+                        try
+                        {
+                            Module.AddFile(userCache,parenFolder, file);
+                        }
+                        catch (Exception ex)
+                        {
+                            return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.AddFile, new object[] { false,ex.ToString() });
+                        }
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.AddFile, new object[] { true, "Файл успешно добавлен" });
+                    }
+                case ProjectMessages.AddFolder:
+                    {
+                        var userCache = (UserCache)message.Message[0];
+                        var parenFolder = (FolderDto)message.Message[1];
+                        var folder = (FolderDto)message.Message[2];
+                        try
+                        {
+                            Module.AddFolder(userCache, parenFolder, folder);
+                        }
+                        catch (Exception ex)
+                        {
+                            return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.AddFolder, new object[] { false, ex.ToString() });
+                        }
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.AddFolder, new object[] { true, "Папка успешно добавлена" });
+                    }
+                case ProjectMessages.RemoveFile:
+                    {
+                        var userCache = (UserCache)message.Message[0];
+                        var file = (FileDto)message.Message[1];
+                        try
+                        {
+                            Module.RemoveFile(userCache,file);
+                        }
+                        catch(Exception ex)
+                        {
+                            return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.RemoveFile, new object[] { false, ex.ToString() });
+                        } 
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.RemoveFile, new object[] { true, "Файл успешно удален" });
+                   }
+                case ProjectMessages.RemoveFolder:
+                    {
+                        var userCache = (UserCache)message.Message[0];
+                        var folder = (FolderDto)message.Message[1];
+                        try
+                        {
+                            Module.RemoveFolder(userCache, folder);
+                        }
+                        catch (Exception ex)
+                        {
+                            return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.RemoveFolder, new object[] { false, ex.ToString() });
+                        }
+                        return new ServiceMessage(KernelTypes.ClientKernel, SubsystemType.Project, SubsystemType.Project, ProjectMessages.RemoveFolder, new object[] { true, "Папка успешно удалена" });
                     }
             }
             throw new Exception();

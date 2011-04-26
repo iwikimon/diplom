@@ -37,6 +37,12 @@ namespace IDEService.Core
         Recieve,
 
         /// <summary>
+        /// Обновление информации
+        /// </summary>
+        [EnumMember]
+        Update,
+
+        /// <summary>
         /// Неопознанное сообщение
         /// </summary>
         [EnumMember]

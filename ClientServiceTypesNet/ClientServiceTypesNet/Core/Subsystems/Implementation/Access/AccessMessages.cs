@@ -16,6 +16,8 @@ namespace IDEService.Core
         [EnumMember]
         GetInfo,
         [EnumMember]
+        Update,
+        [EnumMember]
         Undefined
     }
 }

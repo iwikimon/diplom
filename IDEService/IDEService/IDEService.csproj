@@ -99,12 +99,6 @@
     <Compile Include="Core\Subsystems\Implementation\Access\IAccessModule.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessage.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\Implementation\Chat\ChatMessages.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Core\Subsystems\Implementation\Chat\ChatModule.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -162,16 +156,7 @@
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\ITextModule.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextMessage.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextModule.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\TextPosition.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorMessages.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Core\Subsystems\Implementation\WordProcessor\WordProcessorSubsystem.cs">

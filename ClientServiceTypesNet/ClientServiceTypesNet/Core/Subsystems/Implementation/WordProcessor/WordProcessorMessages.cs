@@ -4,6 +4,7 @@
     {
         TypeText,
         TypeWord,
-        LoadFile
+        LoadFile,
+        Update
     }
 }

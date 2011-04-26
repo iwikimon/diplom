@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using IDEClient.ServiceReference1;
+using IDEClient.Core;
+using IDEService.Core;
 
 namespace IDEClient
 {
@@ -24,9 +25,10 @@ namespace IDEClient
                 AccControl = this;
         }
 
+        public delegate void IncomingMessage(ServiceMessage msg);
         private void Enter(object sender, RoutedEventArgs e)
         {
-            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,  
+            Kernel.GetKernel.SendToServer(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,  
                                               AccessMessages.Login,new object[] {_loginBox.Text, _passwdBox.Password}));
           
         }
@@ -34,16 +36,12 @@ namespace IDEClient
 
         public void SendMessage(ServiceMessage message)
         {
-            var msgType = AccessMessages.Undefined;
-            try
+            if(!Dispatcher.CheckAccess())
             {
-                msgType = (AccessMessages) message.Type;
+                Dispatcher.BeginInvoke(new IncomingMessage(SendMessage), message);
+                return;
             }
-            catch (Exception)
-            {
-              return;
-            }
-            switch (msgType)
+            switch ((AccessMessages) message.Type)
             {
                 case AccessMessages.CheckLogin:
                     return;
@@ -51,16 +49,25 @@ namespace IDEClient
                     return;
                 case AccessMessages.Login:
                     {
-                        var result = message.Message[0].ToString();
-                        MessageBox.Show(result.ToString());
+                        if (message.Message[0].ToString() == "0")
+                            infoLabel.Text = "Пользователя с таким логином и/или паролем не существует";
+                        else
+                        {
+                            Kernel.GetKernel.UID = int.Parse(message.Message[0].ToString());
+                            Kernel.GetKernel.LoginAccess();
+                        }
                         return;
                     }
                 case AccessMessages.Register:
                     return;
                 case AccessMessages.Logout:
-                    return;
+                    {
+                        Kernel.GetKernel.UID = 0;
+                        Kernel.GetKernel.Logout();
+                        return;
+                    }
                 default:
-                    throw new SubsystemWorkingException("Неопознанный тип сообщения.");
+                    throw new Exception("Неопознанный тип сообщения.");
             }
         }
 
@@ -76,7 +83,8 @@ namespace IDEClient
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Kernel.GetKernel.MainWindow.LayoutRoot.Children.Clear();
+            Kernel.GetKernel.MainWindow.LayoutRoot.Children.Add(new RegistrationControl());
         }
 
     }

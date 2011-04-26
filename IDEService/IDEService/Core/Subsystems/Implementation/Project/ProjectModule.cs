@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
+using IDEService.Contracts.Data;
 using Mindscape.LightSpeed;
 
 namespace IDEService.Core
@@ -25,13 +25,13 @@ namespace IDEService.Core
                                                DbSubsystemMessages.GetContext, new object[] { })).Message[0];
         }
 
-        public void AddProject(User user, string pname)
+        public void AddProject(UserCache cache, string pname)
         {
             if(pname.ToCharArray().Contains('/'))
                 return;
-            if (user.ProjectsOwner.Where(p => p.Name == pname).Count() > 0)
+            if (cache.Client.ProjectsOwner.Where(p => p.Name == pname).Count() > 0)
                 throw new CreateProdjectException("Проект с такими названием уже существует");
-            string dir = _prodjectSubsystem.ProjectDir + "\\" + user.Login + "\\" + pname;
+            string dir = _prodjectSubsystem.ProjectDir + "\\" + cache.Client.Login + "\\" + pname;
             try
             {
                 Directory.CreateDirectory(dir);
@@ -44,15 +44,16 @@ namespace IDEService.Core
             }
             var prj = new Project();
             context.Add(prj);
-            prj.Owner = user;
+            prj.Owner = cache.Client;
             prj.Sourcedir = dir;
-            prj.Folders.Add(new Folder(){Name = pname,Path = dir});
+            prj.Folders.Add(new Folder() { Name = pname, Path = _prodjectSubsystem.ProjectDir + "\\" + cache.Client.Login });
             prj.Name = pname;
-            prj.Members.Add(user);
-            user.Userlogs.Add(new Userlog(){Date = DateTime.Now, Message = "Создан проект "+pname});
-            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Project, SubsystemType.DataBase,
-                                                            DbSubsystemMessages.SaveContext, new object[] {}));
-            
+            prj.Members.Add(cache.Client);
+            var log = new Userlog() {Date = DateTime.Now, Message = "Создан проект " + pname};
+            cache.Client.Userlogs.Add(log);
+            cache.LogMessages.Add(log.AsDto());
+            cache.NewProjects.Add(prj.AsDto());
+            SaveContext();
         }
 
         public void DeleteProject(Project prodject)
@@ -65,6 +66,7 @@ namespace IDEService.Core
             throw new NotImplementedException();
         }
 
+
         public List<ProjectInfo> GetProjectList(User u)
         {
             var prjLst = (from owner in u.ProjectsOwner
@@ -73,9 +75,10 @@ namespace IDEService.Core
             return prjLst;
         }
 
-        public ProjectStructure GetStructure(User u, string pname)
+        public ProjectStructure GetStructure(UserCache u, string pname)
         {
-            var project = u.ProjectsOwner.Where(x => x.Name == pname).First();
+            var project = u.Client.ProjectsOwner.Where(x => x.Name == pname).First();
+            u.CurrentProject = project.AsDto();
             var structure = new ProjectStructure();
             //TODO: Реализовать учет прав доступа.
             foreach (var folder in project.Folders)
@@ -94,39 +97,91 @@ namespace IDEService.Core
             throw new NotImplementedException();
         }
 
-        public void AddFolder(Folder folder)
+
+        public void AddFolder(UserCache cache, FolderDto parentFolder, FolderDto folder)
+        {
+            Project p = null;
+            cache.CurrentProject.CopyTo(p);
+            p.Folders.Add(new Folder() {Name = folder.Name, Path = folder.Path});
+            Directory.CreateDirectory(folder.Path+"\\"+folder.Name);
+            SaveContext();
+            var log = new Userlog() { Date = DateTime.Now, Message = "Создание папки " + folder.Name };
+            cache.Client.Userlogs.Add(log);
+            cache.LogMessages.Add(log.AsDto());
+            cache.StructureChanges.Add(new StructureChange(Action.Added, folder));
+        }
+
+        public void AddFile(UserCache cache, FolderDto parentFolder ,FileDto file)
+        {
+            Project p = null;
+            cache.CurrentProject.CopyTo(p);
+            var folder = p.Folders.Where(x => x.Path == parentFolder.Path && x.Name == parentFolder.Name).First();
+            folder.Files.Add(new File() {Name = file.Name, Path = file.Path});
+            System.IO.File.Create(file.Path + "\\" + file.Name);
+            SaveContext();
+            var log = new Userlog() { Date = DateTime.Now, Message = "Создание файла " + file.Name };
+            cache.Client.Userlogs.Add(log);
+            cache.LogMessages.Add(log.AsDto());
+            cache.StructureChanges.Add(new StructureChange(Action.Added, file));
+        }
+
+        public void AddMember(UserCache cache, User member)
         {
             throw new NotImplementedException();
         }
 
-        public void AddFile(File file)
+        public void RemoveFolder(UserCache cache, FolderDto folder)
+        {
+            Project p = null;
+            cache.CurrentProject.CopyTo(p);
+            var f = p.Folders.Where(x => x.Path == folder.Path && x.Name == folder.Name).First();
+            p.Folders.Remove(f);
+            Directory.Delete(f.Path + "\\" + f.Name, true);
+            SaveContext();
+            var log = new Userlog() { Date = DateTime.Now, Message = "Удаление папки " + folder.Name };
+            cache.Client.Userlogs.Add(log);
+            cache.LogMessages.Add(log.AsDto());
+            cache.StructureChanges.Add(new StructureChange(Action.Removed, folder));
+        }
+
+        public void RemoveFile(UserCache cache, FileDto file)
+        {
+            Project p = null;
+            cache.CurrentProject.CopyTo(p);
+            foreach(var folder in p.Folders)
+            {
+                var f = folder.Files.Where(x => x.Path == file.Path && x.Name == file.Name);
+                if(f.Count() > 0)
+                {
+                    folder.Files.Remove(f.First());
+                    System.IO.File.Delete(file.Path+"\\"+file.Name);
+                    SaveContext();
+                    return;
+                }
+            }
+            SaveContext();
+            var log = new Userlog() {Date = DateTime.Now, Message = "Удаление файла " + file.Name};
+            cache.Client.Userlogs.Add(log);
+            cache.LogMessages.Add(log.AsDto());
+            cache.StructureChanges.Add(new StructureChange(Action.Removed,file));
+        }
+
+        public void RemoveMember(UserCache cache, User member)
         {
             throw new NotImplementedException();
         }
 
-        public void AddMember(User member)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveFolder(Folder folder)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveFile(File file)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveMember(User member)
-        {
-            throw new NotImplementedException();
-        }
 
         public void Dispose()
         {
             
+        }
+
+
+        private void SaveContext()
+        {
+            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Project, SubsystemType.DataBase,
+                                                            DbSubsystemMessages.SaveContext, new object[] { }));
         }
     }
 }

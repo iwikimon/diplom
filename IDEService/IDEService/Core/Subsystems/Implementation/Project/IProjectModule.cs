@@ -5,7 +5,7 @@ namespace IDEService.Core
 {
     interface IProjectModule :IDisposable
     {
-        void AddProject(User u,string pname);
+        void AddProject(UserCache u,string pname);
 
         void DeleteProject(Project prodject);
 
@@ -13,21 +13,21 @@ namespace IDEService.Core
 
         List<ProjectInfo> GetProjectList(User u);
 
-        ProjectStructure GetStructure(User u, string pname);
+        ProjectStructure GetStructure(UserCache u, string pname);
 
         void RunProject(Project prodject);
 
-        void AddFolder(Folder folder);
+        void AddFolder(UserCache cache, FolderDto parentFolder, FolderDto folder);
 
-        void AddFile(File file);
+        void AddFile(UserCache cache, FolderDto parentFolder, FileDto file);
 
-        void AddMember(User member);
-        
-        void RemoveFolder(Folder folder);
+        void AddMember(UserCache cache, User member);
 
-        void RemoveFile(File file);
+        void RemoveFolder(UserCache cache, FolderDto folder);
 
-        void RemoveMember(User member);
+        void RemoveFile(UserCache cache, FileDto file);
+
+        void RemoveMember(UserCache cache, User member);
 
     }
 }

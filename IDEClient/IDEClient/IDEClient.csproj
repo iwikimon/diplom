@@ -25,7 +25,7 @@
     <TestPageFileName>IDEClientTestPage.html</TestPageFileName>
     <CreateTestPage>true</CreateTestPage>
     <ValidateXaml>true</ValidateXaml>
-    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <EnableOutOfBrowser>true</EnableOutOfBrowser>
     <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
     <UsePlatformExtensions>false</UsePlatformExtensions>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
@@ -100,22 +100,22 @@
     <Compile Include="Core\Controls\ChatControl.xaml.cs">
       <DependentUpon>ChatControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Core\Controls\ConfirmDialog.xaml.cs">
+      <DependentUpon>ConfirmDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Core\Controls\IDEControl.xaml.cs">
       <DependentUpon>IDEControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core\Controls\LogControl.xaml.cs">
       <DependentUpon>LogControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Core\Controls\ProjectControl.xaml.cs">
+    <Compile Include="Core\Controls\ProdjectControl\ProjectControl.xaml.cs">
       <DependentUpon>ProjectControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Core\Controls\QueryBox.xaml.cs">
-      <DependentUpon>QueryBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core\Controls\UserDialog.xaml.cs">
       <DependentUpon>UserDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Core\Elem.cs" />
+    <Compile Include="Core\Controls\ProdjectControl\Elem.cs" />
     <Compile Include="Core\Kernel.cs" />
     <Compile Include="Core\Subsystems\AccessSubsystem.cs" />
     <Compile Include="Core\Subsystems\NetworkSubsystem.cs" />
@@ -143,6 +143,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Core\Controls\ConfirmDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Core\Controls\IDEControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -151,11 +155,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Core\Controls\ProjectControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Core\Controls\QueryBox.xaml">
+    <Page Include="Core\Controls\ProdjectControl\ProjectControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

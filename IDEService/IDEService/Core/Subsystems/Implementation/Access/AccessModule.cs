@@ -36,7 +36,6 @@ namespace IDEService.Core
         {
             try
             {
-                //TODO: тестирование.
                 var user = _context.Users.Where(u => (u. Login == uname) && (u.Password == upasswd)).First();
                 user.LastAccess = DateTime.Now;
                 _loginTime = DateTime.Now;

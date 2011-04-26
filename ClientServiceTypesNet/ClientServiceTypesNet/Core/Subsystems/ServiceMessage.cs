@@ -23,6 +23,8 @@ namespace IDEService.Core
     [KnownType(typeof(List<UserlogDto>))]
     [KnownType(typeof(List<ProjectInfo>))]
     [KnownType(typeof(ProjectStructure))]
+    [KnownType(typeof(FolderDto))]
+    [KnownType(typeof(FileDto))]
     public class ServiceMessage
     {
 

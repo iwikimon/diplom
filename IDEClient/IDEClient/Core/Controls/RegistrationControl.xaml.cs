@@ -4,12 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
-using IDEClient.ServiceReference1;
+using IDEClient.Core;
+using IDEService.Core;
+
 
 namespace IDEClient
 {
@@ -22,6 +19,7 @@ namespace IDEClient
             InitializeComponent();
             
         }
+        public delegate void IncomingMessage(ServiceMessage msg);
 
         private bool  CheckLogin()
         {
@@ -67,26 +65,11 @@ namespace IDEClient
         {
             if (CheckLogin() && CheckPasswd() && CheckMail())
             {
-               /* var info = new Userinfo()
-                               {
-                                   _email = mailBox.Text,
-                                   
-                                   _name = nameBox.Text,
-                                   _sname = snameBox.Text,
-                                   _lastAccess = DateTime.Now,
-                                   _registred = DateTime.Now,
-                               };
-                var user = new User()
-                               {
-                                   _login = loginBox.Text,
-                                   _password = passwordBox1.Password,
-                                
-                                   
-                               };
-                user._userinfo._value = info;
                 var msg = new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,
-                                             AccessMessages.Register,new object[]{user});
-                Kernel.GetKernel.SendMessage(msg);*/
+                                             AccessMessages.Register, 
+                                             new object[] { mailBox.Text , nameBox.Text, snameBox.Text, 
+                                                 loginBox.Text, passwordBox1.Password});
+                Kernel.GetKernel.SendToServer(msg);
             }
         }
 
@@ -107,8 +90,31 @@ namespace IDEClient
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Kernel.GetKernel.SendMessage(new ServiceMessage(KernelTypes.ServiceKernel,SubsystemType.Access,
+            Kernel.GetKernel.SendToServer(new ServiceMessage(KernelTypes.ServiceKernel,SubsystemType.Access,
                 SubsystemType.Access, AccessMessages.CheckLogin, new object[] { loginBox.Text } ));
+        }
+
+        public void SendMessage(ServiceMessage msg)
+        {
+            if (!Dispatcher.CheckAccess())
+            {
+                Dispatcher.BeginInvoke(new IncomingMessage(SendMessage), msg);
+                return;
+            }
+            if ((AccessMessages)msg.Type == AccessMessages.Register)
+                infoLabel.Text = (bool)msg.Message[0] ? 
+                    "Пользователь успешно зарегистрирован" : 
+                    "Пользователь c таким логином уже существует";
+            if((AccessMessages)msg.Type == AccessMessages.CheckLogin)
+                infoLabel.Text = msg.Message[0].ToString() != "Free" ?
+                    "Пользователь c таким логином уже существует" :
+                    "Логин свободен";
+        }
+
+        private void prev_Click(object sender, RoutedEventArgs e)
+        {
+            Kernel.GetKernel.MainWindow.LayoutRoot.Children.Clear();
+            Kernel.GetKernel.MainWindow.LayoutRoot.Children.Add(new AccessControl());
         }
 
     }

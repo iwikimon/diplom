@@ -28,20 +28,26 @@ namespace ClientServiceTypes.Core
 
         public byte[] Encrypt(byte[] input, string passwd, byte[] salt)
         {
-            var ms = new MemoryStream();
-            var cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write);
-            cs.Write(input, 0, input.Length);
-            cs.Close();
-            return ms.ToArray();
+            lock (this)
+            {
+                var ms = new MemoryStream();
+                var cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write);
+                cs.Write(input, 0, input.Length);
+                cs.Close();
+                return ms.ToArray();
+            }
         }
 
         public byte[] Decrypt(byte[] input, string passwd, byte[] salt)
         {
-            var ms = new MemoryStream();
-            var cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Write);
-            cs.Write(input, 0, input.Length);
-            cs.Close();
-            return ms.ToArray();
+            lock (this)
+            {
+                var ms = new MemoryStream();
+                var cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Write);
+                cs.Write(input, 0, input.Length);
+                cs.Close();
+                return ms.ToArray();
+            }
         }
     }
 }

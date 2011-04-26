@@ -10,6 +10,8 @@ namespace IDEService.Core
         [EnumMember]
         ProdjectReport,
         [EnumMember]
-        GetLastUserLog
+        GetLastUserLog,
+        [EnumMember]
+        Update
     }
 }
