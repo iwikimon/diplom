@@ -53,7 +53,7 @@ namespace IDEClient.Core
         /// </summary>
         private Kernel()
         {
-            Client = new ClientWorker("192.168.1.34", 4505);
+            Client = new ClientWorker("127.0.0.1", 4505);
             Client.ConnectAsync();
         }
 

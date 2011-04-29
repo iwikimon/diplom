@@ -100,8 +100,7 @@ namespace IDEService.Core
 
         public void AddFolder(UserCache cache, FolderDto parentFolder, FolderDto folder)
         {
-            Project p = null;
-            cache.CurrentProject.CopyTo(p);
+            Project p = context.Projects.Where(x => x.Owner.Id == cache.CurrentProject.OwnerId && x.Name == cache.CurrentProject.Name).First();
             p.Folders.Add(new Folder() {Name = folder.Name, Path = folder.Path});
             Directory.CreateDirectory(folder.Path+"\\"+folder.Name);
             SaveContext();
@@ -113,8 +112,7 @@ namespace IDEService.Core
 
         public void AddFile(UserCache cache, FolderDto parentFolder ,FileDto file)
         {
-            Project p = null;
-            cache.CurrentProject.CopyTo(p);
+            Project p = context.Projects.Where(x => x.Owner.Id == cache.CurrentProject.OwnerId && x.Name == cache.CurrentProject.Name).First();
             var folder = p.Folders.Where(x => x.Path == parentFolder.Path && x.Name == parentFolder.Name).First();
             folder.Files.Add(new File() {Name = file.Name, Path = file.Path});
             System.IO.File.Create(file.Path + "\\" + file.Name);
@@ -132,8 +130,7 @@ namespace IDEService.Core
 
         public void RemoveFolder(UserCache cache, FolderDto folder)
         {
-            Project p = null;
-            cache.CurrentProject.CopyTo(p);
+            Project p = context.Projects.Where(x => x.Owner.Id == cache.CurrentProject.OwnerId && x.Name == cache.CurrentProject.Name).First();
             var f = p.Folders.Where(x => x.Path == folder.Path && x.Name == folder.Name).First();
             p.Folders.Remove(f);
             Directory.Delete(f.Path + "\\" + f.Name, true);
@@ -146,8 +143,7 @@ namespace IDEService.Core
 
         public void RemoveFile(UserCache cache, FileDto file)
         {
-            Project p = null;
-            cache.CurrentProject.CopyTo(p);
+            Project p = context.Projects.Where(x => x.Owner.Id == cache.CurrentProject.OwnerId && x.Name == cache.CurrentProject.Name).First();
             foreach(var folder in p.Folders)
             {
                 var f = folder.Files.Where(x => x.Path == file.Path && x.Name == file.Name);

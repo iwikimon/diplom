@@ -6,9 +6,15 @@ using System.Text;
 
 namespace IDEService.Core
 {
+    /// <summary>
+    /// Серверная реализация кеша. 
+    /// </summary>
     [DataContract]
-    public class UserCache :Cache
+    public class UserCache : Cache
     {
+        /// <summary>
+        /// Клиент, котрому соответствует кеш
+        /// </summary>
         [DataMember]
         public User Client { get; set; }
 

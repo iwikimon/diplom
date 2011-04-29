@@ -148,8 +148,9 @@ namespace IDEService.Core
             try
             {
                 var diskClients = Clients.Where(x => x.Value.IP == ip);
-                foreach (var v in diskClients)
+                for (int i = 0; i < diskClients.Count();++i )
                 {
+                    var v = diskClients.First();
                     SendMessage(new ServiceMessage(KernelTypes.ServiceKernel, SubsystemType.Access, SubsystemType.Access,
                                                    AccessMessages.Logout, new object[] { v.Value }));
                     Clients.Remove(v.Key);
